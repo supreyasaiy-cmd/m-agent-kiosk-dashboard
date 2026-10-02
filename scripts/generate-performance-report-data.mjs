@@ -54,6 +54,10 @@ const reportFiles = {
     // (7-13 Aug on NO5-M3-EVT-01), so it is NOT merged separately to avoid double-counting.
     message: "Perfomance Reports/0826 Aug/messageLog-export-2026-08-01-to-2026-08-31-e4e8b37f.csv",
     rating: "Perfomance Reports/0826 Aug/ratings-export-2026-08-01-to-2026-08-31-e4e8b37f.csv"
+  },
+  "2026-09": {
+    message: "Perfomance Reports/0926 Sep/messageLog-export-2026-09-01-to-2026-09-30-74042160.csv",
+    rating: "Perfomance Reports/0926 Sep/ratings-export-2026-09-01-to-2026-09-30-74042160.csv"
   }
 };
 
@@ -260,10 +264,6 @@ export function normalizeDate(value) {
   const date = new Date(value);
   if (Number.isNaN(+date)) return null;
   return date;
-}
-
-export function isoDate(date) {
-  return date ? date.toISOString().slice(0, 10) : null;
 }
 
 export function formatLocalIsoDate(value, timeZone = bangkokTimeZone) {
@@ -590,8 +590,11 @@ export function buildPerformanceReportData(rootDir) {
     }
 
     monthMeta[monthId] = {
-      coverageStart: isoDate(minDate),
-      coverageEnd: isoDate(maxDate)
+      // Use the Bangkok-local calendar date, not toISOString's UTC date: a session logged at
+      // 01:47 Bangkok time on the 1st is still Aug 31 in UTC, which would wrongly shift the
+      // month's coverage start back a day.
+      coverageStart: formatLocalIsoDate(minDate),
+      coverageEnd: formatLocalIsoDate(maxDate)
     };
   }
 
