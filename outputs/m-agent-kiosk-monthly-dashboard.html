@@ -285,11 +285,12 @@
     .overview-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
     .overview-summary-item{border:1px solid var(--line-2);border-radius:18px;background:#fbfcfe;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-width:0}
     .overview-summary-item>div:first-child{display:grid;gap:8px;align-content:start;min-width:0;flex:1}
-    .mini-ring{flex:0 0 auto}
-    .overview-summary-icon{flex:0 0 auto;width:60px;height:60px;border-radius:50%;background:#eef2f7;display:flex;align-items:center;justify-content:center}
+    .overview-summary-item>svg,.overview-summary-item .mini-ring,.overview-summary-item .overview-summary-icon{flex:0 0 auto}
+    .overview-summary-icon{width:60px;height:60px;border-radius:50%;background:#eef2f7;display:flex;align-items:center;justify-content:center}
     .overview-summary-item span{color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase}
     .overview-summary-item strong{font-size:26px;line-height:1.05;letter-spacing:0;overflow-wrap:anywhere}
     .overview-summary-item p{margin:0;color:#475467;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+    @media(max-width:1300px){.overview-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     .overview-summary-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
     .overview-summary-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
     .overview-mentioned-list{display:grid;gap:10px}.overview-mentioned-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.overview-mentioned-col-head{margin-bottom:12px}.overview-mentioned-col-head h4{margin:0;font-size:14px;font-weight:850;color:var(--ink)}.overview-mentioned-col-head span{display:block;font-size:12px;color:#667085;margin-top:2px}@media(max-width:820px){.overview-mentioned-split{grid-template-columns:1fr}}
@@ -1051,7 +1052,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-02T10:04:03.107Z",
+  "generatedAt": "2026-10-06T07:23:13.822Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "30 Sep 2026",
