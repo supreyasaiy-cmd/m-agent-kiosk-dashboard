@@ -429,6 +429,8 @@ export function buildPerformanceReportData(rootDir) {
   const accuracySessionIds = new Set();
   const kmDirectory = loadKmDirectory(rootDir);
   const kmBrandMentions = new Map();
+  const actionBuckets = new Map();
+  const customerDemand = new Map();
   const dailyAssetMetrics = {};
   const monthQuestionCounts = {};
   const monthQuestionCategoryCounts = {};
@@ -535,6 +537,84 @@ export function buildPerformanceReportData(rootDir) {
             machine: assetId,
             time: String(row.startAt || "").trim()
           });
+        }
+      }
+
+      // --- Action routing: who has to fix this, and what exactly do they do? ---
+      // Every question is bucketed by the team that owns the fix, so the dashboard can say
+      // "send these to the vendor" vs "add this to KM" instead of just "the AI failed".
+      {
+        const rowCategory = String(row.category || "").trim();
+        const rowSubCategory = String(row.subCategory || "").trim();
+        const rowApology = String(row.isApology || "").toLowerCase() === "true";
+        const isVoice = !!String(row.audioUrl || "").trim();
+        const inputKind = isVoice ? "voice" : questionText.startsWith("quick reply") ? "quickReply" : "text";
+
+        // Demand: what customers ask about, failures and successes alike — this is the
+        // "what do users actually want" view, so it must count every question.
+        const demandKey = rowSubCategory || rowCategory || "Uncategorized";
+        let demandBucket = customerDemand.get(demandKey);
+        if (!demandBucket) {
+          demandBucket = { topic: demandKey, parent: rowSubCategory ? rowCategory : null, count: 0, apology: 0, voice: 0, questionCounts: new Map(), failExamples: [] };
+          customerDemand.set(demandKey, demandBucket);
+        }
+        demandBucket.count += 1;
+        if (rowApology) demandBucket.apology += 1;
+        if (isVoice) demandBucket.voice += 1;
+        if (questionText) {
+          // Keep the exact wording so the drill-down shows what people really typed/tapped,
+          // deduped so one repeated question doesn't fill the whole list.
+          const qKey = clipText(row.question, 160);
+          const qStat = demandBucket.questionCounts.get(qKey) || { question: qKey, count: 0, apology: 0 };
+          qStat.count += 1;
+          if (rowApology) qStat.apology += 1;
+          demandBucket.questionCounts.set(qKey, qStat);
+          if (rowApology && demandBucket.failExamples.length < 4) {
+            demandBucket.failExamples.push({
+              question: qKey,
+              answer: clipText(row.answer, 180),
+              language: String(row.language || "").trim(),
+              input: inputKind
+            });
+          }
+        }
+
+        // A garbled transcript is an ASR problem no amount of KM content can fix, so it is
+        // routed to the vendor regardless of whether the AI apologized.
+        const isTranscription = rowCategory === "TranscriptionError";
+        let actionId = null;
+        if (isTranscription) actionId = "vendorSpeech";
+        // The kiosk itself offered this button, so "I don't have that information" is always
+        // a defect — checked before the generic buckets so it never hides inside them.
+        else if (rowApology && inputKind === "quickReply") actionId = "quickReplyDeadEnd";
+        else if (rowApology && rowCategory === "Out of Scope") actionId = "outOfScope";
+        else if (rowApology && mentionedStore) actionId = String(row.isMentionedBrandsInKM || "").toLowerCase() === "true" ? "kmVerifyBrand" : "kmAddBrand";
+        else if (rowApology) actionId = "kmAddTopic";
+
+        if (actionId) {
+          let actionBucket = actionBuckets.get(actionId);
+          if (!actionBucket) {
+            actionBucket = { id: actionId, count: 0, voice: 0, text: 0, quickReply: 0, topics: new Map(), languages: new Map(), examples: [] };
+            actionBuckets.set(actionId, actionBucket);
+          }
+          actionBucket.count += 1;
+          actionBucket[inputKind] += 1;
+          const topicLabel = rowSubCategory || rowCategory || "Uncategorized";
+          actionBucket.topics.set(topicLabel, (actionBucket.topics.get(topicLabel) || 0) + 1);
+          const langLabel = String(row.language || "").trim() || "unknown";
+          actionBucket.languages.set(langLabel, (actionBucket.languages.get(langLabel) || 0) + 1);
+          if (questionText && actionBucket.examples.length < 8) {
+            actionBucket.examples.push({
+              question: clipText(row.question, 200),
+              answer: clipText(row.answer, 180),
+              brand: mentionedStore || null,
+              topic: topicLabel,
+              language: langLabel,
+              input: inputKind,
+              machine: assetId,
+              time: String(row.startAt || "").trim()
+            });
+          }
         }
       }
 
@@ -896,7 +976,35 @@ export function buildPerformanceReportData(rootDir) {
     brandByAssetByMonth,
     eventHistory,
     accuracyReview: buildAccuracyReviewSummary(accuracyRows, accuracySessionIds),
-    kmGapAnalysis: buildKmGapAnalysis(kmBrandMentions)
+    kmGapAnalysis: buildKmGapAnalysis(kmBrandMentions, actionBuckets, customerDemand)
+  };
+}
+
+// "owner" is the kind of work the data needs, not a team name: "tune" = the content exists
+// (or the question never arrived intact) so the model/recognition needs tuning; "add" = the
+// content is genuinely missing from KM; "none" = correct behaviour, nothing to change.
+const ACTION_META = {
+  vendorSpeech: { owner: "tune", tone: "rose" },
+  kmAddBrand: { owner: "add", tone: "amber" },
+  kmVerifyBrand: { owner: "tune", tone: "purple" },
+  kmAddTopic: { owner: "add", tone: "cyan" },
+  quickReplyDeadEnd: { owner: "add", tone: "rose" },
+  outOfScope: { owner: "none", tone: "" }
+};
+
+function serializeActionBucket(bucket) {
+  const topEntries = map => [...map.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6).map(([name, count]) => ({ name, count }));
+  return {
+    id: bucket.id,
+    owner: ACTION_META[bucket.id]?.owner || "km",
+    tone: ACTION_META[bucket.id]?.tone || "",
+    count: bucket.count,
+    voice: bucket.voice,
+    text: bucket.text,
+    quickReply: bucket.quickReply,
+    topics: topEntries(bucket.topics),
+    languages: topEntries(bucket.languages),
+    examples: bucket.examples
   };
 }
 
@@ -904,7 +1012,7 @@ export function buildPerformanceReportData(rootDir) {
 // columns, already computed upstream — not re-derived here) into three views: brands the AI
 // got wrong despite KM having the answer, brands customers asked about with no KM entry at
 // all, and the overall most-asked-about brands.
-function buildKmGapAnalysis(brandMentions) {
+function buildKmGapAnalysis(brandMentions, actionBuckets, customerDemand) {
   const all = [...brandMentions.values()];
   const totalBrandMentions = all.reduce((sum, b) => sum + b.count, 0);
   const wrongAnswers = all
@@ -922,7 +1030,25 @@ function buildKmGapAnalysis(brandMentions) {
     .slice()
     .sort((a, b) => b.count - a.count)
     .slice(0, 40);
-  return { totalBrandMentions, totalUniqueBrands: all.length, wrongAnswers, gaps, topMentions };
+
+  // Biggest actionable bucket first; the "no action needed" bucket always sinks to the
+  // bottom regardless of size, since it is context rather than work.
+  const actions = [...actionBuckets.values()]
+    .map(serializeActionBucket)
+    .sort((a, b) => (a.owner === "none") - (b.owner === "none") || b.count - a.count);
+  // Only topics with enough volume to act on — a 1-question topic with a 100% failure rate
+  // is noise, not a priority.
+  const demand = [...customerDemand.values()]
+    .filter(d => d.count >= 5)
+    .map(({ questionCounts, ...d }) => ({
+      ...d,
+      apologyRate: d.count ? (d.apology / d.count) * 100 : 0,
+      topQuestions: [...questionCounts.values()].sort((a, b) => b.count - a.count).slice(0, 10)
+    }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 25);
+
+  return { totalBrandMentions, totalUniqueBrands: all.length, wrongAnswers, gaps, topMentions, actions, demand };
 }
 
 function buildAccuracyReviewSummary(records, sessionIds) {

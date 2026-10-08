@@ -1,5 +1,5 @@
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-08T10:17:28.494Z",
+  "generatedAt": "2026-10-08T15:05:23.930Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "30 Sep 2026",
@@ -286401,6 +286401,2752 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2026-01-26T12:30:57.894125+07:00"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "kmAddTopic",
+        "owner": "add",
+        "tone": "cyan",
+        "count": 1965,
+        "voice": 1730,
+        "text": 235,
+        "quickReply": 0,
+        "topics": [
+          {
+            "name": "Misc",
+            "count": 835
+          },
+          {
+            "name": "Specific purpose",
+            "count": 120
+          },
+          {
+            "name": "Promotions",
+            "count": 64
+          },
+          {
+            "name": "Products & Services",
+            "count": 56
+          },
+          {
+            "name": "Feedback",
+            "count": 52
+          },
+          {
+            "name": "Events",
+            "count": 46
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 1352
+          },
+          {
+            "name": "en-US",
+            "count": 607
+          },
+          {
+            "name": "zh-CN",
+            "count": 6
+          }
+        ],
+        "examples": [
+          {
+            "question": "คุณโชว์แผนที่ได้หรือไม่",
+            "answer": "ขอโทษค่ะ ตอนนี้ฉันไม่สามารถแสดงแผนที่หรือไดเรกทอรีของศูนย์การค้าได้ค่ะ",
+            "brand": null,
+            "topic": "Map and Navigation",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-06T19:50:43.329805+07:00"
+          },
+          {
+            "question": "ไม่ได้ถามชื่อเธอ ฉันถามว่ารู้จักพี่จอยไหม",
+            "answer": "ฉันขอโทษค่ะ ฉันไม่มีข้อมูลเกี่ยวกับพี่จอยนะคะ",
+            "brand": null,
+            "topic": "Misc",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-05T13:46:39.916646+07:00"
+          },
+          {
+            "question": "มีจุดให้ยืม Power Bank ไหมคะ?",
+            "answer": "ขอโทษด้วยค่ะ ตอนนี้ฉันไม่มีข้อมูลเกี่ยวกับบริการยืม Power Bank ค่ะ",
+            "brand": null,
+            "topic": "Locker & Baggage Storage",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-04T15:53:04.572413+07:00"
+          },
+          {
+            "question": "Power Bank",
+            "answer": "ขอโทษด้วยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการยืม Power Bank ค่ะ",
+            "brand": null,
+            "topic": "Misc",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-04T10:48:03.117968+07:00"
+          },
+          {
+            "question": "ยืม Power Bank ได้ป่ะ",
+            "answer": "ขอโทษด้วยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการยืม Power Bank ค่ะ",
+            "brand": null,
+            "topic": "Locker & Baggage Storage",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-04T10:47:42.567623+07:00"
+          },
+          {
+            "question": "แผนก The Living อยู่ชั้นไหนคะ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับแผนก The Living ค่ะ",
+            "brand": null,
+            "topic": "Livings / Furnitures / Home Décor / Gardening / Kitchen",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-01T18:29:18.123127+07:00"
+          },
+          {
+            "question": "Is there any nearby trash can?",
+            "answer": "I'm sorry, I couldn't find information about nearby trash cans. If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Specific purpose",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T21:30:26.649+07:00"
+          },
+          {
+            "question": "เดอะมอลล์บางกะปิสร้างมานานยัง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับระยะเวลาที่เดอะมอลล์บางกะปิสร้างมานานแค่ไหน ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": null,
+            "topic": "Misc",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-31T21:26:31.349229+07:00"
+          }
+        ]
+      },
+      {
+        "id": "vendorSpeech",
+        "owner": "tune",
+        "tone": "rose",
+        "count": 1611,
+        "voice": 1214,
+        "text": 397,
+        "quickReply": 0,
+        "topics": [
+          {
+            "name": "TranscriptionError",
+            "count": 1611
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 968
+          },
+          {
+            "name": "en-US",
+            "count": 616
+          },
+          {
+            "name": "zh-CN",
+            "count": 27
+          }
+        ],
+        "examples": [
+          {
+            "question": "English English",
+            "answer": "I'm sorry, I couldn't find information about \"English English\". If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-31T20:12:31.406153+07:00"
+          },
+          {
+            "question": "***",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับที่ตั้งของ M Card และส่วนลดพิเศษสูงสุด90% ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "th-TH",
+            "input": "text",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-31T13:54:53.68027+07:00"
+          },
+          {
+            "question": "wishdom",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ wishdom ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "th-TH",
+            "input": "text",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-30T18:40:26.029+07:00"
+          },
+          {
+            "question": "เชื่อม",
+            "answer": "ที่นี่มี Wi-Fi ฟรีค่ะ คุณสามารถเชื่อมต่อกับสัญญาณชื่อ ‘The Mall Free WiFi’ ได้เลยค่ะ หลังจากนั้นให้ลงทะเบียนด้วยหมายเลขโทรศัพท์ของคุณค่ะ สะดวกมาก ๆ เลยนะคะ",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-30T16:01:16.014+07:00"
+          },
+          {
+            "question": "***แล้วแหละ",
+            "answer": "แล้วแหละค่ะ มีอะไรอยากถามหรืออยากคุยเพิ่มเติมไหมคะ? ยินดีช่วยเสมอค่ะ",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-28T16:22:53.511026+07:00"
+          },
+          {
+            "question": "Don't M Dave",
+            "answer": "I'm sorry, I couldn't find information about \"M Dave.\" If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "en-US",
+            "input": "text",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-24T16:00:53.642+07:00"
+          },
+          {
+            "question": "เนี่ย",
+            "answer": "",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-23T19:19:52.749365+07:00"
+          },
+          {
+            "question": "Where is the",
+            "answer": "Could you please tell me more about what you want to find? For example, a store, a service, or a facility?",
+            "brand": null,
+            "topic": "TranscriptionError",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-23T10:43:54.737+07:00"
+          }
+        ]
+      },
+      {
+        "id": "kmAddBrand",
+        "owner": "add",
+        "tone": "amber",
+        "count": 640,
+        "voice": 522,
+        "text": 118,
+        "quickReply": 0,
+        "topics": [
+          {
+            "name": "Specific purpose",
+            "count": 43
+          },
+          {
+            "name": "Restaurants",
+            "count": 43
+          },
+          {
+            "name": "Shop Specific",
+            "count": 39
+          },
+          {
+            "name": "Store Location",
+            "count": 37
+          },
+          {
+            "name": "Promotions",
+            "count": 32
+          },
+          {
+            "name": "Misc",
+            "count": 30
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 466
+          },
+          {
+            "name": "en-US",
+            "count": 173
+          },
+          {
+            "name": "zh-CN",
+            "count": 1
+          }
+        ],
+        "examples": [
+          {
+            "question": "The Mall Lifestore Bangkapi ค่ะ อยากทราบว่าห้องน้ำอยู่ชั้นไหนบ้างคะ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับตำแหน่งห้องน้ำใน The Mall Lifestore Bangkapi ค่ะ",
+            "brand": "the mall lifestore bangkapi",
+            "topic": "Specific purpose",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-03T12:44:33.263544+07:00"
+          },
+          {
+            "question": "The Mall Lifestore Bangkapi",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน KFC ที่ The Mall Lifestore Bangkapi ค่ะ",
+            "brand": "the mall lifestore bangkapi",
+            "topic": "Department Store",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-03T09:50:32.026777+07:00"
+          },
+          {
+            "question": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Banana IT ที่เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิค่ะ",
+            "brand": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+            "topic": "Department Store",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T19:32:26.719007+07:00"
+          },
+          {
+            "question": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Banana IT ที่เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิค่ะ",
+            "brand": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+            "topic": "Department Store",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T19:31:29.342666+07:00"
+          },
+          {
+            "question": "ทางไปเมเจอร์อยู่ทางไหนคะ",
+            "answer": "ขอโทษด้วยค่ะ ตอนนี้ฉันไม่มีข้อมูลเกี่ยวกับทางไปเมเจอร์ในศูนย์การค้าของเรา",
+            "brand": "เมเจอร์",
+            "topic": "Cinema, Karaoke, Bowling",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T17:56:40.076936+07:00"
+          },
+          {
+            "question": "The Mall Lifestore Bangkapi",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Bangkapi ค่ะ",
+            "brand": "the mall lifestore bangkapi",
+            "topic": "Department Store",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T12:46:50.408601+07:00"
+          },
+          {
+            "question": "The Mall Lifestore Bangkapi",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Bangkapi ค่ะ",
+            "brand": "the mall lifestore bangkapi",
+            "topic": "Department Store",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T12:45:53.879419+07:00"
+          },
+          {
+            "question": "ร้าน ARI FOOTBALL อยู่ข้างๆ ร้านอะไรครับ",
+            "answer": "ขอโทษด้วยค่ะ ฉันไม่มีข้อมูลว่าร้าน ARI FOOTBALL อยู่ข้างๆ ร้านอะไรค่ะ",
+            "brand": "ari football",
+            "topic": "Sport equipment & Outdoors",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-01T18:24:58.048421+07:00"
+          }
+        ]
+      },
+      {
+        "id": "quickReplyDeadEnd",
+        "owner": "add",
+        "tone": "rose",
+        "count": 19,
+        "voice": 0,
+        "text": 0,
+        "quickReply": 19,
+        "topics": [
+          {
+            "name": "Quick Reply",
+            "count": 12
+          },
+          {
+            "name": "Promotions",
+            "count": 6
+          },
+          {
+            "name": "Events",
+            "count": 1
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 11
+          },
+          {
+            "name": "en-US",
+            "count": 7
+          },
+          {
+            "name": "zh-CN",
+            "count": 1
+          }
+        ],
+        "examples": [
+          {
+            "question": "quick reply: MPet Club Mmovida Promotion",
+            "answer": "ขออภัยค่ะ ตอนนี้ฉันไม่มีข้อมูลโปรโมชั่น MPet Club หรือ Mmovida ค่ะ หากคุณลูกค้ามีคำถามเกี่ยวกับโปรโมชั่นอื่น ๆ หรือข้อมูลศูนย์การค้า สามารถสอบถามได้นะคะ",
+            "brand": null,
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "quickReply",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2025-11-29T10:40:48.718+07:00"
+          },
+          {
+            "question": "quick reply: MPet Club Mmovida Promotion",
+            "answer": "ขออภัยค่ะ ตอนนี้ฉันไม่มีข้อมูลโปรโมชั่นของ MPet Club หรือ Mmovida นะคะ หากคุณลูกค้ามีคำถามเกี่ยวกับเครื่องใช้ไฟฟ้าหรือสินค้าไอทีใน Power Mall สามารถสอบถามได้นะคะ",
+            "brand": null,
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "quickReply",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2025-11-28T15:04:36.631+07:00"
+          },
+          {
+            "question": "quick reply: Happy Monday Promotion",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Happy Monday Promotion ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": null,
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "quickReply",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-22T12:05:53.148+07:00"
+          },
+          {
+            "question": "quick reply: Happy Monday Promotion",
+            "answer": "I'm sorry, I couldn't find information about Happy Monday Promotion. If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Promotions",
+            "language": "en-US",
+            "input": "quickReply",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-11-08T14:21:29.806+07:00"
+          },
+          {
+            "question": "quick reply: SPORTSMALL HALF MARATHON 2025",
+            "answer": "I'm sorry, I couldn't find information about SPORTSMALL HALF MARATHON2025. If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Events",
+            "language": "en-US",
+            "input": "quickReply",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-07T18:14:00.475+07:00"
+          },
+          {
+            "question": "quick reply: Power Mall Master Promotion",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Power Mall Master Promotion ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "power mall",
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "quickReply",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-02T12:11:05.080262+07:00"
+          },
+          {
+            "question": "quick reply: MPet Club Mmomovida Promotion",
+            "answer": "I'm sorry, I couldn't find information about MPet Club Mmomovida Promotion.",
+            "brand": "mpetclub",
+            "topic": "Promotions",
+            "language": "en-US",
+            "input": "quickReply",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-21T14:26:16.885+07:00"
+          },
+          {
+            "question": "quick reply: ศูนย์ ช้อปครบ รับคุ้มตลอดปี กับ ช้อปดี มีดีลคืน 50% ทั้งปี",
+            "answer": "I'm sorry, I couldn't find information about the \"ช้อปดี มีดีลคืน 50% ทั้งปี\" promotion. If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Quick Reply",
+            "language": "en-US",
+            "input": "quickReply",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-01-27T17:49:12.888+07:00"
+          }
+        ]
+      },
+      {
+        "id": "kmVerifyBrand",
+        "owner": "tune",
+        "tone": "purple",
+        "count": 15,
+        "voice": 9,
+        "text": 6,
+        "quickReply": 0,
+        "topics": [
+          {
+            "name": "Coffee, Tea, and Casual Café",
+            "count": 4
+          },
+          {
+            "name": "Restaurants",
+            "count": 4
+          },
+          {
+            "name": "Events",
+            "count": 1
+          },
+          {
+            "name": "Promotions",
+            "count": 1
+          },
+          {
+            "name": "Fast Foods",
+            "count": 1
+          },
+          {
+            "name": "Sports",
+            "count": 1
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 7
+          },
+          {
+            "name": "en-US",
+            "count": 4
+          },
+          {
+            "name": "zh-CN",
+            "count": 4
+          }
+        ],
+        "examples": [
+          {
+            "question": "Academy tomorrow",
+            "answer": "I'm sorry, I couldn't find information about academy schedules or availability for tomorrow. <break/> If you want, I can help you with details about Unicorn Academy or KPN Music Ac…",
+            "brand": "Unicorn Academy",
+            "topic": "Events",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-06-06T12:03:46.445214+00:00"
+          },
+          {
+            "question": "ลานกิจกรรมมีงานอะไรบ้าง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ ลานกิจกรรมมีงานอะไรบ้าง ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "Gourmet Market",
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-08-29T17:10:16.124+07:00"
+          },
+          {
+            "question": "How much does a McChicken menu cost at McDonald's?",
+            "answer": "I'm sorry, I don't have information about the specific cost of a McChicken menu at McDonald's. However, I do know that McDonald's is on the **G Floor** of The Mall Lifestore Bangka…",
+            "brand": "McDonald's",
+            "topic": "Fast Foods",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-08-21T14:55:11.160+07:00"
+          },
+          {
+            "question": "พันธุ์ไทยอยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ พันธุ์ไทย ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "Punthai",
+            "topic": "Coffee, Tea, and Casual Café",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-09-25T07:08:30.652+07:00"
+          },
+          {
+            "question": "กาแฟพันธุ์ไทยอยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ กาแฟพันธุ์ไทย ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "Cafe Amazon",
+            "topic": "Coffee, Tea, and Casual Café",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-09-25T07:08:17.054+07:00"
+          },
+          {
+            "question": "Cafe Punthai is on which floor?",
+            "answer": "I'm sorry, I couldn't find information about Cafe Punthai. If I misunderstood your question, please ask again.",
+            "brand": "Cafe Punthai",
+            "topic": "Coffee, Tea, and Casual Café",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-09-25T07:06:58.641+07:00"
+          },
+          {
+            "question": "你好吗垃店在哪里",
+            "answer": "很抱歉，我没有找到您说的“垃店”。不过，我们这里有 **MALAKOR** 餐厅，它在商场的3楼。您是想找餐厅吗？",
+            "brand": "MALAKOR",
+            "topic": "Restaurants",
+            "language": "zh-CN",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-09-24T19:11:59.627+07:00"
+          },
+          {
+            "question": "มีโปรโมชั่นอะไรไหมครับ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลโปรโมชั่นของ Nike ในขณะนี้ค่ะ",
+            "brand": "Nike",
+            "topic": "Sports",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-09-24T11:04:39.464+07:00"
+          }
+        ]
+      },
+      {
+        "id": "outOfScope",
+        "owner": "none",
+        "tone": "",
+        "count": 185,
+        "voice": 167,
+        "text": 18,
+        "quickReply": 0,
+        "topics": [
+          {
+            "name": "Out of Scope",
+            "count": 185
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 108
+          },
+          {
+            "name": "en-US",
+            "count": 77
+          }
+        ],
+        "examples": [
+          {
+            "question": "วันนี้ฝนตกไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับสภาพอากาศวันนี้",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-30T20:47:03.151815+07:00"
+          },
+          {
+            "question": "What kind of AI tools are you using? Is it ChatGPT or Cloud or Google AI Gemini?",
+            "answer": "I'm sorry, I couldn't find information about the kind of AI tools used here.",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-18T18:29:17.816+07:00"
+          },
+          {
+            "question": "ปิดเครื่องยังไง",
+            "answer": "ต้องขออภัยด้วยนะคะ เนื่องจากฉันมีข้อมูลเฉพาะในส่วนของ Power Mall เท่านั้นค่ะ หากคุณลูกค้ามีคำถามเกี่ยวกับเครื่องใช้ไฟฟ้าหรือสินค้าไอที สามารถสอบถามฉันได้เลยนะคะ",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2025-11-29T21:53:25.203+07:00"
+          },
+          {
+            "question": "My wife, she's not coming on time. What should I do to her?",
+            "answer": "I'm sorry, I couldn't find information about what to do if someone is not coming on time. If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-29T21:29:16.957731+07:00"
+          },
+          {
+            "question": "ปวดท้อง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการปวดท้องหรือคำแนะนำทางการแพทย์สำหรับอาการนี้ที่เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ถ้าคุณต้องการ ฉันช่วยแนะนำคลินิกความงามหรือร้านขายยาในห้างได้นะคะ",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-27T19:55:35.495+07:00"
+          },
+          {
+            "question": "who's your daddy",
+            "answer": "I'm sorry, I couldn't find information about \"who's your daddy.\" If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-26T14:04:58.758028+07:00"
+          },
+          {
+            "question": "Ryan's house",
+            "answer": "I'm sorry, I couldn't find information about Ryan's house. If I misunderstood your question, please ask again.",
+            "brand": null,
+            "topic": "Out of Scope",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-11-21T17:48:57.408+07:00"
+          },
+          {
+            "question": "รู้จักหุ้น Tisco เปล่า",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับหุ้น Tisco ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "tisco",
+            "topic": "Out of Scope",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-20T14:16:22.972936+07:00"
+          }
+        ]
+      }
+    ],
+    "demand": [
+      {
+        "topic": "Misc",
+        "parent": null,
+        "count": 4709,
+        "apology": 865,
+        "voice": 3513,
+        "failExamples": [
+          {
+            "question": "ไม่ได้ถามชื่อเธอ ฉันถามว่ารู้จักพี่จอยไหม",
+            "answer": "ฉันขอโทษค่ะ ฉันไม่มีข้อมูลเกี่ยวกับพี่จอยนะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Power Bank",
+            "answer": "ขอโทษด้วยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการยืม Power Bank ค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "เดอะมอลล์บางกะปิสร้างมานานยัง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับระยะเวลาที่เดอะมอลล์บางกะปิสร้างมานานแค่ไหน ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "อะไรอ่ะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ อะไรอ่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 18.369080484179232,
+        "topQuestions": [
+          {
+            "question": "quick reply: MCard",
+            "count": 441,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Directory",
+            "count": 258,
+            "apology": 0
+          },
+          {
+            "question": "สวัสดี",
+            "count": 226,
+            "apology": 0
+          },
+          {
+            "question": "hello",
+            "count": 174,
+            "apology": 1
+          },
+          {
+            "question": "สวัสดีค่ะ",
+            "count": 166,
+            "apology": 1
+          },
+          {
+            "question": "สวัสดีครับ",
+            "count": 103,
+            "apology": 0
+          },
+          {
+            "question": "MCard",
+            "count": 76,
+            "apology": 0
+          },
+          {
+            "question": "ฮัลโหล",
+            "count": 69,
+            "apology": 1
+          },
+          {
+            "question": "Hello",
+            "count": 60,
+            "apology": 0
+          },
+          {
+            "question": "สวัสดีจ้า",
+            "count": 37,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Quick Reply",
+        "parent": null,
+        "count": 4443,
+        "apology": 12,
+        "voice": 0,
+        "failExamples": [
+          {
+            "question": "quick reply: ศูนย์ ช้อปครบ รับคุ้มตลอดปี กับ ช้อปดี มีดีลคืน 50% ทั้งปี",
+            "answer": "I'm sorry, I couldn't find information about the \"ช้อปดี มีดีลคืน 50% ทั้งปี\" promotion. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "quickReply"
+          },
+          {
+            "question": "quick reply: PWM MID MONTH JAN26",
+            "answer": "I'm sorry, I couldn't find information about PWM MID MONTH JAN26. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "quickReply"
+          },
+          {
+            "question": "quick reply: SUGOI JAPAN FEST 2026",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ SUGOI JAPAN FEST 2026 ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "quickReply"
+          },
+          {
+            "question": "quick reply: Expatriate MCard",
+            "answer": "ต้องขออภัยด้วยนะคะ เนื่องจากฉันมีข้อมูลเฉพาะในส่วนของ Power Mall เท่านั้นค่ะ <break/> หากคุณลูกค้ามีคำถามเกี่ยวกับเครื่องใช้ไฟฟ้าหรือสินค้าไอที สามารถสอบถามฉันได้เลยนะคะ <break/>",
+            "language": "th-TH",
+            "input": "quickReply"
+          }
+        ],
+        "apologyRate": 0.2700877785280216,
+        "topQuestions": [
+          {
+            "question": "quick reply: Directory",
+            "count": 1040,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: promotion",
+            "count": 902,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Coffee or Tea",
+            "count": 720,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: MCard",
+            "count": 578,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Special Privilege",
+            "count": 325,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: The Mall Lifestore The Great New Year First in Thailand",
+            "count": 75,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Global Privileges",
+            "count": 62,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Shopping",
+            "count": 61,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: M Card 1 M Point Redemption",
+            "count": 42,
+            "apology": 1
+          },
+          {
+            "question": "quick reply: Platinum MCard",
+            "count": 38,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Promotions",
+        "parent": null,
+        "count": 1916,
+        "apology": 103,
+        "voice": 411,
+        "failExamples": [
+          {
+            "question": "นาทีทอง วันนี้มีอะไรบ้างคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับนาทีทองในงานวันนี้ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ลดฟรีได้ไหมคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการลดฟรีโดยตรงจากคะแนน M Card หรือโปรโมชันอื่น ๆ ในเอกสารที่มีค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "PICO มีโปรโมชั่นอะไรอยู่บ้างคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของร้าน PICO ค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "MPet Club Mmomovida Promotion",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ MPet Club Mmomovida Promotion ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "text"
+          }
+        ],
+        "apologyRate": 5.375782881002087,
+        "topQuestions": [
+          {
+            "question": "quick reply: promotion",
+            "count": 1016,
+            "apology": 0
+          },
+          {
+            "question": "promotion",
+            "count": 133,
+            "apology": 0
+          },
+          {
+            "question": "Special Privilege",
+            "count": 46,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Special Privilege",
+            "count": 29,
+            "apology": 0
+          },
+          {
+            "question": "โปรโมชั่น",
+            "count": 27,
+            "apology": 0
+          },
+          {
+            "question": "มีโปรโมชั่นอะไรบ้าง",
+            "count": 23,
+            "apology": 0
+          },
+          {
+            "question": "Happy Monday Promotion",
+            "count": 15,
+            "apology": 7
+          },
+          {
+            "question": "quick reply: Highlight Promotions",
+            "count": 13,
+            "apology": 0
+          },
+          {
+            "question": "Platinum VIP MCard",
+            "count": 12,
+            "apology": 0
+          },
+          {
+            "question": "วันนี้มีโปรโมชั่นอะไรบ้าง",
+            "count": 9,
+            "apology": 1
+          }
+        ]
+      },
+      {
+        "topic": "TranscriptionError",
+        "parent": null,
+        "count": 1611,
+        "apology": 729,
+        "voice": 1214,
+        "failExamples": [
+          {
+            "question": "English English",
+            "answer": "I'm sorry, I couldn't find information about \"English English\". If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "***",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับที่ตั้งของ M Card และส่วนลดพิเศษสูงสุด90% ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "text"
+          },
+          {
+            "question": "wishdom",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ wishdom ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "text"
+          },
+          {
+            "question": "Don't M Dave",
+            "answer": "I'm sorry, I couldn't find information about \"M Dave.\" If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "text"
+          }
+        ],
+        "apologyRate": 45.2513966480447,
+        "topQuestions": [
+          {
+            "question": "***",
+            "count": 22,
+            "apology": 10
+          },
+          {
+            "question": "67",
+            "count": 17,
+            "apology": 10
+          },
+          {
+            "question": "play",
+            "count": 13,
+            "apology": 2
+          },
+          {
+            "question": "<transcript not available>",
+            "count": 11,
+            "apology": 1
+          },
+          {
+            "question": "what is",
+            "count": 10,
+            "apology": 2
+          },
+          {
+            "question": "I",
+            "count": 7,
+            "apology": 3
+          },
+          {
+            "question": "where is",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "stop",
+            "count": 6,
+            "apology": 1
+          },
+          {
+            "question": "ร้าน",
+            "count": 6,
+            "apology": 2
+          },
+          {
+            "question": "ฉัน",
+            "count": 6,
+            "apology": 4
+          }
+        ]
+      },
+      {
+        "topic": "Specific purpose",
+        "parent": "Facilities",
+        "count": 962,
+        "apology": 163,
+        "voice": 495,
+        "failExamples": [
+          {
+            "question": "The Mall Lifestore Bangkapi ค่ะ อยากทราบว่าห้องน้ำอยู่ชั้นไหนบ้างคะ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับตำแหน่งห้องน้ำใน The Mall Lifestore Bangkapi ค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Is there any nearby trash can?",
+            "answer": "I'm sorry, I couldn't find information about nearby trash cans. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "ไปห้องน้ำทางไหนหรอ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับทางไปห้องน้ำในเอกสารนี้ค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Where is the toilet?",
+            "answer": "I'm sorry, I couldn't find information about the exact location of the toilets. However, disabled restrooms are available on every floor near the general restrooms, if that helps. …",
+            "language": "en-US",
+            "input": "text"
+          }
+        ],
+        "apologyRate": 16.943866943866944,
+        "topQuestions": [
+          {
+            "question": "quick reply: Directory",
+            "count": 309,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Power Mall Electronica",
+            "count": 51,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: แยกประเภทขยะกันค่ะ",
+            "count": 47,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Waste Separation",
+            "count": 15,
+            "apology": 0
+          },
+          {
+            "question": "Where is the toilet?",
+            "count": 10,
+            "apology": 4
+          },
+          {
+            "question": "ห้องน้ำอยู่ไหน",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "ห้องน้ำ",
+            "count": 5,
+            "apology": 1
+          },
+          {
+            "question": "ห้องน้ำไปทางไหน",
+            "count": 4,
+            "apology": 1
+          },
+          {
+            "question": "ศูนย์ซ่อมเครื่อง",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "เก้าอี้นวด",
+            "count": 3,
+            "apology": 2
+          }
+        ]
+      },
+      {
+        "topic": "Products & Services",
+        "parent": null,
+        "count": 563,
+        "apology": 76,
+        "voice": 333,
+        "failExamples": [
+          {
+            "question": "red Air Max",
+            "answer": "I'm sorry, I couldn't find information about red Air Max. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "มีเบสไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ เบส",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "คุณจำเนียง ขายสินค้าอะไรใน Power Mall",
+            "answer": "ต้องขออภัยด้วยนะคะ ฉันไม่มีข้อมูลเกี่ยวกับคุณจำเนียงหรือสินค้าที่ขายใน Power Mall ค่ะ หากคุณลูกค้ามีคำถามเกี่ยวกับเครื่องใช้ไฟฟ้าหรือสินค้าไอทีใน Power Mall สามารถสอบถามฉันได้เลยนะ…",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ใน Power Mall มีสินค้าตัวไหนที่ราคาสูงที่สุด",
+            "answer": "ต้องขออภัยด้วยนะคะ ข้อมูลราคาสินค้ารายการสูงสุดใน Power Mall ยังไม่มีให้บริการค่ะ หากคุณลูกค้าสนใจสินค้าหรือโปรโมชั่นอื่น ๆ สามารถสอบถามเพิ่มเติมได้นะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 13.49911190053286,
+        "topQuestions": [
+          {
+            "question": "quick reply: MCard",
+            "count": 94,
+            "apology": 0
+          },
+          {
+            "question": "M Card",
+            "count": 20,
+            "apology": 0
+          },
+          {
+            "question": "Platinum MCard",
+            "count": 11,
+            "apology": 0
+          },
+          {
+            "question": "Platinum VIP MCard",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "Could you tell me about M Card",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "Prestige MCard",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "Scarlet MCard",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "MCard มีหลากหลายรูปแบบ สามารถคลิกดูได้ตาม Card ด้านล่าง",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "ฟองน้ำ",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "Oh! Juice Buy 1 Get 1 Free with M Point",
+            "count": 5,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Events",
+        "parent": null,
+        "count": 514,
+        "apology": 65,
+        "voice": 188,
+        "failExamples": [
+          {
+            "question": "Halloween",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับงานฮาโลวีนที่ The Mall บางกะปิค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "text"
+          },
+          {
+            "question": "ที่เดอะมอลล์มี Event อะไรบ้างช่วงฮาโลวีน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับกิจกรรมหรืออีเวนต์ช่วงฮาโลวีนที่เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ถ้าคุณต้องการทราบข้อมูลกิจกรรมอื่น ๆ หรือต้องการสอบถามเพิ่มเติม กรุณาบอกได้นะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "วันนี้มีโปรแกรมหนังอะไรบ้าง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรแกรมหนังวันนี้ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Where did the O show?",
+            "answer": "I'm sorry, I couldn't find information about \"the O show.\" If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 12.645914396887159,
+        "topQuestions": [
+          {
+            "question": "quick reply: The Mall Lifestore The Great New Year First in Thailand",
+            "count": 85,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Power Mall Gamer Festival",
+            "count": 77,
+            "apology": 0
+          },
+          {
+            "question": "MONCHHICHI X THE MALL LIFESTORE THE GREAT NEW YEAR",
+            "count": 17,
+            "apology": 1
+          },
+          {
+            "question": "THE MALL LIFESTORE SUMMER CATION 2026",
+            "count": 15,
+            "apology": 0
+          },
+          {
+            "question": "THE MALL LIFESTORE TASTE OF LUCK",
+            "count": 12,
+            "apology": 8
+          },
+          {
+            "question": "CHINESE NEW YEAR 2026 JOY LUCK LOVE",
+            "count": 10,
+            "apology": 2
+          },
+          {
+            "question": "banner: THE MALL LIFESTORE SPORTS FEST",
+            "count": 10,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Festival of Joy Parade",
+            "count": 8,
+            "apology": 0
+          },
+          {
+            "question": "FIFA 2026",
+            "count": 8,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: กิจกรรมไฮไลท์",
+            "count": 7,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Out of Scope",
+        "parent": null,
+        "count": 469,
+        "apology": 185,
+        "voice": 423,
+        "failExamples": [
+          {
+            "question": "วันนี้ฝนตกไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับสภาพอากาศวันนี้",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "What kind of AI tools are you using? Is it ChatGPT or Cloud or Google AI Gemini?",
+            "answer": "I'm sorry, I couldn't find information about the kind of AI tools used here.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "ปิดเครื่องยังไง",
+            "answer": "ต้องขออภัยด้วยนะคะ เนื่องจากฉันมีข้อมูลเฉพาะในส่วนของ Power Mall เท่านั้นค่ะ หากคุณลูกค้ามีคำถามเกี่ยวกับเครื่องใช้ไฟฟ้าหรือสินค้าไอที สามารถสอบถามฉันได้เลยนะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "My wife, she's not coming on time. What should I do to her?",
+            "answer": "I'm sorry, I couldn't find information about what to do if someone is not coming on time. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 39.44562899786781,
+        "topQuestions": [
+          {
+            "question": "are you gay",
+            "count": 10,
+            "apology": 0
+          },
+          {
+            "question": "เธอชื่ออะไร",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "คุณชื่ออะไร",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "what is your name",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "how old are you",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "เธอชื่ออะไรหรอ",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "คุณชื่ออะไรคะ",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "ชื่ออะไร",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "what's your name",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "How old are you?",
+            "count": 3,
+            "apology": 1
+          }
+        ]
+      },
+      {
+        "topic": "Directory",
+        "parent": "Map and Navigation",
+        "count": 357,
+        "apology": 1,
+        "voice": 5,
+        "failExamples": [
+          {
+            "question": "Can you show me some examples of the directory?",
+            "answer": "I'm sorry, I couldn't find specific examples of the directory here. But you can use the Directory feature on the M Card App to search for products and stores easily. If you want, I…",
+            "language": "en-US",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 0.2801120448179272,
+        "topQuestions": [
+          {
+            "question": "quick reply: Directory",
+            "count": 352,
+            "apology": 0
+          },
+          {
+            "question": "Directory",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Can I see the directory",
+            "count": 1,
+            "apology": 0
+          },
+          {
+            "question": "I just wanted to see your directory list.",
+            "count": 1,
+            "apology": 0
+          },
+          {
+            "question": "Can you show me some examples of the directory?",
+            "count": 1,
+            "apology": 1
+          }
+        ]
+      },
+      {
+        "topic": "Shop Specific",
+        "parent": null,
+        "count": 341,
+        "apology": 68,
+        "voice": 277,
+        "failExamples": [
+          {
+            "question": "ร้านรื่นรมย์อยู่ตรงไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านรื่นรมย์ค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "text"
+          },
+          {
+            "question": "ช่วยบอกทางไปร้านเซ็นฟู",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านเซ็นฟู ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้าน MONGKOK อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MONGKOK ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้าน KOBOLAB อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน KOBOLAB",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 19.941348973607038,
+        "topQuestions": [
+          {
+            "question": "PURADAK",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is MUJI?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "H&M อยู่ที่ไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is the CASIO store?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is MINISO?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน UNIQLO อยู่ไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Hello, where is UNIQLO?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน DAISO อยู่ตรงไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้านพินนาราอยู่ชั้นไหน",
+            "count": 2,
+            "apology": 1
+          },
+          {
+            "question": "มีร้านอื่นไหม",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Food & Beverage",
+        "parent": "Recommendation",
+        "count": 336,
+        "apology": 48,
+        "voice": 224,
+        "failExamples": [
+          {
+            "question": "After You",
+            "answer": "I'm sorry, I couldn't find information about After You. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "ร้านกินจุโกะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ ร้านกินจุโกะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "โปรโมชันอาหารของศูนย์การค้ามีอะไรบ้าง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชันอาหารของศูนย์การค้า ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "After You อยู่ชั้นไหนครับ ไอติมนะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ After You ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 14.285714285714285,
+        "topQuestions": [
+          {
+            "question": "Coffee or Tea",
+            "count": 16,
+            "apology": 0
+          },
+          {
+            "question": "THE MALL LIFESTORE TASTE OF LUCK",
+            "count": 12,
+            "apology": 0
+          },
+          {
+            "question": "ร้านอาหาร",
+            "count": 10,
+            "apology": 0
+          },
+          {
+            "question": "KFC",
+            "count": 8,
+            "apology": 0
+          },
+          {
+            "question": "กินอะไรดี",
+            "count": 8,
+            "apology": 0
+          },
+          {
+            "question": "kfc",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "McDonald's",
+            "count": 6,
+            "apology": 0
+          },
+          {
+            "question": "คัตสึยะ",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "มีร้านอาหารอะไรบ้าง",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "วันนี้กินอะไรดี",
+            "count": 3,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Restaurants",
+        "parent": "Recommendation",
+        "count": 331,
+        "apology": 72,
+        "voice": 292,
+        "failExamples": [
+          {
+            "question": "โซชอนอยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านโซชอนที่ The Mall Lifestore Ngamwongwan",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "MK อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Ngamwongwan ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Where is Moshi Moshi?",
+            "answer": "I'm sorry, I couldn't find information about Moshi Moshi. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "Hello, where is Mama? Where is Mama?",
+            "answer": "I'm sorry, I couldn't find information about \"Mama.\" If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 21.75226586102719,
+        "topQuestions": [
+          {
+            "question": "หิวข้าว",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "MK อยู่ชั้นไหน",
+            "count": 3,
+            "apology": 1
+          },
+          {
+            "question": "ร้านอาหาร",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "มีอะไรกินบ้าง",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "กินอะไรดี",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน SHABUSHI อยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "อีโอไทย",
+            "count": 2,
+            "apology": 2
+          },
+          {
+            "question": "ร้านอาหารอยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "pizza",
+            "count": 2,
+            "apology": 1
+          },
+          {
+            "question": "ร้านอาหารเปิดใหม่",
+            "count": 2,
+            "apology": 2
+          }
+        ]
+      },
+      {
+        "topic": "Map and Navigation",
+        "parent": null,
+        "count": 306,
+        "apology": 34,
+        "voice": 127,
+        "failExamples": [
+          {
+            "question": "คุณโชว์แผนที่ได้หรือไม่",
+            "answer": "ขอโทษค่ะ ตอนนี้ฉันไม่สามารถแสดงแผนที่หรือไดเรกทอรีของศูนย์การค้าได้ค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ตรงไหนของชั้น M คะ",
+            "answer": "ขออภัยค่ะ KARMAKAMET อยู่ที่ชั้น Mezzanine ค่ะ ฉันไม่มีข้อมูลตำแหน่งที่แน่นอนบนชั้น M ให้ค่ะ ถ้าคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับร้านอื่นที่อยู่ชั้น M ฉันยินดีช่วยนะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "yes give me dirctiomns",
+            "answer": "I'm sorry, I don't have specific directions to HEALTH PLUS in the documents. <break/> But since it's on the Ground floor of The Mall Lifestore Bangkapi, you can ask at the Informat…",
+            "language": "en-US",
+            "input": "text"
+          },
+          {
+            "question": "อยู่ตรงไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับที่ตั้งของเดอะมอลล์บางกะปิค่ะ <break/> ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ <break/>",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 11.11111111111111,
+        "topQuestions": [
+          {
+            "question": "Directory",
+            "count": 150,
+            "apology": 0
+          },
+          {
+            "question": "อยู่ที่ไหน",
+            "count": 5,
+            "apology": 2
+          },
+          {
+            "question": "อยู่ชั้นไหน",
+            "count": 5,
+            "apology": 2
+          },
+          {
+            "question": "อยู่ตรงไหน",
+            "count": 3,
+            "apology": 2
+          },
+          {
+            "question": "อยู่ไหน",
+            "count": 2,
+            "apology": 2
+          },
+          {
+            "question": "อยู่ตรงไหนเหรอครับ",
+            "count": 2,
+            "apology": 1
+          },
+          {
+            "question": "where is Boost",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ไปอยู่ชั้นไหน",
+            "count": 2,
+            "apology": 1
+          },
+          {
+            "question": "อเมซอนอยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "KKV อยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Store Location",
+        "parent": "Map and Navigation",
+        "count": 256,
+        "apology": 55,
+        "voice": 243,
+        "failExamples": [
+          {
+            "question": "ถามว่าอยู่เส้นทางไปร้าน PHUTAWAN",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับเส้นทางไปร้าน PHUTAWAN ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Where is S&P?",
+            "answer": "I'm sorry, I couldn't find information about the location of S&P. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "text"
+          },
+          {
+            "question": "*** โกจิ อยู่ไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ โกจิ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Monchhichi อยู่ตรงไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Monchhichi ที่เดอะมอลล์ไลฟ์สโตร์ ท่าพระ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 21.484375,
+        "topQuestions": [
+          {
+            "question": "Starbucks อยู่ชั้นไหน",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "Puma อยู่ชั้นไหน",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "Mister Donut อยู่ชั้นไหนคะ",
+            "count": 3,
+            "apology": 3
+          },
+          {
+            "question": "UNIQLO อยู่ชั้นไหนคะ",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Starbucks ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is Watsons?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is EVEANDBOY?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน AKA อยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Jaspal อยู่ไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "MUJI อยู่ไหน",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Beverages",
+        "parent": "Recommendation",
+        "count": 243,
+        "apology": 20,
+        "voice": 87,
+        "failExamples": [
+          {
+            "question": "ทำไมเธอไม่รู้ล่ะว่าชาร้านไหนขายดีสุด เธอต้องรู้สิว่าชาร้านไหนขายดีที่สุด",
+            "answer": "ขออภัยค่ะ ฉันไม่มีข้อมูลเกี่ยวกับว่าชาร้านไหนขายดีที่สุดที่ The Mall Bangkae ข้อมูลนี้ไม่ได้ระบุไว้ในเอกสารที่ฉันมีค่ะ ถ้าคุณต้องการข้อมูลร้านชาหรือเมนูแนะนำอื่น ๆ ฉันยินดีช่วยนะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ชา ร้านไหน ขายดีสุด",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านชาที่ขายดีสุดที่ The Mall Bangkae ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Chatime อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Chatime ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ที่นี่มีชาจีนไหมคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับชาจีนที่ The Mall Life Store Ngamwongwan ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 8.23045267489712,
+        "topQuestions": [
+          {
+            "question": "Coffee or Tea",
+            "count": 75,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Coffee or Tea",
+            "count": 52,
+            "apology": 0
+          },
+          {
+            "question": "NOSE TEA",
+            "count": 6,
+            "apology": 0
+          },
+          {
+            "question": "CHAGEE",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "KAMU",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "Starbucks",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ชานม",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้านชาตรามือ อยู่ตรงไหนคะ",
+            "count": 2,
+            "apology": 2
+          },
+          {
+            "question": "OH JUICE",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "กาแฟ",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Food and Beverage",
+        "parent": "Recommendation",
+        "count": 217,
+        "apology": 47,
+        "voice": 190,
+        "failExamples": [
+          {
+            "question": "อะไรอร่อยที่สุด กล้วยหรือช็อกโกแลต",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับอะไรอร่อยที่สุดระหว่างกล้วยหรือช็อกโกแลต",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "dunkin",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Dunkin ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ชาตรามืออยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับชาตรามืออยู่ชั้นไหน ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "มีโปรโมชั่นร้านอาหารไหมคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นร้านอาหารในเอกสารที่มีอยู่ค่ะ ถ้าคุณต้องการ ฉันช่วยหาข้อมูลอื่น ๆ หรือร้านอาหารที่น่าสนใจได้นะคะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 21.658986175115206,
+        "topQuestions": [
+          {
+            "question": "KFC",
+            "count": 8,
+            "apology": 1
+          },
+          {
+            "question": "ร้านอาหาร",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "KFC อยู่ตรงไหน",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "McDonald's อยู่ชั้นไหน",
+            "count": 3,
+            "apology": 3
+          },
+          {
+            "question": "restaurant",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "McDonald's อยู่ไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is KFC?",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "มีร้านอาหาร",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "McDonald's",
+            "count": 2,
+            "apology": 2
+          },
+          {
+            "question": "อยากกินหมาล่า",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Feedback",
+        "parent": null,
+        "count": 208,
+        "apology": 53,
+        "voice": 200,
+        "failExamples": [
+          {
+            "question": "ทำไมห่วยจังเลย",
+            "answer": "ขออภัยค่ะ ถ้าฉันช่วยอะไรได้เพิ่มเติมหรือมีคำถามอื่น ๆ บอกได้นะคะ ฉันยินดีช่วยคุณเสมอค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "โง่จังเลย",
+            "answer": "ฉันขอโทษถ้าทำให้คุณรู้สึกไม่ดีนะคะ ฉันพร้อมช่วยเหลือคุณเสมอค่ะ มีอะไรให้ช่วยไหมคะ?",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ห่อหมกฮวกเหม็นมากๆ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ ห่อหมกฮวกเหม็นมากๆ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ไม่ค่อยเก่งเลยอ่ะ ทำไมไม่ถามกลับหลังจากเที่ยวตามโปรอะไรอ่ะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการถามกลับหลังจากเที่ยวตามโปรอะไรอ่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 25.48076923076923,
+        "topQuestions": [
+          {
+            "question": "ขอบคุณค่ะ",
+            "count": 26,
+            "apology": 0
+          },
+          {
+            "question": "ขอบคุณครับ",
+            "count": 9,
+            "apology": 0
+          },
+          {
+            "question": "Thank you.",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "ขอบคุณนะคะ",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "Thank you",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "I hate you",
+            "count": 3,
+            "apology": 1
+          },
+          {
+            "question": "Thank you so much.",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ไม่มีแล้วค่ะ ขอบคุณค่ะ",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ขอบคุณ",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ขอบคุณมากครับ",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Greeting & Chit-chat",
+        "parent": null,
+        "count": 182,
+        "apology": 10,
+        "voice": 169,
+        "failExamples": [
+          {
+            "question": "Hello Siri, what is the women's day?",
+            "answer": "I'm sorry, I couldn't find information about Women's Day. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "สวัสดีค่ะ ฉันอยากมีแฟน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการมีแฟน ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "How old are you?",
+            "answer": "I'm sorry, I couldn't find information about my age.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "เยี่ยมมากเลยครับ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับตำแหน่งเสื้อผ้าสุภาพสตรีที่สาขา The Mall งามวงศ์วานค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 5.4945054945054945,
+        "topQuestions": [
+          {
+            "question": "สวัสดี",
+            "count": 20,
+            "apology": 0
+          },
+          {
+            "question": "สวัสดีค่ะ",
+            "count": 15,
+            "apology": 0
+          },
+          {
+            "question": "สวัสดีครับ",
+            "count": 14,
+            "apology": 0
+          },
+          {
+            "question": "ฮัลโหล",
+            "count": 8,
+            "apology": 0
+          },
+          {
+            "question": "Thank you.",
+            "count": 6,
+            "apology": 0
+          },
+          {
+            "question": "สวัสดีจ้า",
+            "count": 6,
+            "apology": 0
+          },
+          {
+            "question": "Hello",
+            "count": 5,
+            "apology": 0
+          },
+          {
+            "question": "hello",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ขอบคุณค่ะ",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ไม่ถามแล้วครับ",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Restaurant",
+        "parent": "Map and Navigation",
+        "count": 178,
+        "apology": 22,
+        "voice": 144,
+        "failExamples": [
+          {
+            "question": "FUJI RAMEN",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ FUJI RAMEN แต่ฉันพบข้อมูลเกี่ยวกับ FUJI RESTAURANT ซึ่งเป็นร้านอาหารญี่ปุ่นที่ตั้งอยู่ที่ The Mall Lifestore Ngamwongwan ชั้น 5 ค่ะ นอกจากนี้ยังมี…",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้านกับข้าวกับปลาอยู่โซนไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านกับข้าวกับปลาในเดอะมอลล์ไลฟ์สโตร์งามวงศ์วานค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้านกับข้าวกับปลาอยู่ตรงไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านกับข้าวกับปลาในเดอะมอลล์ไลฟ์สโตร์งามวงศ์วานค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้านกับข้าวกับปลาอยู่ชั้นไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านกับข้าวกับปลาในเดอะมอลล์ไลฟ์สโตร์งามวงศ์วานค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 12.359550561797752,
+        "topQuestions": [
+          {
+            "question": "Sushiro",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "Sizzler",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ฮะจิบังอยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "MK RESTAURANTS",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "MK อยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "MK Restaurants",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้านกับข้าวกับปลาอยู่ชั้นไหนคะ",
+            "count": 2,
+            "apology": 2
+          },
+          {
+            "question": "ร้านอาหารใน The Mall",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "SHABUSHI",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "MK",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Attraction",
+        "parent": null,
+        "count": 164,
+        "apology": 42,
+        "voice": 141,
+        "failExamples": [
+          {
+            "question": "MCC Hall The Mall Ngamwongwan",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ MCC Hall ที่ The Mall Ngamwongwan",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "MCC Hall",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ MCC Hall",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Major Cineplex ชั้นไหนครับ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Major Cineplex ชั้นไหนในเดอะมอลล์บางกะปิ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "คาราโอเกะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับคาราโอเกะในเดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ถ้าคุณต้องการ ฉันช่วยหาข้อมูลร้านอื่น ๆ หรือความบันเทิงประเภทอื่น ๆ ไหมคะ?",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 25.609756097560975,
+        "topQuestions": [
+          {
+            "question": "MCC Hall",
+            "count": 5,
+            "apology": 1
+          },
+          {
+            "question": "Peppa Pig",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Monchhichi Christmas Town",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "อยากไปดูหนัง",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Cinema",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "movie",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "โรงหนัง",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "หนัง",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "หนังผี",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "เล่นเกม",
+            "count": 2,
+            "apology": 1
+          }
+        ]
+      },
+      {
+        "topic": "Uncategorized",
+        "parent": null,
+        "count": 136,
+        "apology": 0,
+        "voice": 28,
+        "failExamples": [],
+        "apologyRate": 0,
+        "topQuestions": [
+          {
+            "question": "quick reply: Directory",
+            "count": 24,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: promotion",
+            "count": 17,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Coffee or Tea",
+            "count": 12,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Special Privilege",
+            "count": 10,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: MCard",
+            "count": 7,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: M Pet Club Dog Days Discount",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "banner: Summer cation",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "THE MALL LIFESTORE SUMMER CATION 2026",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "quick reply: Alto Coffee Roasters 50% Discount with M Point",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "hello",
+            "count": 2,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Coffee, Tea, and Casual Café",
+        "parent": "Shop Specific",
+        "count": 122,
+        "apology": 18,
+        "voice": 89,
+        "failExamples": [
+          {
+            "question": "ไปร้านชาจี",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านชาจี",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ที่นี่มีชาพันธุ์ไทยไหมคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับชาพันธุ์ไทยในเอกสารที่มีค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "มีอาหารอะไรแนะนำไหมที่ Starbucks",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับเมนูอาหารแนะนำที่ Starbucks",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "Starbucks",
+            "answer": "I'm sorry, I couldn't find information about Starbucks promotions. If I misunderstood your question, please ask again.",
+            "language": "en-US",
+            "input": "text"
+          }
+        ],
+        "apologyRate": 14.754098360655737,
+        "topQuestions": [
+          {
+            "question": "Coffee or Tea",
+            "count": 14,
+            "apology": 0
+          },
+          {
+            "question": "Starbucks",
+            "count": 10,
+            "apology": 1
+          },
+          {
+            "question": "ร้านกาแฟ",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน Cafe Amazon อยู่ตรงไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "กาแฟพันธุ์ไทยอยู่ชั้นไหน",
+            "count": 2,
+            "apology": 2
+          },
+          {
+            "question": "哦，是奈雪的茶",
+            "count": 1,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน RABBIT BUBBLE MILK TEA สาขา The Mall บางแค ไปยังไงครับ",
+            "count": 1,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน RABBIT BUBBLE MILK TEA มีที่สาขาไหนครับ",
+            "count": 1,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน CASA LAPIN อยู่ที่ชั้นไหนครับ",
+            "count": 1,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน STARBUCKS",
+            "count": 1,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "restaurant",
+        "parent": "Map and Navigation",
+        "count": 120,
+        "apology": 14,
+        "voice": 98,
+        "failExamples": [
+          {
+            "question": "ร้านอาหาร MBK อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านอาหาร MBK อยู่ชั้นไหน ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้านอาหารกับข้าวกับปลาอยู่โซนไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านกับข้าวกับปลาในเดอะมอลล์ไลฟ์สโตร์งามวงศ์นวนค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "ร้านกับข้าวกับปลาอยู่ตรงไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านกับข้าวกับปลาในเดอะมอลล์ไลฟ์สโตร์งามวงศ์วานค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "I want to go to McDonald's.",
+            "answer": "I'm sorry, I couldn't find information about McDonald's at The Mall Lifestore Ngamwongwan.",
+            "language": "en-US",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 11.666666666666666,
+        "topQuestions": [
+          {
+            "question": "SUSHIRO อยู่ชั้นไหน",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "Sizzler อยู่ที่ไหน",
+            "count": 4,
+            "apology": 0
+          },
+          {
+            "question": "Where is Sushiro?",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "แนะนำร้านอาหารหน่อย",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "MK อยู่ตรงไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "shabushi",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้านอาหาร",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "KFC อยู่ที่ไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "ร้าน Hachiban Ramen อยู่ชั้นไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "Where is YAKINIKU LIKE?",
+            "count": 1,
+            "apology": 0
+          }
+        ]
+      },
+      {
+        "topic": "Parking",
+        "parent": "Facilities",
+        "count": 79,
+        "apology": 17,
+        "voice": 74,
+        "failExamples": [
+          {
+            "question": "จอดรถที่ The Mall บางแค ได้ฟรี กี่ชั่วโมง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับเวลาจอดรถฟรีที่ The Mall บางแคค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "วันนี้ฉันสามารถจอดรถได้ฟรี กี่ชั่วโมง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับเวลาจอดรถฟรีในวันนี้ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          },
+          {
+            "question": "parking tickets",
+            "answer": "I'm sorry, I couldn't find information about parking tickets.",
+            "language": "en-US",
+            "input": "voice"
+          },
+          {
+            "question": "จอดรถวันนี้จอดรถฟรีใช่หรือไม่",
+            "answer": "จอดรถวันนี้จอดรถฟรีใช่หรือไม่ ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการจอดรถฟรีในวันนี้ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "language": "th-TH",
+            "input": "voice"
+          }
+        ],
+        "apologyRate": 21.518987341772153,
+        "topQuestions": [
+          {
+            "question": "ที่จอดรถ",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "จอดรถฟรีกี่ชั่วโมง",
+            "count": 3,
+            "apology": 0
+          },
+          {
+            "question": "ที่จอดรถอยู่ไหน",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "จอดรถฟรีได้กี่ชั่วโมง",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "จอดรถได้กี่ชั่วโมง",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "วันนี้สามารถจอดรถได้กี่ชั่วโมง",
+            "count": 2,
+            "apology": 0
+          },
+          {
+            "question": "จอดรถที่ The Mall บางแค ได้ฟรี กี่ชั่วโมง",
+            "count": 1,
+            "apology": 1
+          },
+          {
+            "question": "วันนี้ฉันสามารถจอดรถได้ฟรี กี่ชั่วโมง",
+            "count": 1,
+            "apology": 1
+          },
+          {
+            "question": "parking tickets",
+            "count": 1,
+            "apology": 1
+          },
+          {
+            "question": "จอดรถวันนี้จอดรถฟรีใช่หรือไม่",
+            "count": 1,
+            "apology": 1
+          }
+        ]
+      },
+      {
+        "topic": "directory",
+        "parent": "Map and Navigation",
+        "count": 79,
+        "apology": 0,
+        "voice": 1,
+        "failExamples": [],
+        "apologyRate": 0,
+        "topQuestions": [
+          {
+            "question": "quick reply: Directory",
+            "count": 79,
+            "apology": 0
           }
         ]
       }
