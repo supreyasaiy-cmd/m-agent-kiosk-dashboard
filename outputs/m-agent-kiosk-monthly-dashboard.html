@@ -599,6 +599,11 @@
     .km-action-examples-body{margin-top:12px;display:grid;gap:10px}
     .km-example{border:1px solid var(--line-2);border-radius:14px;background:#fbfcfe;padding:12px 14px;display:grid;gap:4px;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
     .km-example-meta{color:var(--muted);font-size:11px}
+    .km-coverage{margin-top:16px;display:flex;align-items:flex-start;gap:11px;border:1px solid var(--line-2);border-radius:14px;background:#f8fafc;padding:13px 16px}
+    .km-coverage-icon{flex:0 0 auto;color:#667085;margin-top:1px}
+    .km-coverage-body{min-width:0;display:grid;gap:3px}
+    .km-coverage-body b{font-size:13px;font-weight:850;color:var(--ink)}
+    .km-coverage-body span{color:var(--muted);font-size:11.5px;line-height:1.55;overflow-wrap:anywhere}
     .km-export-btn{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;border:1px solid #bfdbfe;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:12.5px;font-weight:850;padding:9px 16px;cursor:pointer;white-space:nowrap;transition:.22s var(--ease-smooth)}
     .km-export-btn:hover{background:#dbeafe;border-color:#93c5fd}
     .km-demand-list{display:grid;gap:8px}
@@ -1119,7 +1124,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-08T15:05:23.930Z",
+  "generatedAt": "2026-10-08T16:29:26.394Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "30 Sep 2026",
@@ -283056,52 +283061,202 @@ window.__PERFORMANCE_REPORT_DATA__ = {
     "totalUniqueBrands": 1025,
     "wrongAnswers": [
       {
-        "name": "THE PIZZA COMPANY",
-        "directoryName": "THE PIZZA COMPANY",
+        "name": "BOOTS",
+        "directoryName": "BOOTS",
         "dept": "Shopping Complex",
-        "subCategory": "Dining",
-        "floor": "3",
-        "count": 11,
-        "inKMCount": 4,
-        "notInKMCount": 7,
-        "apologyInKMCount": 3,
-        "apologyNotInKMCount": 1,
+        "subCategory": "Lifestyle & Specialty",
+        "floor": "B",
+        "count": 33,
+        "inKMCount": 33,
+        "notInKMCount": 0,
+        "apologyInKMCount": 7,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
-            "question": "The Mall งามวงศ์วาน มี The Pizza Company ไหม",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ The Pizza Company ที่ The Mall งามวงศ์วานค่ะ",
-            "apology": true,
-            "inKM": false,
+            "question": "Boots",
+            "answer": "ร้าน BOOTS อยู่ที่ชั้น G ค่ะ มีสินค้าหลากหลายแบบ เช่น สินค้าไลฟ์สไตล์ ของใช้ในบ้าน ของขวัญ และของตกแต่งบ้านค่ะ ถ้าคุณสนใจสินค้าหมวดไหนเพิ่มเติม บอกได้นะคะ",
+            "apology": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-16T09:56:54.531+07:00"
+            "time": "2025-12-28T16:34:33.784+07:00"
           },
           {
-            "question": "พิซซ่าชั้น G มีไหมครับ",
-            "answer": "ที่ชั้น G ของเดอะมอลล์บางกะปิ มีร้านพิซซ่าค่ะ ร้าน THE PIZZA COMPANY เป็นร้านพิซซ่าแบบฟาสต์ฟู้ดที่ตั้งอยู่ที่ชั้น G คุณสามารถไปลองชิมพิซซ่าอร่อย ๆ ได้ที่นั่นเลยค่ะ",
+            "question": "BOOTS",
+            "answer": "BOOTS is located on the B floor at The Mall Lifestore Tha Phra. They offer lifestyle products, home goods, gifts, specialty items, and decor. It's a great place if you're looking for a variety of life…",
             "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-11-22T16:26:24.363824+07:00"
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-12-27T19:02:27.82+07:00"
           },
           {
-            "question": "The Pizza Company",
-            "answer": "The Pizza Company is a fast-food restaurant serving pizza. It is located on the Ground floor (G) of The Mall Lifestore Bangkapi. You can enjoy a variety of pizzas there. Would you like to know more ab…",
+            "question": "Boots",
+            "answer": "BOOTS is a lifestyle and specialty store. It is located on the Ground Floor at The Mall Lifestore Bangkapi. You can find a variety of lifestyle products there. It's a great spot if you want specialty …",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
-            "time": "2025-12-02T17:36:51.365182+07:00"
+            "time": "2025-12-18T16:37:13.665925+07:00"
           },
           {
-            "question": "The Pizza Company อยู่ที่ไหน",
-            "answer": "The Pizza Company อยู่ที่ชั้น G ของ The Mall Lifestore Bangkapi ค่ะ เป็นร้านอาหารฟาสต์ฟู้ดที่เสิร์ฟพิซซ่า ถ้าคุณอยากทานพิซซ่าแวะไปที่นั่นได้เลยนะคะ",
+            "question": "Boots ฟู้ดคอร์ท อาหารน่ะ",
+            "answer": "ที่ฟู้ดคอร์ทของเดอะมอลล์มีที่นั่งกินข้าวค่ะ ฟู้ดคอร์ทอยู่ที่ชั้น G ของห้างค่ะ มีเมนูอาหารหลากหลายให้เลือกทานค่ะ ส่วนร้าน Boots ไม่มีข้อมูลในเอกสารนะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-14T13:30:47.618+07:00"
+          }
+        ]
+      },
+      {
+        "name": "AIS",
+        "directoryName": "AIS",
+        "dept": "Shopping Complex",
+        "subCategory": "IT & Electronics",
+        "floor": "3",
+        "count": 54,
+        "inKMCount": 54,
+        "notInKMCount": 0,
+        "apologyInKMCount": 6,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ใกล้เวลาห้างจะเปิดแล้วนะ AIS",
+            "answer": "The Mall Lifestore Ngamwongwan เปิดทุกวันตั้งแต่10:00 น. ถึง22:00 น.ค่ะ ส่วนร้าน AIS อยู่ที่ชั้น3 ของห้างนี้ค่ะ ร้าน AIS เปิดให้บริการตามเวลาห้างเลยนะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-25T09:58:02.935+07:00"
+          },
+          {
+            "question": "ใกล้จะได้กลับบ้านแล้วนะ AIS",
+            "answer": "ขอบคุณที่มาเล่าให้ฟังนะคะ ถ้าคุณมีคำถามหรืออยากรู้ข้อมูลเพิ่มเติมเกี่ยวกับ AIS หรือร้านอื่นๆ ที่ The Mall Lifestore Ngamwongwan ฉันยินดีช่วยเสมอค่ะ เดินทางปลอดภัยนะคะ!",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-24T21:42:44.561+07:00"
+          },
+          {
+            "question": "ใกล้จะได้กลับบ้านแล้วนะ AIS",
+            "answer": "AIS อยู่ที่ชั้น3 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านที่เชี่ยวชาญด้านไอทีและอิเล็กทรอนิกส์ มีสินค้าอย่างโทรศัพท์มือถือ อุปกรณ์เสริม และเทคโนโลยีต่างๆ ให้เลือกมากมายค่ะ ถ้าคุณต้องการความช่วย…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-24T21:42:12.053+07:00"
+          },
+          {
+            "question": "Where is AIS?",
+            "answer": "AIS is located on the3rd floor of The Mall Lifestore Tha Phra. You can find electronics, gadgets, mobile phones, and accessories there.",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-22T17:37:23.26+07:00"
+          }
+        ]
+      },
+      {
+        "name": "STARBUCKS",
+        "directoryName": "STARBUCKS",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "G",
+        "count": 98,
+        "inKMCount": 98,
+        "notInKMCount": 0,
+        "apologyInKMCount": 5,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ร้าน STARBUCKS",
+            "answer": "ร้าน STARBUCKS ที่ The Mall Lifestore บางกะปิ มีทั้งหมด3 สาขานะคะ- ชั้น M- ชั้น3- ชั้น Gคุณลูกค้าสามารถเลือกไปชิมกาแฟและนั่งพักผ่อนที่สาขาใดสาขาหนึ่งได้เลยค่ะ",
+            "apology": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
-            "time": "2026-02-20T16:44:43.2606+07:00"
+            "time": "2025-09-03T09:47:15.380303+07:00"
+          },
+          {
+            "question": "Cafe Starbucks อยู่ชั้นไหน",
+            "answer": "STARBUCKS อยู่ที่ชั้น G และชั้น2 ของ The Mall Lifestore Bangkae ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-31T13:46:18.821165+07:00"
+          },
+          {
+            "question": "ค่ะ ร้าน Starbucks ค่ะ",
+            "answer": "ร้าน Starbucks อยู่ที่ชั้น3 ของเดอะมอลล์ไลฟ์สโตร์ บางกะปิค่ะ มีเมนูกาแฟ ชา และอาหารให้เลือกหลากหลาย นอกจากนี้ยังมีสาขาอยู่ที่ชั้น M และ G ด้วยนะคะ ถ้าคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับเมนูหรือเวลาทำกา…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-30T10:38:55.568461+07:00"
+          },
+          {
+            "question": "how many Starbucks do you have",
+            "answer": "There are Starbucks locations on three floors in The Mall Lifestore Bangkapi. You can find Starbucks on the3rd floor, the M floor, and the G floor. So, there are three Starbucks spots for you to enjoy…",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-27T14:25:59.274435+07:00"
+          }
+        ]
+      },
+      {
+        "name": "TRUE l DTAC",
+        "directoryName": "TRUE l DTAC",
+        "dept": "Shopping Complex",
+        "subCategory": "IT & Electronics",
+        "floor": "3",
+        "count": 5,
+        "inKMCount": 5,
+        "notInKMCount": 0,
+        "apologyInKMCount": 5,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Where is Dtac?",
+            "answer": "I'm sorry, I couldn't find information about Dtac location here. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-25T17:05:00.311+07:00"
+          },
+          {
+            "question": "dtac",
+            "answer": "I'm sorry, I couldn't find information about dtac. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-03T15:55:56.661523+07:00"
+          },
+          {
+            "question": "dtac",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ dtac ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-03T15:53:52.795729+07:00"
+          },
+          {
+            "question": "dtac sim",
+            "answer": "I'm sorry, I couldn't find information about dtac SIM. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-01T13:25:05.229+07:00"
           }
         ]
       },
@@ -283112,16 +283267,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "IT & Electronics",
         "floor": "3",
         "count": 9,
-        "inKMCount": 2,
-        "notInKMCount": 7,
-        "apologyInKMCount": 2,
-        "apologyNotInKMCount": 3,
+        "inKMCount": 9,
+        "notInKMCount": 0,
+        "apologyInKMCount": 5,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "How do I go to True?",
             "answer": "I'm sorry, I couldn't find information about how to go to True.",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-23T19:48:52.762+07:00"
@@ -283130,7 +283285,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ศูนย์ทรูอยู่ตรงไหนของ The Mall",
             "answer": "ศูนย์ทรู l DTAC อยู่ที่ The Mall Lifestore บางแคค่ะ อยู่ที่ชั้น 1 ของห้างเลยค่ะ มีสินค้าอิเล็กทรอนิกส์ โทรศัพท์มือถือ และบริการสมาร์ทโฟนครบครันค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-12-20T18:58:57.156192+07:00"
@@ -283139,7 +283294,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ศูนย์ TrueMove H อยู่ชั้นไหน",
             "answer": "ศูนย์ TrueMove H อยู่ที่ชั้น 1 ค่ะ ที่ The Mall Lifestore Bangkae ถ้าคุณต้องการข้อมูลเพิ่มเติม แจ้งได้นะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-12-18T15:09:38.850469+07:00"
@@ -283148,10 +283303,774 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้าน True Shop",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน True Shop แต่ฉันพบข้อมูลเกี่ยวกับ True Coffee ซึ่งเป็นร้านกาแฟและร้านอาหารที่ The Mall Lifestore ท่าพระค่ะ คุณต้องการทราบข้อมูลเกี่ยวกับ True Coffee ไหมคะ?",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2026-03-14T16:10:37.286+07:00"
+          }
+        ]
+      },
+      {
+        "name": "WATSONS",
+        "directoryName": "WATSONS",
+        "dept": "Shopping Complex",
+        "subCategory": "Lifestyle & Specialty",
+        "floor": "B",
+        "count": 44,
+        "inKMCount": 44,
+        "notInKMCount": 0,
+        "apologyInKMCount": 4,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "WATSONS",
+            "answer": "To give you the most accurate information,",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-06T10:42:48.049083+07:00"
+          },
+          {
+            "question": "WATSONS",
+            "answer": "",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T15:52:39.831189+07:00"
+          },
+          {
+            "question": "Watsons อยู่ชั้นไหนคะ",
+            "answer": "WATSONS อยู่ที่ชั้น B ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-28T14:34:10.483+07:00"
+          },
+          {
+            "question": "ร้าน Watsons อยู่ชั้นไหน",
+            "answer": "ร้าน Watsons อยู่ที่ชั้น B ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-20T15:49:19.219+07:00"
+          }
+        ]
+      },
+      {
+        "name": "THE PIZZA COMPANY",
+        "directoryName": "THE PIZZA COMPANY",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 11,
+        "inKMCount": 11,
+        "notInKMCount": 0,
+        "apologyInKMCount": 4,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "The Mall งามวงศ์วาน มี The Pizza Company ไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ The Pizza Company ที่ The Mall งามวงศ์วานค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-16T09:56:54.531+07:00"
+          },
+          {
+            "question": "พิซซ่าชั้น G มีไหมครับ",
+            "answer": "ที่ชั้น G ของเดอะมอลล์บางกะปิ มีร้านพิซซ่าค่ะ ร้าน THE PIZZA COMPANY เป็นร้านพิซซ่าแบบฟาสต์ฟู้ดที่ตั้งอยู่ที่ชั้น G คุณสามารถไปลองชิมพิซซ่าอร่อย ๆ ได้ที่นั่นเลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-22T16:26:24.363824+07:00"
+          },
+          {
+            "question": "The Pizza Company",
+            "answer": "The Pizza Company is a fast-food restaurant serving pizza. It is located on the Ground floor (G) of The Mall Lifestore Bangkapi. You can enjoy a variety of pizzas there. Would you like to know more ab…",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-02T17:36:51.365182+07:00"
+          },
+          {
+            "question": "The Pizza Company อยู่ที่ไหน",
+            "answer": "The Pizza Company อยู่ที่ชั้น G ของ The Mall Lifestore Bangkapi ค่ะ เป็นร้านอาหารฟาสต์ฟู้ดที่เสิร์ฟพิซซ่า ถ้าคุณอยากทานพิซซ่าแวะไปที่นั่นได้เลยนะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-02-20T16:44:43.2606+07:00"
+          }
+        ]
+      },
+      {
+        "name": "BEARHOUSE",
+        "directoryName": "BEARHOUSE",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 10,
+        "inKMCount": 10,
+        "notInKMCount": 0,
+        "apologyInKMCount": 4,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ร้าน Bear House",
+            "answer": "ร้าน BEARHOUSE อยู่ที่ The Mall Lifestore Bangkapi ค่ะ ร้านนี้อยู่ที่ชั้น1 เป็นร้านอาหารที่ให้บริการประสบการณ์การรับประทานอาหาร",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-04T19:38:44.5534+07:00"
+          },
+          {
+            "question": "ร้าน BEARHOUSE อยู่ชั้นไหน",
+            "answer": "ร้าน BEARHOUSE อยู่ที่ชั้น G ค่ะ ที่ The Mall Lifestore Bangkae เป็นร้านอาหารและคาเฟ่ที่มีของหวานด้วยนะคะ ถ้าคุณสนใจอยากไปลองชิมดูค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-12-03T14:36:10.975581+07:00"
+          },
+          {
+            "question": "มีชานมไข่มุก BEARHOUSE ป่ะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับชานมไข่มุกที่ BEARHOUSE แต่ BEARHOUSE เป็นร้านคาเฟ่และของหวานที่ตั้งอยู่ที่ The Mall Lifestore Bangkae ชั้น G ค่ะ ถ้าคุณสนใจชานมไข่มุก ฉันแนะนำร้าน Rabbit Bubble Milk …",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-01-29T14:13:17.155667+07:00"
+          },
+          {
+            "question": "BEARHOUSE อยู่ข้างร้านอะไร",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านที่อยู่ข้างร้าน BEARHOUSE ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-01-17T14:29:32.842036+07:00"
+          }
+        ]
+      },
+      {
+        "name": "HARBORLAND",
+        "directoryName": "HARBORLAND",
+        "dept": "Shopping Complex",
+        "subCategory": "Attraction & Entertainment",
+        "floor": "3",
+        "count": 35,
+        "inKMCount": 35,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Can you give me direction details to go to Harborland?",
+            "answer": "To give you the most accurate information,",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-06T11:46:06.271589+07:00"
+          },
+          {
+            "question": "Where is Harborland?",
+            "answer": "Harborland is an attraction and entertainment area located on the3rd floor at The Mall Lifestore Bangkapi, Thapra, and Bangkae. At The Mall Lifestore Ngamwongwan, you can find Harborland on the6th flo…",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-06T11:45:30.134658+07:00"
+          },
+          {
+            "question": "HARBORLAND",
+            "answer": "HARBORLAND is located on the3rd floor of The Mall Lifestore Bangkapi.",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-20T18:13:16.582892+07:00"
+          },
+          {
+            "question": "ราคา HARBORLAND ที่เป็นสวนน้ำเท่าไหร่",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับราคา HARBORLAND ที่เป็นสวนน้ำค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-17T13:58:31.63583+07:00"
+          }
+        ]
+      },
+      {
+        "name": "MK RESTAURANTS",
+        "directoryName": "MK RESTAURANTS",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 21,
+        "inKMCount": 21,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ร้าน MK อยู่ชั้นไหน",
+            "answer": "ร้าน MK RESTAURANTS มีสาขาในศูนย์การค้าของเรา ดังนี้ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T12:47:37.488969+07:00"
+          },
+          {
+            "question": "MK อยู่ไหน",
+            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T12:45:10.173839+07:00"
+          },
+          {
+            "question": "MK อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Ngamwongwan ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T21:37:03.667+07:00"
+          },
+          {
+            "question": "MK สาขางามวงศ์วานอยู่ชั้นไหนครับ",
+            "answer": "MK สาขางามวงศ์วานอยู่ที่ชั้น5 ค่ะ คุณสามารถไปทานอาหารและเลือกเมนูอร่อยๆ ได้ที่นั่นเลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-23T20:59:32.446+07:00"
+          }
+        ]
+      },
+      {
+        "name": "SUSHIRO",
+        "directoryName": "SUSHIRO",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 80,
+        "inKMCount": 80,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Sushiro ไปทางไหน",
+            "answer": "ร้าน Sushiro อยู่ที่ The Mall Lifestore Bangkapi ชั้น2 ค่ะ คุณสามารถขึ้นบันไดเลื่อนหรือใช้ลิฟต์ไปยังชั้น2 ได้เลยค่ะ ร้านจะอยู่ในโซนอาหารที่ชั้นนั้นค่ะ ถ้าคุณต้องการ ฉันช่วยบอกทางจากจุดที่คุณอยู่ได้ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-30T18:07:13.378882+07:00"
+          },
+          {
+            "question": "SUSHIRO อยู่ตรงไหน",
+            "answer": "ร้าน SUSHIRO อยู่ที่ชั้น5 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารซูชิที่น่าสนใจมากเลยค่ะ ถ้าคุณอยากทานซูชิสดใหม่ ต้องลองที่นี่นะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-30T16:00:35.561+07:00"
+          },
+          {
+            "question": "ต้องการไปร้านอาหารญี่ปุ่น SUSHIRO",
+            "answer": "ร้าน SUSHIRO อยู่ที่ The Mall Lifestore Tha Phra ค่ะ ร้านนี้อยู่ที่ชั้น3 เป็นร้านอาหารญี่ปุ่นที่ให้บริการอาหารญี่ปุ่นหลากหลายเมนู ถ้าคุณชอบอาหารญี่ปุ่น ต้องไม่พลาดที่นี่เลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-23T13:44:41.406+07:00"
+          },
+          {
+            "question": "Sushiro",
+            "answer": "SUSHIRO is a Japanese restaurant. It serves Japanese food. You can find it on the 3rd floor of The Mall Lifestore Tha Phra. Let me know if you want to know about other restaurants too!",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-11-29T14:47:43.108+07:00"
+          }
+        ]
+      },
+      {
+        "name": "BAR B Q PLAZA",
+        "directoryName": "BAR B Q PLAZA",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 16,
+        "inKMCount": 16,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "BARBQPLAZA",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชันของ BARBQPLAZA ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-26T21:25:46.501+07:00"
+          },
+          {
+            "question": "Where is BARBQPLAZA?",
+            "answer": "BARBQPLAZA is located in The Mall Lifestore Bangkapi.",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-07T20:43:08.608245+07:00"
+          },
+          {
+            "question": "อยากกิน BAR B Q PLAZA มีโปรอะไรบ้าง",
+            "answer": "ร้าน BAR B Q PLAZA ที่ The Mall Lifestore Ngamwongwan ชั้น 5 มีอาหารปิ้งย่างให้บริการค่ะ แต่ขอโทษด้วยนะคะ ฉันไม่มีข้อมูลโปรโมชั่นของร้านนี้ในตอนนี้ค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-26T13:11:47.038+07:00"
+          },
+          {
+            "question": "มี BAR B Q PLAZA ไหม",
+            "answer": "มีค่ะ BAR B Q PLAZA อยู่ที่ The Mall Lifestore Tha Phra ชั้น 3 เป็นร้านอาหารปิ้งย่างบาร์บีคิวที่เปิดให้บริการอยู่ค่ะ คุณสามารถไปทานได้เลยนะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-01-23T21:11:59.432+07:00"
+          }
+        ]
+      },
+      {
+        "name": "AIS",
+        "directoryName": "AIS",
+        "dept": "Shopping Complex",
+        "subCategory": "IT & Electronics",
+        "floor": "3",
+        "count": 23,
+        "inKMCount": 23,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "โปรโมชั่นห้าง The Mall Daiso ท่าพระ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-25T20:44:57.574+07:00"
+          },
+          {
+            "question": "โปรโมชั่นห้าง The Mall Daiso The Mall ท่าพระ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-25T20:44:31.078+07:00"
+          },
+          {
+            "question": "DAISO อยู่ไหน",
+            "answer": "DAISO อยู่ที่ชั้น G ใน The Mall Lifestore Bangkae ค่ะ ที่นี่มีสินค้าหลากหลาย ทั้งของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน และของขวัญด้วยนะคะ ถ้าคุณสนใจอยากไปดูสินค้า สามารถไปที่ชั้น G ได้เลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-23T19:17:27.369954+07:00"
+          },
+          {
+            "question": "ร้านไหน ร้าน DAISO",
+            "answer": "ร้าน DAISO อยู่ที่ชั้น 5 ค่ะ ที่ The Mall Lifestore Ngamwongwan ร้านนี้มีสินค้าหลากหลาย เช่น ของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน ของขวัญ และของพิเศษอื่นๆ ค่ะ ถ้าคุณสนใจไปดูได้เลยนะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-12T17:21:55.91+07:00"
+          }
+        ]
+      },
+      {
+        "name": "UNIQLO",
+        "directoryName": "UNIQLO",
+        "dept": "Shopping Complex",
+        "subCategory": "Fashion",
+        "floor": "G",
+        "count": 64,
+        "inKMCount": 64,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "UNIQLO",
+            "answer": "UNIQLO อยู่ที่ชั้น M ในเดอะมอลล์ไลฟ์สโตร์ บางกะปิค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-19T16:35:46.589588+07:00"
+          },
+          {
+            "question": "UNIQLO สาขา The Mall ท่าพระ อยู่ชั้นไหน",
+            "answer": "UNIQLO สาขา The Mall Lifestore ท่าพระ อยู่ที่ชั้น G ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-15T15:25:31.412+07:00"
+          },
+          {
+            "question": "UNIQLO",
+            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-15T15:05:19.886+07:00"
+          },
+          {
+            "question": "ที่นี่มี UNIQLO ไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ UNIQLO ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-30T11:20:18.712941+07:00"
+          }
+        ]
+      },
+      {
+        "name": "UOB",
+        "directoryName": "UOB",
+        "dept": "Shopping Complex",
+        "subCategory": "Bank & Insurance",
+        "floor": "3",
+        "count": 11,
+        "inKMCount": 9,
+        "notInKMCount": 2,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 1,
+        "examples": [
+          {
+            "question": "UOB",
+            "answer": "บัตรเครดิต UOB มีโปรโมชันน่าสนใจหลายรายการค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-17T20:53:54.273+07:00"
+          },
+          {
+            "question": "UOB",
+            "answer": "UOB มีสาขาอยู่ที่ The Mall Lifestore Bangkae ชั้น 2 ค่ะ ให้บริการธนาคาร การเงิน ประกันภัย และตู้ ATM ด้วยนะคะ ตอนนี้มีโปรโมชั่นบัตรเครดิต UOB ที่ Power Mall ด้วยค่ะ โปรโมชั่นนี้เริ่มตั้งแต่ 1 ตุลาคม 2…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-12-31T14:59:15.227662+07:00"
+          },
+          {
+            "question": "EAT&JOY with UOB",
+            "answer": "I'm sorry, I couldn't find information about the EAT&JOY with UOB promotion.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-28T11:25:33.748+07:00"
+          },
+          {
+            "question": "EAT&JOY with UOB",
+            "answer": "I'm sorry, I couldn't find information about the EAT&JOY with UOB promotion. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-12-16T12:22:10.958+07:00"
+          }
+        ]
+      },
+      {
+        "name": "AEON",
+        "directoryName": "AEON",
+        "dept": "Shopping Complex",
+        "subCategory": "Bank & Insurance",
+        "floor": "3",
+        "count": 5,
+        "inKMCount": 5,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "AEON อยู่ชั้นไหนคะ",
+            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-04T11:06:43.607942+07:00"
+          },
+          {
+            "question": "AEON",
+            "answer": "AEON is on the 2nd floor of The Mall Lifestore Bangkae. It offers banking, financial services, insurance, and ATM services. If you want, I can help you with directions or more info!",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-02-23T12:21:02.727599+07:00"
+          },
+          {
+            "question": "AEON",
+            "answer": "AEON is located on the 2nd floor of The Mall Lifestore Bangkae. It offers banking, financial services, insurance, and ATM services. If you need more details or directions, just ask!",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-02-23T12:20:36.766757+07:00"
+          },
+          {
+            "question": "สมัคร AEON",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการสมัคร AEON",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-03-10T16:44:26.636304+07:00"
+          }
+        ]
+      },
+      {
+        "name": "CAFE AMAZON",
+        "directoryName": "CAFE AMAZON",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "1",
+        "count": 20,
+        "inKMCount": 20,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Cafe Amazon อยู่ชั้นไหน",
+            "answer": "Cafe Amazon อยู่ที่ชั้น M และชั้น3 ของ The Mall Lifestore Bangkae ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-31T13:45:45.204749+07:00"
+          },
+          {
+            "question": "If you need to go to Cafe Amazon.",
+            "answer": "You can find Cafe Amazon on the Ground floor and also on the 6th floor here at The Mall Lifestore Ngamwongwan. It’s a popular eatery offering a variety of food and beverages.",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-15T15:52:33.062+07:00"
+          },
+          {
+            "question": "คาเฟ่ อเมซอนอยู่ชั้นไหน",
+            "answer": "คาเฟ่ อเมซอนอยู่ที่ชั้น 6 และชั้น G ค่ะ คุณสามารถไปชั้นไหนก็ได้ตามสะดวกเลยนะคะ มีอะไรให้ช่วยอีกไหมคะ?",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-12T16:41:21.677+07:00"
+          },
+          {
+            "question": "CAFE AMAZON อยู่ชั้นไหน",
+            "answer": "CAFE AMAZON อยู่ที่ชั้น 6 และชั้น G ค่ะ ที่ The Mall Lifestore Ngamwongwan คุณสามารถไปนั่งพักดื่มกาแฟและทานของว่างได้เลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-01-26T21:28:38.569+07:00"
+          }
+        ]
+      },
+      {
+        "name": "MOSHI MOSHI",
+        "directoryName": "MOSHI MOSHI",
+        "dept": "Shopping Complex",
+        "subCategory": "Lifestyle & Specialty",
+        "floor": "1",
+        "count": 24,
+        "inKMCount": 24,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Where is Moshi Moshi?",
+            "answer": "I'm sorry, I couldn't find information about Moshi Moshi. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T10:47:31.583+07:00"
+          },
+          {
+            "question": "ร้าน MOSHIMOSHI อยู่ไหน",
+            "answer": "ร้าน MOSHIMOSHI อยู่ที่ The Mall Lifestore Ngamwongwan ค่ะ อยู่ที่ชั้น 2 เป็นร้านที่จำหน่ายสินค้าลifestyle, ของใช้ในบ้าน, ของขวัญ, และของตกแต่งค่ะ ถ้าคุณสนใจ ฉันช่วยแนะนำเพิ่มเติมได้นะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-15T18:34:40.341+07:00"
+          },
+          {
+            "question": "Moshi Moshi อยู่โซนไหนของชั้น 1",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโซนของร้าน Moshi Moshi ที่ชั้น 1 ค่ะ ถ้าคุณต้องการทราบข้อมูลเพิ่มเติม กรุณาถามอีกครั้งนะคะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-13T19:18:02.889044+07:00"
+          },
+          {
+            "question": "Moshi Moshi อยู่ชั้นไหน",
+            "answer": "Moshi Moshi อยู่ที่ชั้น 1 ค่ะ เป็นร้านไลฟ์สไตล์และของตกแต่งบ้านที่น่าสนใจมากค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-13T19:17:07.658251+07:00"
+          }
+        ]
+      },
+      {
+        "name": "UOB",
+        "directoryName": "UOB",
+        "dept": "Shopping Complex",
+        "subCategory": "Bank & Insurance",
+        "floor": "3",
+        "count": 2,
+        "inKMCount": 2,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "EAT&JOY with UOB",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่น EAT&JOY กับบัตร UOB ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-15T16:46:51.683525+07:00"
+          },
+          {
+            "question": "EAT&JOY with UOB",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่น EAT&JOY with UOB ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-12T15:23:44.236+07:00"
+          }
+        ]
+      },
+      {
+        "name": "KOI THE",
+        "directoryName": "KOI THE",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "G",
+        "count": 9,
+        "inKMCount": 9,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "จะไปร้าน KOI Thé ไปทางไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเส้นทางไปยังร้าน KOI THE ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-01-10T14:28:06.587+07:00"
+          },
+          {
+            "question": "ร้านชาตามือชั้นไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านชาตามือชั้นไหนคะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-02-25T21:36:16.199+07:00"
+          },
+          {
+            "question": "KOI THE อยู่ตรงไหน",
+            "answer": "KOI THE อยู่ที่ชั้น G ใน The Mall Lifestore Bangkapi ค่ะ เป็นร้านอาหารและเครื่องดื่มที่มีเมนูคาเฟ่และของหวานด้วยนะคะ ถ้าคุณสนใจไปลองชิมดูได้เลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-02-25T12:40:43.059249+07:00"
+          },
+          {
+            "question": "KOI THE อยู่ชั้นไหนคะ",
+            "answer": "KOI THE อยู่ที่ชั้น G ค่ะ ถ้าคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับร้านนี้ บอกได้นะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-02-05T17:27:49.789+07:00"
+          }
+        ]
+      },
+      {
+        "name": "AIS",
+        "directoryName": "AIS",
+        "dept": "Shopping Complex",
+        "subCategory": "IT & Electronics",
+        "floor": "3",
+        "count": 2,
+        "inKMCount": 2,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "AIS ข้าวยัง",
+            "answer": "ขออภัยค่ะ AIS ที่นี่เป็นร้านจำหน่ายสินค้าไอทีและอิเล็กทรอนิกส์ค่ะ ไม่มีบริการอาหารหรือข้าวนะคะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-03-31T12:50:08.243634+07:00"
+          },
+          {
+            "question": "AIS ข้าวยัง",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ AIS ที่เกี่ยวข้องกับข้าวหรืออาหารนะคะ AIS ที่นี่เป็นร้านจำหน่ายสินค้าไอทีและอิเล็กทรอนิกส์ค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-03-30T16:52:18.655877+07:00"
           }
         ]
       },
@@ -283206,6 +284125,56 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
+        "name": "AIIZ",
+        "directoryName": "AIIZ",
+        "dept": "Shopping Complex",
+        "subCategory": "Fashion",
+        "floor": "G",
+        "count": 6,
+        "inKMCount": 5,
+        "notInKMCount": 1,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 1,
+        "examples": [
+          {
+            "question": "AIIZ",
+            "answer": "AIIZ is a fashion store you can find in several of our malls!",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-03T17:44:58.323004+07:00"
+          },
+          {
+            "question": "AIIZ",
+            "answer": "AIIZ is a fashion store available in several malls:",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-03T17:44:14.724902+07:00"
+          },
+          {
+            "question": "aiiz",
+            "answer": "[interrupt]",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-04-19T22:29:46.833462+07:00"
+          },
+          {
+            "question": "ร้าน AIIZ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน AIIZ ที่เดอะมอลล์บางกะปิค่ะ แต่ถ้าคุณสนใจร้านแฟชั่นอื่น ๆ ที่นี่มี Jeune Style อยู่ชั้น M SOS - SENSE OF STYLE อยู่ชั้น G G2000 อยู่ชั้น M Hara Jeans อยู่ชั้น 1 แ…",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-04-04T12:34:17.643335+07:00"
+          }
+        ]
+      },
+      {
         "name": "gourmet market",
         "directoryName": null,
         "dept": null,
@@ -283256,52 +284225,516 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "CAFE AMAZON",
-        "directoryName": "CAFE AMAZON",
+        "name": "MR. D.I.Y.",
+        "directoryName": "MR. D.I.Y.",
         "dept": "Shopping Complex",
-        "subCategory": "Dining",
+        "subCategory": "Lifestyle & Specialty",
         "floor": "1",
-        "count": 20,
-        "inKMCount": 1,
-        "notInKMCount": 19,
+        "count": 43,
+        "inKMCount": 43,
+        "notInKMCount": 0,
         "apologyInKMCount": 1,
-        "apologyNotInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
-            "question": "Cafe Amazon อยู่ชั้นไหน",
-            "answer": "Cafe Amazon อยู่ที่ชั้น M และชั้น3 ของ The Mall Lifestore Bangkae ค่ะ",
+            "question": "ร้าน MR. D.I.Y. อยู่ชั้นไหน",
+            "answer": "ร้าน MR. D.I.Y. มีสาขาในศูนย์การค้าของเรา ดังนี้ค่ะ- ที่ The Mall Lifestore งามวงศ์วาน อยู่ที่ชั้น6- ที่ The Mall Lifestore บางแค อยู่ที่ชั้น1- ที่ The Mall Lifestore ท่าพระ อยู่ที่ชั้น1- ที่ The Mall…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T12:48:23.374701+07:00"
+          },
+          {
+            "question": "MR. D.I.Y. อยู่ชั้นไหน",
+            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T12:46:20.169714+07:00"
+          },
+          {
+            "question": "เดินทางอย่างไรไป MR.D.I.Y.",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการเดินทางไปยัง MR.D.I.Y. ที่เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T11:50:17.859+07:00"
+          },
+          {
+            "question": "MR.D.I.Y.",
+            "answer": "MR.D.I.Y. อยู่ที่ชั้น6 ของเดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ร้านนี้จำหน่ายสินค้าหลายประเภท เช่น สินค้าไลฟ์สไตล์, อุปกรณ์ปรับปรุงบ้าน, ของขวัญ, สินค้าเฉพาะทาง และของตกแต่งบ้านค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T11:49:43.56+07:00"
+          }
+        ]
+      },
+      {
+        "name": "KKV",
+        "directoryName": "KKV",
+        "dept": "Shopping Complex",
+        "subCategory": "Lifestyle & Specialty",
+        "floor": "1",
+        "count": 26,
+        "inKMCount": 26,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ร้าน KKV ไปทางไหน",
+            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-01T18:34:03.395693+07:00"
+          },
+          {
+            "question": "ร้าน KKV อยู่ที่ไหน",
+            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-01T18:32:47.379639+07:00"
+          },
+          {
+            "question": "ร้าน KKV อยู่ไหน",
+            "answer": "ร้าน KKV มีสาขาในศูนย์การค้าของเรา4 แห่งค่ะ- ที่ The Mall Lifestore งามวงศ์วาน อยู่ที่ชั้น1- ที่ The Mall Lifestore บางแค อยู่ที่ชั้น G- ที่ The Mall Lifestore ท่าพระ อยู่ที่ชั้น1- ที่ The Mall Lifest…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-15T17:54:30.478543+07:00"
+          },
+          {
+            "question": "KKV",
+            "answer": "Sorry, I couldn’t find information about KKV here. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-29T11:52:04.969617+07:00"
+          }
+        ]
+      },
+      {
+        "name": "SIZZLER",
+        "directoryName": "SIZZLER",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 21,
+        "inKMCount": 21,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ร้าน SIZZLER อยู่ชั้นไหน",
+            "answer": "ร้าน SIZZLER อยู่ที่ชั้น5 ค่ะ เป็นร้านอาหารที่ให้บริการอาหารและบรรยากาศน่านั่งมากเลยค่ะ มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T21:36:09.704+07:00"
+          },
+          {
+            "question": "Sizzler",
+            "answer": "SIZZLER อยู่ที่ชั้น5 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารที่ให้บริการอาหารและบรรยากาศสำหรับรับประทานอาหารอย่างดีเลยค่ะ ถ้าคุณสนใจอาหารแบบนี้ ที่นี่ตอบโจทย์แน่นอนค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-26T13:13:36.637+07:00"
+          },
+          {
+            "question": "Sizzler อยู่ชั้นไหน",
+            "answer": "SIZZLER อยู่ที่ชั้น5 ค่ะ คุณสามารถไปทานอาหารที่นั่นได้เลย มีบรรยากาศร้านอาหารที่น่านั่งมากค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-26T11:08:29.776+07:00"
+          },
+          {
+            "question": "Sizzler ไปทางไหน",
+            "answer": "ร้าน Sizzler อยู่ที่ The Mall Lifestore Ngamwongwan ชั้น 5 ค่ะ คุณสามารถขึ้นบันไดเลื่อนหรือใช้ลิฟต์ไปชั้น 5 ได้เลยค่ะ ที่นั่นจะมีร้านอาหารหลากหลายรวมถึง Sizzler ด้วยค่ะ ถ้าคุณต้องการฉันช่วยแนะนำเส้นทา…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-14T18:44:05.859+07:00"
+          }
+        ]
+      },
+      {
+        "name": "SWENSEN'S",
+        "directoryName": "SWENSEN'S",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 35,
+        "inKMCount": 35,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "SWENSEN'S สาขางามวงศ์วาน",
+            "answer": "SWENSEN'S สาขางามวงศ์วานอยู่ที่ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารที่ให้บริการอาหารและเครื่องดื่ม ตั้งอยู่ที่ชั้น5 และชั้น G ของห้างค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T21:35:34.456+07:00"
+          },
+          {
+            "question": "Swensen's now",
+            "answer": "I'm sorry, I couldn't find information about current promotions at Swensen's. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-28T16:01:06.786762+07:00"
+          },
+          {
+            "question": "SWENSEN'S",
+            "answer": "SWENSEN'S is located on the Ground floor at The Mall Lifestore Bangkapi. It is an ice cream parlor and restaurant offering desserts and light meals. The store is active and ready for you to enjoy some…",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-27T16:07:34.048089+07:00"
+          },
+          {
+            "question": "Swensen's อยู่ที่ไหน",
+            "answer": "Swensen's อยู่ที่ชั้น Ground ค่ะ ในอาคาร The Mall Lifestore Bangkae",
+            "apology": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
-            "time": "2025-10-31T13:45:45.204749+07:00"
+            "time": "2025-10-26T20:05:06.810756+07:00"
+          }
+        ]
+      },
+      {
+        "name": "BONCHON",
+        "directoryName": "BONCHON",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 22,
+        "inKMCount": 22,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ร้านอาหาร BONCHON",
+            "answer": "BONCHON เป็นร้านอาหารที่ตั้งอยู่ที่ The Mall Lifestore Ngamwongwan ค่ะ ร้านนี้อยู่ที่ชั้น G",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-26T20:32:55.99+07:00"
           },
           {
-            "question": "If you need to go to Cafe Amazon.",
-            "answer": "You can find Cafe Amazon on the Ground floor and also on the 6th floor here at The Mall Lifestore Ngamwongwan. It’s a popular eatery offering a variety of food and beverages.",
+            "question": "ที่นี่มีร้าน BONCHON ไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน BONCHON ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-30T11:20:56.475232+07:00"
+          },
+          {
+            "question": "วิธีไป Bonchon",
+            "answer": "Bonchon อยู่ที่ชั้น G (Ground) ในอาคาร The Mall Lifestore Bangkae ค่ะ ถ้าคุณอยู่ที่เคาน์เตอร์ข้อมูลชั้นล่าง ก็เดินไปไม่ไกลเลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-14T19:57:49.961178+07:00"
+          },
+          {
+            "question": "Bonchon",
+            "answer": "",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-07T16:31:40.906+07:00"
+          }
+        ]
+      },
+      {
+        "name": "YVES ROCHER",
+        "directoryName": "YVES ROCHER",
+        "dept": "Shopping Complex",
+        "subCategory": "Beauty Skincare & Costmetic",
+        "floor": "G",
+        "count": 3,
+        "inKMCount": 3,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Yves Rocher",
+            "answer": "Yves Rocher is located on the2nd floor of The Mall Lifestore Ngamwongwan. They offer a range of beauty, skincare, and cosmetic products. If you want to explore natural beauty options, this store is a …",
+            "apology": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO3-M6-NGW-01",
-            "time": "2025-11-15T15:52:33.062+07:00"
+            "time": "2025-10-23T19:53:47.256+07:00"
           },
           {
-            "question": "คาเฟ่ อเมซอนอยู่ชั้นไหน",
-            "answer": "คาเฟ่ อเมซอนอยู่ที่ชั้น 6 และชั้น G ค่ะ คุณสามารถไปชั้นไหนก็ได้ตามสะดวกเลยนะคะ มีอะไรให้ช่วยอีกไหมคะ?",
+            "question": "มี YVESROCHER ไหม อยู่ตรงไหนไม่รู้",
+            "answer": "YVESROCHER มีร้านที่ The Mall Lifestore Ngamwongwan ค่ะ ร้านอยู่ที่ชั้น2 นะคะ ที่นี่มีสินค้าความงาม สกินแคร์ และเครื่องสำอางครบเลยค่ะ ถ้าคุณสนใจอยากไปดูสินค้าก็สะดวกมากค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
-            "time": "2025-12-12T16:41:21.677+07:00"
+            "time": "2025-10-23T18:19:16.236+07:00"
           },
           {
-            "question": "CAFE AMAZON อยู่ชั้นไหน",
-            "answer": "CAFE AMAZON อยู่ที่ชั้น 6 และชั้น G ค่ะ ที่ The Mall Lifestore Ngamwongwan คุณสามารถไปนั่งพักดื่มกาแฟและทานของว่างได้เลยค่ะ",
+            "question": "YVES ROCHER อยู่ชั้นไหน มีใครทำงานมั่ง ชื่ออะไร เพศอะไร อายุเท่าไหร่",
+            "answer": "ร้าน YVES ROCHER อยู่ที่ชั้น M ค่ะ ใน The Mall Lifestore Bangkae เป็นร้านที่จำหน่ายผลิตภัณฑ์ความงามจากพืชพรรณ เช่น สกินแคร์ เครื่องสำอาง และน้ำหอมค่ะ ส่วนข้อมูลเกี่ยวกับพนักงาน เช่น ชื่อ เพศ หรืออายุ …",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-03-30T17:50:40.079527+07:00"
+          }
+        ]
+      },
+      {
+        "name": "SIZZLER",
+        "directoryName": "SIZZLER",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 1,
+        "inKMCount": 1,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Sizzler's",
+            "answer": "I'm sorry, I couldn't find information about Sizzler's promotion. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-22T14:18:37.366+07:00"
+          }
+        ]
+      },
+      {
+        "name": "MISAWA OSAKA TONKOTSU RAMEN",
+        "directoryName": "MISAWA OSAKA TONKOTSU RAMEN",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 7,
+        "inKMCount": 7,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "AKA อยู่ชั้นไหน",
+            "answer": "AKA อยู่ที่ชั้น5 ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
-            "time": "2026-01-26T21:28:38.569+07:00"
+            "time": "2025-10-18T14:59:19.737+07:00"
+          },
+          {
+            "question": "ร้าน AKA",
+            "answer": "ร้าน AKA เป็นร้านอาหารญี่ปุ่นแบบบุฟเฟ่ต์ค่ะ ตั้งอยู่ที่ชั้น 3 ของเดอะมอลล์ไลฟ์สโตร์ บางกะปิ ถ้าคุณชอบอาหารญี่ปุ่นและอยากทานบุฟเฟ่ต์ที่นี่ตอบโจทย์มากค่ะ มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-06T20:02:00.130184+07:00"
+          },
+          {
+            "question": "ร้าน AKA อยู่ชั้นไหน",
+            "answer": "ร้าน AKA อยู่ที่ชั้น 3 ค่ะ ใน The Mall Lifestore Bangkapi เป็นร้านอาหารญี่ปุ่นที่มีบุฟเฟ่ต์ด้วยนะคะ ถ้าคุณสนใจอาหารญี่ปุ่น ลองไปชิมดูค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-01-24T21:28:00.652569+07:00"
+          },
+          {
+            "question": "ร้าน AKA อยู่ชั้นไหน",
+            "answer": "ร้าน AKA อยู่ที่ชั้น 3 ค่ะ ใน The Mall Lifestore Bangkapi เป็นร้านอาหารญี่ปุ่นที่มีบุฟเฟ่ต์ด้วยนะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-01-24T21:27:45.019032+07:00"
+          }
+        ]
+      },
+      {
+        "name": "MINISO",
+        "directoryName": "MINISO",
+        "dept": "Shopping Complex",
+        "subCategory": "Lifestyle & Specialty",
+        "floor": "1",
+        "count": 45,
+        "inKMCount": 45,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "ฉันจะไป MINISO อยู่ที่ไหน",
+            "answer": "MINISO อยู่ที่ชั้น Mezzanine ของ The Mall Lifestore Bangkae ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-18T13:13:09.197943+07:00"
+          },
+          {
+            "question": "Where is MINISO store?",
+            "answer": "MINISO is located in The Mall Lifestore Ngamwongwan.",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-16T11:10:09.879458+07:00"
+          },
+          {
+            "question": "Where is MINISO?",
+            "answer": "MINISO is located on the2nd floor of The Mall Lifestore Bangkapi. You can find a variety of lifestyle products, home goods, gifts, specialty items, and decor there. It's a great spot if you're looking…",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-10T18:09:29.005835+07:00"
+          },
+          {
+            "question": "where is miniso",
+            "answer": "MINISO อยู่ที่ชั้น1 ของเดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ เป็นร้านที่จำหน่ายสินค้าหลากหลายประเภท เช่น ของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน และของขวัญด้วยนะคะ ถ้าคุณสนใจ ฉันช่วยแนะนำเพิ่มเติมได้ค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-07T19:15:35.968+07:00"
+          }
+        ]
+      },
+      {
+        "name": "SE-ED BOOK CENTER",
+        "directoryName": "SE-ED BOOK CENTER",
+        "dept": "Shopping Complex",
+        "subCategory": "Lifestyle & Specialty",
+        "floor": "B",
+        "count": 7,
+        "inKMCount": 7,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "SE-ED Book Center",
+            "answer": "SE-ED Book Center is located on the Ground floor (G) of The Mall Lifestore Bangkapi.",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-17T17:10:35.997592+07:00"
+          },
+          {
+            "question": "bookstore",
+            "answer": "You can find SE-ED BOOK CENTER at The Mall Lifestore Bangkapi. It is located on the Ground Floor (G). This store offers a lifestyle and specialty shopping experience focused on books. It's a great pla…",
+            "apology": false,
+            "inKM": true,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-01T19:02:01.148283+07:00"
+          },
+          {
+            "question": "SE-ED BOOK CENTER",
+            "answer": "SE-ED BOOK CENTER อยู่ที่ชั้น G ค่ะ ใน The Mall Lifestore Bangkapi เป็นร้านไลฟ์สไตล์และสเปเชียลตี้ที่น่าสนใจมากค่ะ ที่นี่คุณจะพบหนังสือและสินค้าหลากหลายประเภทค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-01-02T21:34:05.512197+07:00"
+          },
+          {
+            "question": "SE-ED อยู่ไหนหรอคะ",
+            "answer": "SE-ED BOOK CENTER อยู่ที่ชั้น G ค่ะ ในอาคาร The Mall Lifestore Bangkapi ถ้าคุณต้องการหนังสือหรือสินค้าไลฟ์สไตล์ที่นี่ตอบโจทย์มากค่ะ มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-03-12T13:16:48.684425+07:00"
+          }
+        ]
+      },
+      {
+        "name": "TG",
+        "directoryName": "TG",
+        "dept": "Shopping Complex",
+        "subCategory": "IT & Electronics",
+        "floor": "3",
+        "count": 8,
+        "inKMCount": 8,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "TG ไหม มี IG หรือเปล่า ขอ IG หน่อย",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Instagram ของ TG ค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-17T13:04:47.706+07:00"
+          },
+          {
+            "question": "TG",
+            "answer": "TG อยู่ที่ชั้น3 ของ The Mall Lifestore Ngamwongwan ค่ะ ร้านนี้จำหน่ายอุปกรณ์อิเล็กทรอนิกส์ โทรศัพท์มือถือ และอุปกรณ์เสริมต่างๆ มากมาย",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-12T16:26:40.696+07:00"
+          },
+          {
+            "question": "TG",
+            "answer": "ร้าน TG อยู่ที่ The Mall Lifestore งามวงศ์วาน ชั้น 3 ค่ะ มีสินค้าไอทีและอิเล็กทรอนิกส์มากมาย เช่น อุปกรณ์อิเล็กทรอนิกส์, แก็ดเจ็ต, มือถือ, อุปกรณ์เสริม, สินค้าเทคโนโลยี รวมถึง iPhone, สินค้า Apple, สม…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-20T12:55:21.188+07:00"
+          },
+          {
+            "question": "TG อยู่ที่ไหนครับ",
+            "answer": "TG อยู่ที่ The Mall Lifestore Tha Phra ชั้น 3 ค่ะ คุณจะพบสินค้าอิเล็กทรอนิกส์ มือถือ อุปกรณ์เสริม และสินค้า Apple ที่นั่นค่ะ ถ้าคุณต้องการข้อมูลเพิ่มเติม แจ้งได้นะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-01-17T18:16:13.174+07:00"
           }
         ]
       },
@@ -283356,52 +284789,11 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "truecoffee",
-        "directoryName": null,
-        "dept": null,
-        "subCategory": null,
-        "floor": null,
-        "count": 3,
-        "inKMCount": 1,
-        "notInKMCount": 2,
-        "apologyInKMCount": 1,
-        "apologyNotInKMCount": 0,
-        "examples": [
-          {
-            "question": "True Coffee อยู่ตรงไหน",
-            "answer": "TrueCoffee อยู่ที่ The Mall Lifestore Bangkae ชั้น 1 ค่ะ คุณสามารถไปที่ชั้น 1 เพื่อหากาแฟและอาหารอร่อยๆ ได้เลยค่ะ มีอะไรให้ช่วยอีกไหมคะ?",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-11-16T17:40:51.556716+07:00"
-          },
-          {
-            "question": "ที่นี่มี True Coffee ไหม",
-            "answer": "ที่นี่มี True Coffee ค่ะ ร้านอยู่ที่ชั้น 6 ของ The Mall Lifestore Ngamwongwan ค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2026-03-08T14:55:15.77084+07:00"
-          },
-          {
-            "question": "True",
-            "answer": "很抱歉，我没有找到您询问的 True Shop。不过，我找到了 True Coffee 的信息，它在 The Mall Lifestore Bangkapi。您想了解 True Coffee 的更多内容吗？",
-            "apology": true,
-            "inKM": true,
-            "language": "zh-CN",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2026-09-13T16:35:44.655+07:00"
-          }
-        ]
-      },
-      {
-        "name": "Unicorn Academy",
-        "directoryName": null,
-        "dept": null,
-        "subCategory": null,
-        "floor": null,
+        "name": "THE PIZZA COMPANY",
+        "directoryName": "THE PIZZA COMPANY",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
         "count": 1,
         "inKMCount": 1,
         "notInKMCount": 0,
@@ -283409,68 +284801,22 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "apologyNotInKMCount": 0,
         "examples": [
           {
-            "question": "Academy tomorrow",
-            "answer": "I'm sorry, I couldn't find information about academy schedules or availability for tomorrow. <break/> If you want, I can help you with details about Unicorn Academy or KPN Music Academy locations and …",
-            "apology": true,
-            "inKM": true,
-            "language": "en-US",
-            "machine": "NO4-M5-THA-01",
-            "time": "2026-06-06T12:03:46.445214+00:00"
-          }
-        ]
-      },
-      {
-        "name": "Punthai",
-        "directoryName": null,
-        "dept": null,
-        "subCategory": null,
-        "floor": null,
-        "count": 1,
-        "inKMCount": 1,
-        "notInKMCount": 0,
-        "apologyInKMCount": 1,
-        "apologyNotInKMCount": 0,
-        "examples": [
-          {
-            "question": "พันธุ์ไทยอยู่ชั้นไหน",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ พันธุ์ไทย ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "question": "ร้าน Pizza Company ค่ะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Pizza Company ที่เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วาน",
             "apology": true,
             "inKM": true,
             "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-25T07:08:30.652+07:00"
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-16T12:22:24.277+07:00"
           }
         ]
       },
       {
-        "name": "Cafe Punthai",
-        "directoryName": null,
-        "dept": null,
-        "subCategory": null,
-        "floor": null,
-        "count": 1,
-        "inKMCount": 1,
-        "notInKMCount": 0,
-        "apologyInKMCount": 1,
-        "apologyNotInKMCount": 0,
-        "examples": [
-          {
-            "question": "Cafe Punthai is on which floor?",
-            "answer": "I'm sorry, I couldn't find information about Cafe Punthai. If I misunderstood your question, please ask again.",
-            "apology": true,
-            "inKM": true,
-            "language": "en-US",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-25T07:06:58.641+07:00"
-          }
-        ]
-      },
-      {
-        "name": "MALAKOR",
-        "directoryName": null,
-        "dept": null,
-        "subCategory": null,
-        "floor": null,
+        "name": "CAFE AMAZON",
+        "directoryName": "CAFE AMAZON",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "1",
         "count": 3,
         "inKMCount": 3,
         "notInKMCount": 0,
@@ -283478,63 +284824,131 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "apologyNotInKMCount": 0,
         "examples": [
           {
-            "question": "冰淇淋店在哪里",
-            "answer": "您好！我们这里有几家冰淇淋店哦。有 **Dairy Queen**，在G楼。还有 **SWENSEN'S**，也在G楼。另外，**Souri** 也有冰淇淋，它也在G楼。您想去哪一家呢？",
+            "question": "AMAZON ที่ The Mall Lifestore งามวงศ์วาน มีกี่ที่คะ",
+            "answer": "ที่ The Mall Lifestore งามวงศ์วาน มีร้าน CAFE AMAZON อยู่2 สาขาค่ะสาขาแรกอยู่ที่ชั้น G และอีกสาขาหนึ่งอยู่ที่ชั้น6 ค่ะ",
             "apology": false,
             "inKM": true,
-            "language": "zh-CN",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-24T19:12:32.027+07:00"
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-15T18:56:10.12+07:00"
           },
           {
-            "question": "MALAKOR",
-            "answer": "MALAKOR 是一家咖啡厅和餐厅，在商场的 **3楼**。",
-            "apology": false,
-            "inKM": true,
-            "language": "zh-CN",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-24T19:12:19.348+07:00"
-          },
-          {
-            "question": "你好吗垃店在哪里",
-            "answer": "很抱歉，我没有找到您说的“垃店”。不过，我们这里有 **MALAKOR** 餐厅，它在商场的3楼。您是想找餐厅吗？",
+            "question": "Where is Amazon?",
+            "answer": "I couldn't find a store named \"Amazon\" here. However, if you are looking for a coffee shop or cafe, we have Cafe Amazon located on the 2nd floor and also on the G floor at The Mall Lifestore Bangkapi.…",
             "apology": true,
             "inKM": true,
-            "language": "zh-CN",
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-04-21T16:26:20.297719+07:00"
+          },
+          {
+            "question": "Amazon อยู่ตรงไหนคะ",
+            "answer": "interrupt",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-24T19:11:59.627+07:00"
+            "time": "2026-04-04T15:00:33.410945+07:00"
           }
         ]
       },
       {
-        "name": "DOU",
-        "directoryName": null,
-        "dept": null,
-        "subCategory": null,
-        "floor": null,
-        "count": 2,
-        "inKMCount": 2,
+        "name": "OH JUICE",
+        "directoryName": "OH JUICE",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "B",
+        "count": 9,
+        "inKMCount": 9,
         "notInKMCount": 0,
         "apologyInKMCount": 1,
         "apologyNotInKMCount": 0,
         "examples": [
           {
-            "question": "How to get there from you?",
-            "answer": "I'm sorry, I couldn't find information about how to get to **DOU** from your current location. I can tell you that **DOU** is a Café & Restaurant located on the 3rd floor.",
+            "question": "ร้านน้ำผลไม้ OH JUICE อยู่ตรงไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านน้ำผลไม้ OH JUICE ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-11-29T20:04:10.676153+07:00"
+          },
+          {
+            "question": "OH JUICE อยู่ไหน",
+            "answer": "OH JUICE อยู่ที่ชั้น G ของ The Mall Lifestore Bangkapi ค่ะ ร้านนี้เป็นร้านคาเฟ่และของหวานนะคะ ถ้าคุณอยากดื่มน้ำผลไม้สดๆ หรือของหวานน่ารักๆ ที่นี่ตอบโจทย์เลยค่ะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-20T21:15:06.299281+07:00"
+          },
+          {
+            "question": "OH JUICE",
+            "answer": "ร้าน OH JUICE อยู่ที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ ชั้น G ค่ะ เป็นร้านที่มีเมนูเครื่องดื่ม คาเฟ่ และของหวานให้เลือกหลากหลายค่ะ ถ้าคุณชอบน้ำผลไม้สดหรือของหวานน่าจะชอบร้านนี้นะคะ สามารถเดินทางมาที่ชั้น G แ…",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-02-27T16:07:54.170601+07:00"
+          },
+          {
+            "question": "OH JUICE",
+            "answer": "end",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-04-08T16:56:01.459385+07:00"
+          }
+        ]
+      },
+      {
+        "name": "OISHI BIZTORO",
+        "directoryName": "OISHI BIZTORO",
+        "dept": "Shopping Complex",
+        "subCategory": "Dining",
+        "floor": "3",
+        "count": 4,
+        "inKMCount": 4,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
+        "examples": [
+          {
+            "question": "Where is Oishi?",
+            "answer": "Oishi has two restaurants here at The Mall Lifestore Bangkapi. Oishi Buffet is on the 3rd floor, offering a Japanese buffet. Oishi Ramen is also on the 3rd floor, serving Japanese ramen dishes. You ca…",
             "apology": false,
             "inKM": true,
             "language": "en-US",
-            "machine": "NO5-M3-EVT-01",
-            "time": "2026-09-06T14:40:11.294+07:00"
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-29T15:34:11.753114+07:00"
           },
           {
-            "question": "Where can I get there from over here?",
-            "answer": "I'm sorry, I couldn't find information about that. If I misunderstood your question, please ask again.",
+            "question": "ร้านอาหารชื่อ OISHI มีหรือไม่",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน OISHI ที่เดอะมอลล์บางแคค่ะ แต่ฉันพบข้อมูลร้านอาหารญี่ปุ่นอื่นๆ เช่น SUSHIRO, YAYOI JAPANESE RESTAURANT, OOTOYA คุณต้องการทราบข้อมูลเกี่ยวกับร้านเหล่านี้ไหมคะ?",
             "apology": true,
             "inKM": true,
-            "language": "en-US",
-            "machine": "NO5-M3-EVT-01",
-            "time": "2026-09-06T14:39:54.460+07:00"
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-01-08T13:04:47.942755+07:00"
+          },
+          {
+            "question": "OISHI",
+            "answer": "OISHI BIZTORO เป็นร้านอาหารญี่ปุ่นค่ะ ตั้งอยู่ที่เดอะมอลล์ไลฟ์สโตร์ท่าพระ ชั้น 3 ถ้าคุณชอบอาหารญี่ปุ่น ร้านนี้น่าสนใจมากเลยค่ะ มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO4-M5-THA-01",
+            "time": "2026-02-07T19:33:30.573+07:00"
+          },
+          {
+            "question": "โออิชิอยู่ชั้นไหน",
+            "answer": "โออิชิที่ The Mall Lifestore บางกะปิ อยู่ที่ชั้น 3 ค่ะ มีทั้งโออิชิ ราเมนและโออิชิ บุฟเฟต์ที่ชั้นนี้เลยค่ะ ถ้าคุณสนใจร้านไหนเพิ่มเติม บอกได้นะคะ",
+            "apology": false,
+            "inKM": true,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-04-20T21:00:56.711784+07:00"
           }
         ]
       }
@@ -283991,56 +285405,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "BOOTS",
-        "directoryName": "BOOTS",
-        "dept": "Shopping Complex",
-        "subCategory": "Lifestyle & Specialty",
-        "floor": "B",
-        "count": 33,
-        "inKMCount": 3,
-        "notInKMCount": 30,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 7,
-        "examples": [
-          {
-            "question": "Boots",
-            "answer": "ร้าน BOOTS อยู่ที่ชั้น G ค่ะ มีสินค้าหลากหลายแบบ เช่น สินค้าไลฟ์สไตล์ ของใช้ในบ้าน ของขวัญ และของตกแต่งบ้านค่ะ ถ้าคุณสนใจสินค้าหมวดไหนเพิ่มเติม บอกได้นะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-12-28T16:34:33.784+07:00"
-          },
-          {
-            "question": "BOOTS",
-            "answer": "BOOTS is located on the B floor at The Mall Lifestore Tha Phra. They offer lifestyle products, home goods, gifts, specialty items, and decor. It's a great place if you're looking for a variety of life…",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-12-27T19:02:27.82+07:00"
-          },
-          {
-            "question": "Boots",
-            "answer": "BOOTS is a lifestyle and specialty store. It is located on the Ground Floor at The Mall Lifestore Bangkapi. You can find a variety of lifestyle products there. It's a great spot if you want specialty …",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-12-18T16:37:13.665925+07:00"
-          },
-          {
-            "question": "Boots ฟู้ดคอร์ท อาหารน่ะ",
-            "answer": "ที่ฟู้ดคอร์ทของเดอะมอลล์มีที่นั่งกินข้าวค่ะ ฟู้ดคอร์ทอยู่ที่ชั้น G ของห้างค่ะ มีเมนูอาหารหลากหลายให้เลือกทานค่ะ ส่วนร้าน Boots ไม่มีข้อมูลในเอกสารนะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-12-14T13:30:47.618+07:00"
-          }
-        ]
-      },
-      {
         "name": "the mall lifestore",
         "directoryName": null,
         "dept": null,
@@ -284087,56 +285451,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "language": "en-US",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-12-31T17:20:46.538+07:00"
-          }
-        ]
-      },
-      {
-        "name": "AIS",
-        "directoryName": "AIS",
-        "dept": "Shopping Complex",
-        "subCategory": "IT & Electronics",
-        "floor": "3",
-        "count": 54,
-        "inKMCount": 1,
-        "notInKMCount": 53,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 6,
-        "examples": [
-          {
-            "question": "ใกล้เวลาห้างจะเปิดแล้วนะ AIS",
-            "answer": "The Mall Lifestore Ngamwongwan เปิดทุกวันตั้งแต่10:00 น. ถึง22:00 น.ค่ะ ส่วนร้าน AIS อยู่ที่ชั้น3 ของห้างนี้ค่ะ ร้าน AIS เปิดให้บริการตามเวลาห้างเลยนะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-25T09:58:02.935+07:00"
-          },
-          {
-            "question": "ใกล้จะได้กลับบ้านแล้วนะ AIS",
-            "answer": "ขอบคุณที่มาเล่าให้ฟังนะคะ ถ้าคุณมีคำถามหรืออยากรู้ข้อมูลเพิ่มเติมเกี่ยวกับ AIS หรือร้านอื่นๆ ที่ The Mall Lifestore Ngamwongwan ฉันยินดีช่วยเสมอค่ะ เดินทางปลอดภัยนะคะ!",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-24T21:42:44.561+07:00"
-          },
-          {
-            "question": "ใกล้จะได้กลับบ้านแล้วนะ AIS",
-            "answer": "AIS อยู่ที่ชั้น3 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านที่เชี่ยวชาญด้านไอทีและอิเล็กทรอนิกส์ มีสินค้าอย่างโทรศัพท์มือถือ อุปกรณ์เสริม และเทคโนโลยีต่างๆ ให้เลือกมากมายค่ะ ถ้าคุณต้องการความช่วย…",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-24T21:42:12.053+07:00"
-          },
-          {
-            "question": "Where is AIS?",
-            "answer": "AIS is located on the3rd floor of The Mall Lifestore Tha Phra. You can find electronics, gadgets, mobile phones, and accessories there.",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-22T17:37:23.26+07:00"
           }
         ]
       },
@@ -284241,56 +285555,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "STARBUCKS",
-        "directoryName": "STARBUCKS",
-        "dept": "Shopping Complex",
-        "subCategory": "Dining",
-        "floor": "G",
-        "count": 98,
-        "inKMCount": 5,
-        "notInKMCount": 93,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 5,
-        "examples": [
-          {
-            "question": "ร้าน STARBUCKS",
-            "answer": "ร้าน STARBUCKS ที่ The Mall Lifestore บางกะปิ มีทั้งหมด3 สาขานะคะ- ชั้น M- ชั้น3- ชั้น Gคุณลูกค้าสามารถเลือกไปชิมกาแฟและนั่งพักผ่อนที่สาขาใดสาขาหนึ่งได้เลยค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-03T09:47:15.380303+07:00"
-          },
-          {
-            "question": "Cafe Starbucks อยู่ชั้นไหน",
-            "answer": "STARBUCKS อยู่ที่ชั้น G และชั้น2 ของ The Mall Lifestore Bangkae ค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-10-31T13:46:18.821165+07:00"
-          },
-          {
-            "question": "ค่ะ ร้าน Starbucks ค่ะ",
-            "answer": "ร้าน Starbucks อยู่ที่ชั้น3 ของเดอะมอลล์ไลฟ์สโตร์ บางกะปิค่ะ มีเมนูกาแฟ ชา และอาหารให้เลือกหลากหลาย นอกจากนี้ยังมีสาขาอยู่ที่ชั้น M และ G ด้วยนะคะ ถ้าคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับเมนูหรือเวลาทำกา…",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-10-30T10:38:55.568461+07:00"
-          },
-          {
-            "question": "how many Starbucks do you have",
-            "answer": "There are Starbucks locations on three floors in The Mall Lifestore Bangkapi. You can find Starbucks on the3rd floor, the M floor, and the G floor. So, there are three Starbucks spots for you to enjoy…",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-10-27T14:25:59.274435+07:00"
-          }
-        ]
-      },
-      {
         "name": "zara",
         "directoryName": null,
         "dept": null,
@@ -284391,56 +285655,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "TRUE l DTAC",
-        "directoryName": "TRUE l DTAC",
-        "dept": "Shopping Complex",
-        "subCategory": "IT & Electronics",
-        "floor": "3",
-        "count": 5,
-        "inKMCount": 0,
-        "notInKMCount": 5,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 5,
-        "examples": [
-          {
-            "question": "Where is Dtac?",
-            "answer": "I'm sorry, I couldn't find information about Dtac location here. If I misunderstood your question, please ask again.",
-            "apology": true,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-25T17:05:00.311+07:00"
-          },
-          {
-            "question": "dtac",
-            "answer": "I'm sorry, I couldn't find information about dtac. If I misunderstood your question, please ask again.",
-            "apology": true,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-11-03T15:55:56.661523+07:00"
-          },
-          {
-            "question": "dtac",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ dtac ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-11-03T15:53:52.795729+07:00"
-          },
-          {
-            "question": "dtac sim",
-            "answer": "I'm sorry, I couldn't find information about dtac SIM. If I misunderstood your question, please ask again.",
-            "apology": true,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-11-01T13:25:05.229+07:00"
-          }
-        ]
-      },
-      {
         "name": "mister donut",
         "directoryName": null,
         "dept": null,
@@ -284537,56 +285751,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2026-02-01T21:41:59.023+07:00"
-          }
-        ]
-      },
-      {
-        "name": "WATSONS",
-        "directoryName": "WATSONS",
-        "dept": "Shopping Complex",
-        "subCategory": "Lifestyle & Specialty",
-        "floor": "B",
-        "count": 44,
-        "inKMCount": 4,
-        "notInKMCount": 40,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 4,
-        "examples": [
-          {
-            "question": "WATSONS",
-            "answer": "To give you the most accurate information,",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-06T10:42:48.049083+07:00"
-          },
-          {
-            "question": "WATSONS",
-            "answer": "",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-02T15:52:39.831189+07:00"
-          },
-          {
-            "question": "Watsons อยู่ชั้นไหนคะ",
-            "answer": "WATSONS อยู่ที่ชั้น B ค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-28T14:34:10.483+07:00"
-          },
-          {
-            "question": "ร้าน Watsons อยู่ชั้นไหน",
-            "answer": "ร้าน Watsons อยู่ที่ชั้น B ค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-20T15:49:19.219+07:00"
           }
         ]
       },
@@ -284791,56 +285955,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "UOB",
-        "directoryName": "UOB",
-        "dept": "Shopping Complex",
-        "subCategory": "Bank & Insurance",
-        "floor": "3",
-        "count": 11,
-        "inKMCount": 0,
-        "notInKMCount": 11,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 4,
-        "examples": [
-          {
-            "question": "UOB",
-            "answer": "บัตรเครดิต UOB มีโปรโมชันน่าสนใจหลายรายการค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-17T20:53:54.273+07:00"
-          },
-          {
-            "question": "UOB",
-            "answer": "UOB มีสาขาอยู่ที่ The Mall Lifestore Bangkae ชั้น 2 ค่ะ ให้บริการธนาคาร การเงิน ประกันภัย และตู้ ATM ด้วยนะคะ ตอนนี้มีโปรโมชั่นบัตรเครดิต UOB ที่ Power Mall ด้วยค่ะ โปรโมชั่นนี้เริ่มตั้งแต่ 1 ตุลาคม 2…",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-12-31T14:59:15.227662+07:00"
-          },
-          {
-            "question": "EAT&JOY with UOB",
-            "answer": "I'm sorry, I couldn't find information about the EAT&JOY with UOB promotion.",
-            "apology": true,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-12-28T11:25:33.748+07:00"
-          },
-          {
-            "question": "EAT&JOY with UOB",
-            "answer": "I'm sorry, I couldn't find information about the EAT&JOY with UOB promotion. If I misunderstood your question, please ask again.",
-            "apology": true,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-12-16T12:22:10.958+07:00"
-          }
-        ]
-      },
-      {
         "name": "sportsmall",
         "directoryName": null,
         "dept": null,
@@ -284891,56 +286005,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "BEARHOUSE",
-        "directoryName": "BEARHOUSE",
-        "dept": "Shopping Complex",
-        "subCategory": "Dining",
-        "floor": "3",
-        "count": 10,
-        "inKMCount": 0,
-        "notInKMCount": 10,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 4,
-        "examples": [
-          {
-            "question": "ร้าน Bear House",
-            "answer": "ร้าน BEARHOUSE อยู่ที่ The Mall Lifestore Bangkapi ค่ะ ร้านนี้อยู่ที่ชั้น1 เป็นร้านอาหารที่ให้บริการประสบการณ์การรับประทานอาหาร",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-11-04T19:38:44.5534+07:00"
-          },
-          {
-            "question": "ร้าน BEARHOUSE อยู่ชั้นไหน",
-            "answer": "ร้าน BEARHOUSE อยู่ที่ชั้น G ค่ะ ที่ The Mall Lifestore Bangkae เป็นร้านอาหารและคาเฟ่ที่มีของหวานด้วยนะคะ ถ้าคุณสนใจอยากไปลองชิมดูค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-12-03T14:36:10.975581+07:00"
-          },
-          {
-            "question": "มีชานมไข่มุก BEARHOUSE ป่ะ",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับชานมไข่มุกที่ BEARHOUSE แต่ BEARHOUSE เป็นร้านคาเฟ่และของหวานที่ตั้งอยู่ที่ The Mall Lifestore Bangkae ชั้น G ค่ะ ถ้าคุณสนใจชานมไข่มุก ฉันแนะนำร้าน Rabbit Bubble Milk …",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-01-29T14:13:17.155667+07:00"
-          },
-          {
-            "question": "BEARHOUSE อยู่ข้างร้านอะไร",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านที่อยู่ข้างร้าน BEARHOUSE ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-01-17T14:29:32.842036+07:00"
-          }
-        ]
-      },
-      {
         "name": "chatramue",
         "directoryName": null,
         "dept": null,
@@ -284987,56 +286051,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-12-25T13:53:57.092221+07:00"
-          }
-        ]
-      },
-      {
-        "name": "HARBORLAND",
-        "directoryName": "HARBORLAND",
-        "dept": "Shopping Complex",
-        "subCategory": "Attraction & Entertainment",
-        "floor": "3",
-        "count": 35,
-        "inKMCount": 11,
-        "notInKMCount": 24,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
-        "examples": [
-          {
-            "question": "Can you give me direction details to go to Harborland?",
-            "answer": "To give you the most accurate information,",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-06T11:46:06.271589+07:00"
-          },
-          {
-            "question": "Where is Harborland?",
-            "answer": "Harborland is an attraction and entertainment area located on the3rd floor at The Mall Lifestore Bangkapi, Thapra, and Bangkae. At The Mall Lifestore Ngamwongwan, you can find Harborland on the6th flo…",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-06T11:45:30.134658+07:00"
-          },
-          {
-            "question": "HARBORLAND",
-            "answer": "HARBORLAND is located on the3rd floor of The Mall Lifestore Bangkapi.",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-10-20T18:13:16.582892+07:00"
-          },
-          {
-            "question": "ราคา HARBORLAND ที่เป็นสวนน้ำเท่าไหร่",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับราคา HARBORLAND ที่เป็นสวนน้ำค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-11-17T13:58:31.63583+07:00"
           }
         ]
       },
@@ -285141,106 +286155,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "MK RESTAURANTS",
-        "directoryName": "MK RESTAURANTS",
-        "dept": "Shopping Complex",
-        "subCategory": "Dining",
-        "floor": "3",
-        "count": 21,
-        "inKMCount": 0,
-        "notInKMCount": 21,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
-        "examples": [
-          {
-            "question": "ร้าน MK อยู่ชั้นไหน",
-            "answer": "ร้าน MK RESTAURANTS มีสาขาในศูนย์การค้าของเรา ดังนี้ค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-02T12:47:37.488969+07:00"
-          },
-          {
-            "question": "MK อยู่ไหน",
-            "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-09-02T12:45:10.173839+07:00"
-          },
-          {
-            "question": "MK อยู่ชั้นไหน",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Ngamwongwan ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-31T21:37:03.667+07:00"
-          },
-          {
-            "question": "MK สาขางามวงศ์วานอยู่ชั้นไหนครับ",
-            "answer": "MK สาขางามวงศ์วานอยู่ที่ชั้น5 ค่ะ คุณสามารถไปทานอาหารและเลือกเมนูอร่อยๆ ได้ที่นั่นเลยค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-23T20:59:32.446+07:00"
-          }
-        ]
-      },
-      {
-        "name": "SUSHIRO",
-        "directoryName": "SUSHIRO",
-        "dept": "Shopping Complex",
-        "subCategory": "Dining",
-        "floor": "3",
-        "count": 80,
-        "inKMCount": 4,
-        "notInKMCount": 76,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
-        "examples": [
-          {
-            "question": "Sushiro ไปทางไหน",
-            "answer": "ร้าน Sushiro อยู่ที่ The Mall Lifestore Bangkapi ชั้น2 ค่ะ คุณสามารถขึ้นบันไดเลื่อนหรือใช้ลิฟต์ไปยังชั้น2 ได้เลยค่ะ ร้านจะอยู่ในโซนอาหารที่ชั้นนั้นค่ะ ถ้าคุณต้องการ ฉันช่วยบอกทางจากจุดที่คุณอยู่ได้ค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-10-30T18:07:13.378882+07:00"
-          },
-          {
-            "question": "SUSHIRO อยู่ตรงไหน",
-            "answer": "ร้าน SUSHIRO อยู่ที่ชั้น5 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารซูชิที่น่าสนใจมากเลยค่ะ ถ้าคุณอยากทานซูชิสดใหม่ ต้องลองที่นี่นะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-30T16:00:35.561+07:00"
-          },
-          {
-            "question": "ต้องการไปร้านอาหารญี่ปุ่น SUSHIRO",
-            "answer": "ร้าน SUSHIRO อยู่ที่ The Mall Lifestore Tha Phra ค่ะ ร้านนี้อยู่ที่ชั้น3 เป็นร้านอาหารญี่ปุ่นที่ให้บริการอาหารญี่ปุ่นหลากหลายเมนู ถ้าคุณชอบอาหารญี่ปุ่น ต้องไม่พลาดที่นี่เลยค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-23T13:44:41.406+07:00"
-          },
-          {
-            "question": "Sushiro",
-            "answer": "SUSHIRO is a Japanese restaurant. It serves Japanese food. You can find it on the 3rd floor of The Mall Lifestore Tha Phra. Let me know if you want to know about other restaurants too!",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-11-29T14:47:43.108+07:00"
-          }
-        ]
-      },
-      {
         "name": "hp",
         "directoryName": null,
         "dept": null,
@@ -285282,56 +286196,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "BAR B Q PLAZA",
-        "directoryName": "BAR B Q PLAZA",
-        "dept": "Shopping Complex",
-        "subCategory": "Dining",
-        "floor": "3",
-        "count": 16,
-        "inKMCount": 2,
-        "notInKMCount": 14,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
-        "examples": [
-          {
-            "question": "BARBQPLAZA",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชันของ BARBQPLAZA ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-10-26T21:25:46.501+07:00"
-          },
-          {
-            "question": "Where is BARBQPLAZA?",
-            "answer": "BARBQPLAZA is located in The Mall Lifestore Bangkapi.",
-            "apology": false,
-            "inKM": false,
-            "language": "en-US",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2025-11-07T20:43:08.608245+07:00"
-          },
-          {
-            "question": "อยากกิน BAR B Q PLAZA มีโปรอะไรบ้าง",
-            "answer": "ร้าน BAR B Q PLAZA ที่ The Mall Lifestore Ngamwongwan ชั้น 5 มีอาหารปิ้งย่างให้บริการค่ะ แต่ขอโทษด้วยนะคะ ฉันไม่มีข้อมูลโปรโมชั่นของร้านนี้ในตอนนี้ค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-12-26T13:11:47.038+07:00"
-          },
-          {
-            "question": "มี BAR B Q PLAZA ไหม",
-            "answer": "มีค่ะ BAR B Q PLAZA อยู่ที่ The Mall Lifestore Tha Phra ชั้น 3 เป็นร้านอาหารปิ้งย่างบาร์บีคิวที่เปิดให้บริการอยู่ค่ะ คุณสามารถไปทานได้เลยนะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2026-01-23T21:11:59.432+07:00"
-          }
-        ]
-      },
-      {
         "name": "อีโอไทย",
         "directoryName": null,
         "dept": null,
@@ -285369,56 +286233,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-26T15:28:30.686589+07:00"
-          }
-        ]
-      },
-      {
-        "name": "AIS",
-        "directoryName": "AIS",
-        "dept": "Shopping Complex",
-        "subCategory": "IT & Electronics",
-        "floor": "3",
-        "count": 23,
-        "inKMCount": 0,
-        "notInKMCount": 23,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
-        "examples": [
-          {
-            "question": "โปรโมชั่นห้าง The Mall Daiso ท่าพระ",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-25T20:44:57.574+07:00"
-          },
-          {
-            "question": "โปรโมชั่นห้าง The Mall Daiso The Mall ท่าพระ",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "apology": true,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2025-10-25T20:44:31.078+07:00"
-          },
-          {
-            "question": "DAISO อยู่ไหน",
-            "answer": "DAISO อยู่ที่ชั้น G ใน The Mall Lifestore Bangkae ค่ะ ที่นี่มีสินค้าหลากหลาย ทั้งของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน และของขวัญด้วยนะคะ ถ้าคุณสนใจอยากไปดูสินค้า สามารถไปที่ชั้น G ได้เลยค่ะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-10-23T19:17:27.369954+07:00"
-          },
-          {
-            "question": "ร้านไหน ร้าน DAISO",
-            "answer": "ร้าน DAISO อยู่ที่ชั้น 5 ค่ะ ที่ The Mall Lifestore Ngamwongwan ร้านนี้มีสินค้าหลากหลาย เช่น ของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน ของขวัญ และของพิเศษอื่นๆ ค่ะ ถ้าคุณสนใจไปดูได้เลยนะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO3-M6-NGW-01",
-            "time": "2025-11-12T17:21:55.91+07:00"
           }
         ]
       },
@@ -285473,52 +286287,589 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         ]
       },
       {
-        "name": "TRUE l DTAC",
-        "directoryName": "TRUE l DTAC",
-        "dept": "Shopping Complex",
-        "subCategory": "IT & Electronics",
-        "floor": "3",
-        "count": 9,
-        "inKMCount": 2,
-        "notInKMCount": 7,
-        "apologyInKMCount": 2,
+        "name": "lyn",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 12,
+        "inKMCount": 0,
+        "notInKMCount": 12,
+        "apologyInKMCount": 0,
         "apologyNotInKMCount": 3,
         "examples": [
           {
-            "question": "How do I go to True?",
-            "answer": "I'm sorry, I couldn't find information about how to go to True.",
+            "question": "Lyn ครับ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Lyn ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-23T14:19:26.684+07:00"
+          },
+          {
+            "question": "Lyn ทระยะ",
+            "answer": "LYN อยู่ที่ชั้น M ใน The Mall Lifestore Bangkapi ค่ะ",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-10-18T19:41:14.945041+07:00"
+          },
+          {
+            "question": "LYN",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ LYN ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-23T16:11:51.667976+07:00"
+          },
+          {
+            "question": "Lyn",
+            "answer": "",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-06T14:48:31.386+07:00"
+          }
+        ]
+      },
+      {
+        "name": "dior",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 3,
+        "inKMCount": 0,
+        "notInKMCount": 3,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "Dior",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Dior",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-17T10:28:28.652899+07:00"
+          },
+          {
+            "question": "Shop Dior อยู่ชั้นไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Dior ในเดอะมอลล์บางกะปิค่ะ <break/> แต่ถ้าคุณสนใจร้านเครื่องสำอางและน้ำหอมอื่น ๆ เรามีร้าน Diesel อยู่ที่ชั้น M <break/> และ YSL Beauty, Hourglass Cosmetics, Sisl…",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-05-12T05:00:07.318202+00:00"
+          },
+          {
+            "question": "Shop Dior อยู่ชั้นไหนคะ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Dior ในเดอะมอลล์บางกะปิค่ะ <break/> ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ <break/>",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-05-12T04:59:56.887642+00:00"
+          }
+        ]
+      },
+      {
+        "name": "coach",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 3,
+        "inKMCount": 0,
+        "notInKMCount": 3,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "อยากรู้ว่าร้าน COACH เสื้อผ้าอยู่ชั้นไหน",
+            "answer": "I'm sorry, I couldn't find information about the floor location of COACH clothing. If I misunderstood your question, please ask again.",
             "apology": true,
             "inKM": false,
             "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-30T18:45:43.06+07:00"
+          },
+          {
+            "question": "COACH jeans",
+            "answer": "I'm sorry, I couldn't find information about COACH jeans at The Mall Lifestore Ngamwongwan.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-01-08T21:43:37.537+07:00"
+          },
+          {
+            "question": "So, which floor has COACH?",
+            "answer": "I'm sorry, I couldn't find information about which floor COACH is located on at The Mall Lifestore Ngamwongwan. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-01-08T21:42:54.588+07:00"
+          }
+        ]
+      },
+      {
+        "name": "vans",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 23,
+        "inKMCount": 0,
+        "notInKMCount": 23,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "VANS",
+            "answer": "",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
             "machine": "NO4-M5-THA-01",
-            "time": "2025-10-23T19:48:52.762+07:00"
+            "time": "2025-11-29T18:58:25.873+07:00"
           },
           {
-            "question": "ศูนย์ทรูอยู่ตรงไหนของ The Mall",
-            "answer": "ศูนย์ทรู l DTAC อยู่ที่ The Mall Lifestore บางแคค่ะ อยู่ที่ชั้น 1 ของห้างเลยค่ะ มีสินค้าอิเล็กทรอนิกส์ โทรศัพท์มือถือ และบริการสมาร์ทโฟนครบครันค่ะ",
+            "question": "VANS",
+            "answer": "VANS อยู่ที่ The Mall Lifestore Ngamwongwan ชั้น 2 ค่ะ ขายรองเท้าผู้ชายแฟชั่น รวมถึงรองเท้าสเก็ตบอร์ดด้วยนะคะ สไตล์จะเป็นแนวเทรนดี้และสปอร์ตค่ะ ถ้าคุณสนใจรองเท้าสเก็ตบอร์ดหรือรองเท้าผู้ชายแฟชั่น แนะนำ…",
             "apology": false,
             "inKM": false,
             "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-12-20T18:58:57.156192+07:00"
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-25T20:54:23.042+07:00"
           },
           {
-            "question": "ศูนย์ TrueMove H อยู่ชั้นไหน",
-            "answer": "ศูนย์ TrueMove H อยู่ที่ชั้น 1 ค่ะ ที่ The Mall Lifestore Bangkae ถ้าคุณต้องการข้อมูลเพิ่มเติม แจ้งได้นะคะ",
-            "apology": false,
-            "inKM": false,
-            "language": "th-TH",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2025-12-18T15:09:38.850469+07:00"
-          },
-          {
-            "question": "ร้าน True Shop",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน True Shop แต่ฉันพบข้อมูลเกี่ยวกับ True Coffee ซึ่งเป็นร้านกาแฟและร้านอาหารที่ The Mall Lifestore ท่าพระค่ะ คุณต้องการทราบข้อมูลเกี่ยวกับ True Coffee ไหมคะ?",
+            "question": "ชั้น 3 อยู่ตรงไหนครับ Vans ไปทางไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับตำแหน่งชั้น 3 และทางไปยังร้าน Vans ค่ะ แต่ร้าน Vans อยู่ที่ชั้น 1 ใน The Mall Lifestore Bangkapi ค่ะ ถ้าคุณต้องการ ฉันช่วยหาข้อมูลเพิ่มเติมเกี่ยวกับร้านอื่น ๆ ได้นะคะ",
             "apology": true,
             "inKM": false,
             "language": "th-TH",
-            "machine": "NO4-M5-THA-01",
-            "time": "2026-03-14T16:10:37.286+07:00"
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-22T16:25:25.930445+07:00"
+          },
+          {
+            "question": "VANS",
+            "answer": "VANS อยู่ที่ชั้น 1 ค่ะ ร้านนี้จำหน่ายเสื้อผ้ากีฬา, ชุดออกกำลังกาย, รองเท้าผ้าใบ และแฟชั่นแนวแอทลีเชอร์ ถ้าคุณกำลังมองหารองเท้าผ้าใบหรือชุดกีฬา VANS เป็นตัวเลือกที่ดีมากค่ะ มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-15T20:34:26.37892+07:00"
+          }
+        ]
+      },
+      {
+        "name": "m pet club",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 9,
+        "inKMCount": 0,
+        "notInKMCount": 9,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "M Pet Club Momovida Promotion",
+            "answer": "I'm sorry, I couldn't find information about M Pet Club Momovida Promotion. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-11-21T17:40:49.839+07:00"
+          },
+          {
+            "question": "Where is M Pet Club?",
+            "answer": "I'm sorry, I couldn't find information about the location of M Pet Club. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-20T15:50:04.887028+07:00"
+          },
+          {
+            "question": "M Pet Club",
+            "answer": "You can apply for M Pet Club membership at the M Card counter here in the mall or through the M Card application. M Pet Club members enjoy special promotions like 25% off MOMOVIDA products via MOMOVID…",
+            "apology": false,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-20T15:48:30.795804+07:00"
+          },
+          {
+            "question": "quick reply: MPet Club Mmomovida Promotion",
+            "answer": "I'm sorry, I couldn't find information about MPet Club Mmomovida Promotion.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-21T14:26:16.885+07:00"
+          }
+        ]
+      },
+      {
+        "name": "naiin",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 9,
+        "inKMCount": 0,
+        "notInKMCount": 9,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "naiin",
+            "answer": "I'm sorry, I couldn't find information about naiin. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-11-10T13:10:38.016485+07:00"
+          },
+          {
+            "question": "Naiin",
+            "answer": "ร้านหนังสือ Naiin มีสาขาในแผนก BeTrend ที่ The Mall Life Store หลายสาขาค่ะ เช่น สาขาท่าพระ, งามวงศ์วาน, บางแค, บางกะปิ, โคราช, เอ็มโพเรียม และพารากอนค่ะ ตอนนี้มีโปรโมชั่นสำหรับสมาชิก M Card คือ แลก 9 …",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-02-11T20:42:53.479747+07:00"
+          },
+          {
+            "question": "ร้านหนังสือ Naiin",
+            "answer": "ร้านหนังสือ Naiin มีสาขาในแผนก BeTrend ที่ The Mall Life Store หลายสาขาค่ะ เช่น สาขาท่าพระ, งามวงศ์วาน, บางแค, บางกะปิ, โคราช, เอ็มโพเรียม และพารากอนค่ะ ตอนนี้มีโปรโมชั่นพิเศษสำหรับสมาชิก M Card คือ แ…",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-02-11T20:41:53.754511+07:00"
+          },
+          {
+            "question": "ร้านนายอินทร์อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับชั้นที่ตั้งของร้านนายอินทร์ใน The Mall Bangkapi ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-02-06T21:22:22.099306+07:00"
+          }
+        ]
+      },
+      {
+        "name": "bangkapi cineplex",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 19,
+        "inKMCount": 5,
+        "notInKMCount": 14,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "What movies are available tonight at Bangkapi Cineplex?",
+            "answer": "I'm sorry, I couldn't find information about the movies available tonight at Bangkapi Cineplex. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-23T19:48:07.409271+07:00"
+          },
+          {
+            "question": "What movies do they show in the cinema?",
+            "answer": "I'm sorry, I couldn't find information about the movies showing in the cinema. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-03-01T10:53:25.33823+07:00"
+          },
+          {
+            "question": "Can I see what movies are showing on the IMAX?",
+            "answer": "I'm sorry, I couldn't find information about the movies showing on the IMAX at Bangkapi Cineplex. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-03-01T10:53:03.595656+07:00"
+          },
+          {
+            "question": "where is the cinema",
+            "answer": "The cinema, Bangkapi Cineplex, is located on the 3rd floor of The Mall Lifestore Bangkapi. <break/> It is operated by Major Cineplex. <break/> You can find it easily on Floor 3 near Starbucks and the …",
+            "apology": false,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-05-17T06:16:45.439857+00:00"
+          }
+        ]
+      },
+      {
+        "name": "jim thompson",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 4,
+        "inKMCount": 0,
+        "notInKMCount": 4,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "หาร้าน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับหาร้านในเอกสารนี้",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-11T15:08:09.661073+07:00"
+          },
+          {
+            "question": "อินทนนท์",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ อินทนนท์ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-11T15:07:25.534787+07:00"
+          },
+          {
+            "question": "เก้าอี้นวด",
+            "answer": "",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-11T15:07:12.273964+07:00"
+          },
+          {
+            "question": "เก้าอี้นวด",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับเก้าอี้นวด ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-12-11T15:06:35.814297+07:00"
+          }
+        ]
+      },
+      {
+        "name": "koitake",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 4,
+        "inKMCount": 0,
+        "notInKMCount": 4,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "คุยด้วยแล้วไม่คุยด้วยแล้ว",
+            "answer": "ขอโทษนะคะ ถ้าคุณรู้สึกแบบนั้น ฉันอยู่ที่นี่เพื่อช่วยคุณเสมอค่ะ ถ้ามีอะไรที่อยากถามหรืออยากให้ช่วย แจ้งได้เลยนะคะ ฉันยินดีช่วยเต็มที่ค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-02T17:54:46.748+07:00"
+          },
+          {
+            "question": "ไม่มีอะไรที่ฉันสามารถอิ่มท้องได้ในราคาฟรีหรอ เธอเลี้ยงฉันได้หรือเปล่า",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับอาหารฟรีหรือการเลี้ยงอาหารค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-02T17:54:07.023+07:00"
+          },
+          {
+            "question": "ฉันต้องการร้านอาหารที่อร่อยที่สุดราคาถูก",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้านอาหารที่อร่อยที่สุดราคาถูก ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-02T17:53:15.393+07:00"
+          },
+          {
+            "question": "สวัสดี",
+            "answer": "สวัสดีค่ะ มีอะไรให้ช่วยไหมคะ?",
+            "apology": false,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-12-02T17:53:00.905+07:00"
+          }
+        ]
+      },
+      {
+        "name": "7eleven",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 3,
+        "inKMCount": 0,
+        "notInKMCount": 3,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "เซเว่นอยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับเซเว่นในเอกสารที่มีค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2026-03-08T12:01:56.657092+07:00"
+          },
+          {
+            "question": "รู้จัก 7-Eleven ไหม",
+            "answer": "ขออภัยค่ะคุณลูกค้า ฉันไม่พบข้อมูลเกี่ยวกับ 7-Eleven ในศูนย์การค้านี้ค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2026-08-18T20:14:30.746+07:00"
+          },
+          {
+            "question": "มี 7-Eleven ไหม",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ 7-Eleven ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2026-09-23T21:42:47.637+07:00"
+          }
+        ]
+      },
+      {
+        "name": "smiggle",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 3,
+        "inKMCount": 0,
+        "notInKMCount": 3,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "where Smiggle?",
+            "answer": "Sorry, I couldn’t find any information about Smiggle here. However, if you are interested in retail toy or character stores, we have Hello Kitty on the 2nd floor at The Mall Lifestore Bangkapi. Also, …",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-04-25T14:40:52.607451+07:00"
+          },
+          {
+            "question": "where is smiggle?",
+            "answer": "I'm sorry, I couldn't find information about Smiggle. If I misunderstood your question, please ask again.",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-04-25T14:40:15.35037+07:00"
+          },
+          {
+            "question": "So, where is Smiggle?",
+            "answer": "Sorry, I couldn’t find any information about Smiggle here. However, if you are looking for children's retail stores, we have MIX ME on the 2nd floor in Kids' Planet. Also, Mushie Frigg is on the 2nd f…",
+            "apology": true,
+            "inKM": false,
+            "language": "en-US",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2026-04-25T14:37:43.714168+07:00"
+          }
+        ]
+      },
+      {
+        "name": "sukishi",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 3,
+        "inKMCount": 0,
+        "notInKMCount": 3,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 3,
+        "examples": [
+          {
+            "question": "sukishi",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Sukishi แต่ถ้าคุณสนใจร้านอาหารสุกี้หรืออาหารญี่ปุ่นที่เดอะมอลล์บางกะปิ เรามีร้าน Elvis Suki อยู่ที่ชั้น G โซนฟู้ดคอร์ทค่ะ หรือถ้าชอบอาหารญี่ปุ่นแท้ๆ ก็มี YAYOI Japane…",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2026-04-14T18:24:03.477+07:00"
+          },
+          {
+            "question": "where is sukishi",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ Sukishi <break/> แต่ถ้าคุณกำลังมองหาร้านอาหารสุกี้หรืออาหารญี่ปุ่นที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ <break/> เรามี Elvis Suki ที่ชั้น G โซนฟู้ดคอร์ท <break/> หรือถ้าชอบอา…",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2026-05-04T09:32:55.845480+00:00"
+          },
+          {
+            "question": "Sukishi อยู่ชั้นไหนครับ",
+            "answer": "ขออภัยค่ะคุณ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Sukishi ในระบบของเรานะคะ แต่ถ้าคุณกำลังมองหาร้านอาหารญี่ปุ่น เรามีร้านอื่นๆ ที่น่าสนใจค่ะ เช่น **SUSHI SEKI** ที่ชั้น **3** **YAYOI Japanese Restaurant** ที่ชั…",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO5-M3-EVT-01",
+            "time": "2026-08-23T10:50:04.070+07:00"
+          }
+        ]
+      },
+      {
+        "name": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+        "directoryName": null,
+        "dept": null,
+        "subCategory": null,
+        "floor": null,
+        "count": 2,
+        "inKMCount": 0,
+        "notInKMCount": 2,
+        "apologyInKMCount": 0,
+        "apologyNotInKMCount": 2,
+        "examples": [
+          {
+            "question": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Banana IT ที่เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T19:32:26.719007+07:00"
+          },
+          {
+            "question": "เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิ",
+            "answer": "ขอโทษค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน Banana IT ที่เดอะ มอลล์ ไลฟ์สโตร์ บางกะปิค่ะ",
+            "apology": true,
+            "inKM": false,
+            "language": "th-TH",
+            "machine": "NO1-M8-BKP-01",
+            "time": "2025-09-02T19:31:29.342666+07:00"
           }
         ]
       }
@@ -285631,16 +286982,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "G",
         "count": 98,
-        "inKMCount": 5,
-        "notInKMCount": 93,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 5,
+        "inKMCount": 98,
+        "notInKMCount": 0,
+        "apologyInKMCount": 5,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ร้าน STARBUCKS",
             "answer": "ร้าน STARBUCKS ที่ The Mall Lifestore บางกะปิ มีทั้งหมด3 สาขานะคะ- ชั้น M- ชั้น3- ชั้น Gคุณลูกค้าสามารถเลือกไปชิมกาแฟและนั่งพักผ่อนที่สาขาใดสาขาหนึ่งได้เลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-03T09:47:15.380303+07:00"
@@ -285649,7 +287000,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Cafe Starbucks อยู่ชั้นไหน",
             "answer": "STARBUCKS อยู่ที่ชั้น G และชั้น2 ของ The Mall Lifestore Bangkae ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-31T13:46:18.821165+07:00"
@@ -285658,7 +287009,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ค่ะ ร้าน Starbucks ค่ะ",
             "answer": "ร้าน Starbucks อยู่ที่ชั้น3 ของเดอะมอลล์ไลฟ์สโตร์ บางกะปิค่ะ มีเมนูกาแฟ ชา และอาหารให้เลือกหลากหลาย นอกจากนี้ยังมีสาขาอยู่ที่ชั้น M และ G ด้วยนะคะ ถ้าคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับเมนูหรือเวลาทำกา…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-30T10:38:55.568461+07:00"
@@ -285667,7 +287018,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "how many Starbucks do you have",
             "answer": "There are Starbucks locations on three floors in The Mall Lifestore Bangkapi. You can find Starbucks on the3rd floor, the M floor, and the G floor. So, there are three Starbucks spots for you to enjoy…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-27T14:25:59.274435+07:00"
@@ -285781,16 +287132,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "3",
         "count": 80,
-        "inKMCount": 4,
-        "notInKMCount": 76,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
+        "inKMCount": 80,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "Sushiro ไปทางไหน",
             "answer": "ร้าน Sushiro อยู่ที่ The Mall Lifestore Bangkapi ชั้น2 ค่ะ คุณสามารถขึ้นบันไดเลื่อนหรือใช้ลิฟต์ไปยังชั้น2 ได้เลยค่ะ ร้านจะอยู่ในโซนอาหารที่ชั้นนั้นค่ะ ถ้าคุณต้องการ ฉันช่วยบอกทางจากจุดที่คุณอยู่ได้ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-30T18:07:13.378882+07:00"
@@ -285799,7 +287150,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "SUSHIRO อยู่ตรงไหน",
             "answer": "ร้าน SUSHIRO อยู่ที่ชั้น5 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารซูชิที่น่าสนใจมากเลยค่ะ ถ้าคุณอยากทานซูชิสดใหม่ ต้องลองที่นี่นะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-30T16:00:35.561+07:00"
@@ -285808,7 +287159,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ต้องการไปร้านอาหารญี่ปุ่น SUSHIRO",
             "answer": "ร้าน SUSHIRO อยู่ที่ The Mall Lifestore Tha Phra ค่ะ ร้านนี้อยู่ที่ชั้น3 เป็นร้านอาหารญี่ปุ่นที่ให้บริการอาหารญี่ปุ่นหลากหลายเมนู ถ้าคุณชอบอาหารญี่ปุ่น ต้องไม่พลาดที่นี่เลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-23T13:44:41.406+07:00"
@@ -285817,7 +287168,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Sushiro",
             "answer": "SUSHIRO is a Japanese restaurant. It serves Japanese food. You can find it on the 3rd floor of The Mall Lifestore Tha Phra. Let me know if you want to know about other restaurants too!",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO4-M5-THA-01",
             "time": "2025-11-29T14:47:43.108+07:00"
@@ -285981,16 +287332,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Fashion",
         "floor": "G",
         "count": 64,
-        "inKMCount": 3,
-        "notInKMCount": 61,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
+        "inKMCount": 64,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "UNIQLO",
             "answer": "UNIQLO อยู่ที่ชั้น M ในเดอะมอลล์ไลฟ์สโตร์ บางกะปิค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-19T16:35:46.589588+07:00"
@@ -285999,7 +287350,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "UNIQLO สาขา The Mall ท่าพระ อยู่ชั้นไหน",
             "answer": "UNIQLO สาขา The Mall Lifestore ท่าพระ อยู่ที่ชั้น G ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-15T15:25:31.412+07:00"
@@ -286008,7 +287359,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "UNIQLO",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-15T15:05:19.886+07:00"
@@ -286017,7 +287368,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ที่นี่มี UNIQLO ไหม",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ UNIQLO ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-11-30T11:20:18.712941+07:00"
@@ -286031,16 +287382,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "IT & Electronics",
         "floor": "3",
         "count": 54,
-        "inKMCount": 1,
-        "notInKMCount": 53,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 6,
+        "inKMCount": 54,
+        "notInKMCount": 0,
+        "apologyInKMCount": 6,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ใกล้เวลาห้างจะเปิดแล้วนะ AIS",
             "answer": "The Mall Lifestore Ngamwongwan เปิดทุกวันตั้งแต่10:00 น. ถึง22:00 น.ค่ะ ส่วนร้าน AIS อยู่ที่ชั้น3 ของห้างนี้ค่ะ ร้าน AIS เปิดให้บริการตามเวลาห้างเลยนะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-25T09:58:02.935+07:00"
@@ -286049,7 +287400,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ใกล้จะได้กลับบ้านแล้วนะ AIS",
             "answer": "ขอบคุณที่มาเล่าให้ฟังนะคะ ถ้าคุณมีคำถามหรืออยากรู้ข้อมูลเพิ่มเติมเกี่ยวกับ AIS หรือร้านอื่นๆ ที่ The Mall Lifestore Ngamwongwan ฉันยินดีช่วยเสมอค่ะ เดินทางปลอดภัยนะคะ!",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-24T21:42:44.561+07:00"
@@ -286058,7 +287409,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ใกล้จะได้กลับบ้านแล้วนะ AIS",
             "answer": "AIS อยู่ที่ชั้น3 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านที่เชี่ยวชาญด้านไอทีและอิเล็กทรอนิกส์ มีสินค้าอย่างโทรศัพท์มือถือ อุปกรณ์เสริม และเทคโนโลยีต่างๆ ให้เลือกมากมายค่ะ ถ้าคุณต้องการความช่วย…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-24T21:42:12.053+07:00"
@@ -286067,7 +287418,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Where is AIS?",
             "answer": "AIS is located on the3rd floor of The Mall Lifestore Tha Phra. You can find electronics, gadgets, mobile phones, and accessories there.",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-22T17:37:23.26+07:00"
@@ -286081,16 +287432,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Lifestyle & Specialty",
         "floor": "1",
         "count": 45,
-        "inKMCount": 2,
-        "notInKMCount": 43,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 45,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ฉันจะไป MINISO อยู่ที่ไหน",
             "answer": "MINISO อยู่ที่ชั้น Mezzanine ของ The Mall Lifestore Bangkae ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-18T13:13:09.197943+07:00"
@@ -286099,7 +287450,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Where is MINISO store?",
             "answer": "MINISO is located in The Mall Lifestore Ngamwongwan.",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-16T11:10:09.879458+07:00"
@@ -286108,7 +287459,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Where is MINISO?",
             "answer": "MINISO is located on the2nd floor of The Mall Lifestore Bangkapi. You can find a variety of lifestyle products, home goods, gifts, specialty items, and decor there. It's a great spot if you're looking…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-11-10T18:09:29.005835+07:00"
@@ -286117,7 +287468,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "where is miniso",
             "answer": "MINISO อยู่ที่ชั้น1 ของเดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ เป็นร้านที่จำหน่ายสินค้าหลากหลายประเภท เช่น ของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน และของขวัญด้วยนะคะ ถ้าคุณสนใจ ฉันช่วยแนะนำเพิ่มเติมได้ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-07T19:15:35.968+07:00"
@@ -286131,16 +287482,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Lifestyle & Specialty",
         "floor": "B",
         "count": 44,
-        "inKMCount": 4,
-        "notInKMCount": 40,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 4,
+        "inKMCount": 44,
+        "notInKMCount": 0,
+        "apologyInKMCount": 4,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "WATSONS",
             "answer": "To give you the most accurate information,",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-06T10:42:48.049083+07:00"
@@ -286149,7 +287500,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "WATSONS",
             "answer": "",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-02T15:52:39.831189+07:00"
@@ -286158,7 +287509,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Watsons อยู่ชั้นไหนคะ",
             "answer": "WATSONS อยู่ที่ชั้น B ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-28T14:34:10.483+07:00"
@@ -286167,7 +287518,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้าน Watsons อยู่ชั้นไหน",
             "answer": "ร้าน Watsons อยู่ที่ชั้น B ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-20T15:49:19.219+07:00"
@@ -286181,16 +287532,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Lifestyle & Specialty",
         "floor": "1",
         "count": 43,
-        "inKMCount": 1,
-        "notInKMCount": 42,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 43,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ร้าน MR. D.I.Y. อยู่ชั้นไหน",
             "answer": "ร้าน MR. D.I.Y. มีสาขาในศูนย์การค้าของเรา ดังนี้ค่ะ- ที่ The Mall Lifestore งามวงศ์วาน อยู่ที่ชั้น6- ที่ The Mall Lifestore บางแค อยู่ที่ชั้น1- ที่ The Mall Lifestore ท่าพระ อยู่ที่ชั้น1- ที่ The Mall…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-02T12:48:23.374701+07:00"
@@ -286199,7 +287550,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MR. D.I.Y. อยู่ชั้นไหน",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-02T12:46:20.169714+07:00"
@@ -286208,7 +287559,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "เดินทางอย่างไรไป MR.D.I.Y.",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการเดินทางไปยัง MR.D.I.Y. ที่เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-31T11:50:17.859+07:00"
@@ -286217,7 +287568,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MR.D.I.Y.",
             "answer": "MR.D.I.Y. อยู่ที่ชั้น6 ของเดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ร้านนี้จำหน่ายสินค้าหลายประเภท เช่น สินค้าไลฟ์สไตล์, อุปกรณ์ปรับปรุงบ้าน, ของขวัญ, สินค้าเฉพาะทาง และของตกแต่งบ้านค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-31T11:49:43.56+07:00"
@@ -286381,16 +287732,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Attraction & Entertainment",
         "floor": "3",
         "count": 35,
-        "inKMCount": 11,
-        "notInKMCount": 24,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
+        "inKMCount": 35,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "Can you give me direction details to go to Harborland?",
             "answer": "To give you the most accurate information,",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-06T11:46:06.271589+07:00"
@@ -286399,7 +287750,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Where is Harborland?",
             "answer": "Harborland is an attraction and entertainment area located on the3rd floor at The Mall Lifestore Bangkapi, Thapra, and Bangkae. At The Mall Lifestore Ngamwongwan, you can find Harborland on the6th flo…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-06T11:45:30.134658+07:00"
@@ -286408,7 +287759,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "HARBORLAND",
             "answer": "HARBORLAND is located on the3rd floor of The Mall Lifestore Bangkapi.",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-20T18:13:16.582892+07:00"
@@ -286417,7 +287768,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ราคา HARBORLAND ที่เป็นสวนน้ำเท่าไหร่",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับราคา HARBORLAND ที่เป็นสวนน้ำค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-11-17T13:58:31.63583+07:00"
@@ -286431,16 +287782,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "3",
         "count": 35,
-        "inKMCount": 2,
-        "notInKMCount": 33,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 35,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "SWENSEN'S สาขางามวงศ์วาน",
             "answer": "SWENSEN'S สาขางามวงศ์วานอยู่ที่ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารที่ให้บริการอาหารและเครื่องดื่ม ตั้งอยู่ที่ชั้น5 และชั้น G ของห้างค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-31T21:35:34.456+07:00"
@@ -286449,7 +287800,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Swensen's now",
             "answer": "I'm sorry, I couldn't find information about current promotions at Swensen's. If I misunderstood your question, please ask again.",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-28T16:01:06.786762+07:00"
@@ -286458,7 +287809,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "SWENSEN'S",
             "answer": "SWENSEN'S is located on the Ground floor at The Mall Lifestore Bangkapi. It is an ice cream parlor and restaurant offering desserts and light meals. The store is active and ready for you to enjoy some…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-27T16:07:34.048089+07:00"
@@ -286467,7 +287818,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Swensen's อยู่ที่ไหน",
             "answer": "Swensen's อยู่ที่ชั้น Ground ค่ะ ในอาคาร The Mall Lifestore Bangkae",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-26T20:05:06.810756+07:00"
@@ -286481,16 +287832,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Lifestyle & Specialty",
         "floor": "B",
         "count": 33,
-        "inKMCount": 3,
-        "notInKMCount": 30,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 7,
+        "inKMCount": 33,
+        "notInKMCount": 0,
+        "apologyInKMCount": 7,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "Boots",
             "answer": "ร้าน BOOTS อยู่ที่ชั้น G ค่ะ มีสินค้าหลากหลายแบบ เช่น สินค้าไลฟ์สไตล์ ของใช้ในบ้าน ของขวัญ และของตกแต่งบ้านค่ะ ถ้าคุณสนใจสินค้าหมวดไหนเพิ่มเติม บอกได้นะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-12-28T16:34:33.784+07:00"
@@ -286499,7 +287850,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "BOOTS",
             "answer": "BOOTS is located on the B floor at The Mall Lifestore Tha Phra. They offer lifestyle products, home goods, gifts, specialty items, and decor. It's a great place if you're looking for a variety of life…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO4-M5-THA-01",
             "time": "2025-12-27T19:02:27.82+07:00"
@@ -286508,7 +287859,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Boots",
             "answer": "BOOTS is a lifestyle and specialty store. It is located on the Ground Floor at The Mall Lifestore Bangkapi. You can find a variety of lifestyle products there. It's a great spot if you want specialty …",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-12-18T16:37:13.665925+07:00"
@@ -286517,7 +287868,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Boots ฟู้ดคอร์ท อาหารน่ะ",
             "answer": "ที่ฟู้ดคอร์ทของเดอะมอลล์มีที่นั่งกินข้าวค่ะ ฟู้ดคอร์ทอยู่ที่ชั้น G ของห้างค่ะ มีเมนูอาหารหลากหลายให้เลือกทานค่ะ ส่วนร้าน Boots ไม่มีข้อมูลในเอกสารนะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-12-14T13:30:47.618+07:00"
@@ -286531,8 +287882,8 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Beauty Skincare & Costmetic",
         "floor": "1",
         "count": 32,
-        "inKMCount": 2,
-        "notInKMCount": 30,
+        "inKMCount": 32,
+        "notInKMCount": 0,
         "apologyInKMCount": 0,
         "apologyNotInKMCount": 0,
         "examples": [
@@ -286540,7 +287891,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "EVEANDBOY เดอะมอลล์บางกะปิ อยู่ไหน",
             "answer": "EVEANDBOY ที่เดอะมอลล์บางกะปิ ตั้งอยู่ที่ชั้น G ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-04T11:50:40.14168+07:00"
@@ -286549,7 +287900,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "EVEANDBOY อยู่ตรงไหนครับ",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-04T11:50:09.535992+07:00"
@@ -286558,7 +287909,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้าน EVEANDBOY อยู่ชั้นไหน",
             "answer": "ร้าน EVEANDBOY มีสาขาในศูนย์การค้าของเรา ดังนี้ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-02T12:53:43.277425+07:00"
@@ -286567,7 +287918,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "EVEANDBOY อยู่ตรงไหนคะ",
             "answer": "EVEANDBOY อยู่ที่ชั้น G ใน The Mall Lifestore Bangkapi ค่ะ เป็นแหล่งรวมเครื่องสำอาง สกินแคร์ เมคอัพ และน้ำหอมมากมายเลยค่ะ คุณสามารถไปช้อปได้ที่ชั้น G นะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-30T11:44:57.721527+07:00"
@@ -286781,16 +288132,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Lifestyle & Specialty",
         "floor": "1",
         "count": 26,
-        "inKMCount": 2,
-        "notInKMCount": 24,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 26,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ร้าน KKV ไปทางไหน",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-01T18:34:03.395693+07:00"
@@ -286799,7 +288150,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้าน KKV อยู่ที่ไหน",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-01T18:32:47.379639+07:00"
@@ -286808,7 +288159,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้าน KKV อยู่ไหน",
             "answer": "ร้าน KKV มีสาขาในศูนย์การค้าของเรา4 แห่งค่ะ- ที่ The Mall Lifestore งามวงศ์วาน อยู่ที่ชั้น1- ที่ The Mall Lifestore บางแค อยู่ที่ชั้น G- ที่ The Mall Lifestore ท่าพระ อยู่ที่ชั้น1- ที่ The Mall Lifest…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-10-15T17:54:30.478543+07:00"
@@ -286817,7 +288168,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "KKV",
             "answer": "Sorry, I couldn’t find information about KKV here. If I misunderstood your question, please ask again.",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-11-29T11:52:04.969617+07:00"
@@ -286881,16 +288232,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Lifestyle & Specialty",
         "floor": "1",
         "count": 24,
-        "inKMCount": 3,
-        "notInKMCount": 21,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 2,
+        "inKMCount": 24,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "Where is Moshi Moshi?",
             "answer": "I'm sorry, I couldn't find information about Moshi Moshi. If I misunderstood your question, please ask again.",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-31T10:47:31.583+07:00"
@@ -286899,7 +288250,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้าน MOSHIMOSHI อยู่ไหน",
             "answer": "ร้าน MOSHIMOSHI อยู่ที่ The Mall Lifestore Ngamwongwan ค่ะ อยู่ที่ชั้น 2 เป็นร้านที่จำหน่ายสินค้าลifestyle, ของใช้ในบ้าน, ของขวัญ, และของตกแต่งค่ะ ถ้าคุณสนใจ ฉันช่วยแนะนำเพิ่มเติมได้นะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-15T18:34:40.341+07:00"
@@ -286908,7 +288259,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Moshi Moshi อยู่โซนไหนของชั้น 1",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโซนของร้าน Moshi Moshi ที่ชั้น 1 ค่ะ ถ้าคุณต้องการทราบข้อมูลเพิ่มเติม กรุณาถามอีกครั้งนะคะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-11-13T19:18:02.889044+07:00"
@@ -286917,7 +288268,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Moshi Moshi อยู่ชั้นไหน",
             "answer": "Moshi Moshi อยู่ที่ชั้น 1 ค่ะ เป็นร้านไลฟ์สไตล์และของตกแต่งบ้านที่น่าสนใจมากค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-11-13T19:17:07.658251+07:00"
@@ -286931,8 +288282,8 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "IT & Electronics",
         "floor": "3",
         "count": 24,
-        "inKMCount": 0,
-        "notInKMCount": 24,
+        "inKMCount": 24,
+        "notInKMCount": 0,
         "apologyInKMCount": 0,
         "apologyNotInKMCount": 0,
         "examples": [
@@ -286940,7 +288291,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Samsung อยู่ตรงไหนครับ",
             "answer": "ร้าน Samsung by TG อยู่ที่ชั้น3 ของ The Mall Lifestore Ngamwongwan ค่ะ ถ้าคุณสนใจสินค้าไอทีและอิเล็กทรอนิกส์ที่นี่มีครบเลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-30T13:02:45.483+07:00"
@@ -286949,7 +288300,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "TV Samsung",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด คุณลูกค้าสนใจสอบถามข้อมูลของศูนย์การค้าสาขาไหนคะ สามารถเลือกจากสาขาต่อไปนี้ได้เลยค่ะ: The Mall Lifestore Bangkapi, The Mall Lifestore Korat, The Mall Lifestore Thaphra, T…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO5-M3-EVT-01",
             "time": "2025-11-27T12:48:40.483+07:00"
@@ -286958,7 +288309,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Samsung ไหม",
             "answer": "ร้าน Samsung by Jaymart อยู่ที่ The Mall Lifestore Bangkapi ชั้น 2 ค่ะ ที่นี่มีขายอุปกรณ์อิเล็กทรอนิกส์ของ Samsung ทั้งมือถือและแก็ดเจ็ตต่างๆ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-11-15T14:08:26.171405+07:00"
@@ -286967,7 +288318,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ใจเย็น ๆ ตอนนี้เราอยากหาบูธ Samsung อยู่ตรงไหนหรอ พาเราไปหน่อย",
             "answer": "ร้าน Samsung ที่ The Mall Lifestore บางกะปิ อยู่ที่ชั้น 2 โซน Power Mall ค่ะ มีสินค้าหลากหลายทั้งโทรศัพท์มือถือ ทีวี ตู้เย็น และเครื่องใช้ไฟฟ้าอื่น ๆ ให้เลือกช็อปได้เลยค่ะ ถ้าต้องการความช่วยเหลือเพิ่ม…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO5-M3-EVT-01",
             "time": "2025-11-14T20:38:40.344+07:00"
@@ -286981,16 +288332,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "IT & Electronics",
         "floor": "3",
         "count": 23,
-        "inKMCount": 0,
-        "notInKMCount": 23,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
+        "inKMCount": 23,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "โปรโมชั่นห้าง The Mall Daiso ท่าพระ",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-25T20:44:57.574+07:00"
@@ -286999,7 +288350,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "โปรโมชั่นห้าง The Mall Daiso The Mall ท่าพระ",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-10-25T20:44:31.078+07:00"
@@ -287008,7 +288359,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "DAISO อยู่ไหน",
             "answer": "DAISO อยู่ที่ชั้น G ใน The Mall Lifestore Bangkae ค่ะ ที่นี่มีสินค้าหลากหลาย ทั้งของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน และของขวัญด้วยนะคะ ถ้าคุณสนใจอยากไปดูสินค้า สามารถไปที่ชั้น G ได้เลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-23T19:17:27.369954+07:00"
@@ -287017,7 +288368,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ร้านไหน ร้าน DAISO",
             "answer": "ร้าน DAISO อยู่ที่ชั้น 5 ค่ะ ที่ The Mall Lifestore Ngamwongwan ร้านนี้มีสินค้าหลากหลาย เช่น ของใช้ในชีวิตประจำวัน ของตกแต่งบ้าน ของขวัญ และของพิเศษอื่นๆ ค่ะ ถ้าคุณสนใจไปดูได้เลยนะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-12T17:21:55.91+07:00"
@@ -287081,16 +288432,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "3",
         "count": 22,
-        "inKMCount": 1,
-        "notInKMCount": 21,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 22,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ร้านอาหาร BONCHON",
             "answer": "BONCHON เป็นร้านอาหารที่ตั้งอยู่ที่ The Mall Lifestore Ngamwongwan ค่ะ ร้านนี้อยู่ที่ชั้น G",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-26T20:32:55.99+07:00"
@@ -287099,7 +288450,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "ที่นี่มีร้าน BONCHON ไหม",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน BONCHON ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-11-30T11:20:56.475232+07:00"
@@ -287108,7 +288459,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "วิธีไป Bonchon",
             "answer": "Bonchon อยู่ที่ชั้น G (Ground) ในอาคาร The Mall Lifestore Bangkae ค่ะ ถ้าคุณอยู่ที่เคาน์เตอร์ข้อมูลชั้นล่าง ก็เดินไปไม่ไกลเลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-11-14T19:57:49.961178+07:00"
@@ -287117,7 +288468,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Bonchon",
             "answer": "",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-07T16:31:40.906+07:00"
@@ -287131,16 +288482,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "3",
         "count": 21,
-        "inKMCount": 0,
-        "notInKMCount": 21,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 3,
+        "inKMCount": 21,
+        "notInKMCount": 0,
+        "apologyInKMCount": 3,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ร้าน MK อยู่ชั้นไหน",
             "answer": "ร้าน MK RESTAURANTS มีสาขาในศูนย์การค้าของเรา ดังนี้ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-02T12:47:37.488969+07:00"
@@ -287149,7 +288500,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MK อยู่ไหน",
             "answer": "เพื่อให้ข้อมูลที่แม่นยำที่สุด",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-02T12:45:10.173839+07:00"
@@ -287158,7 +288509,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MK อยู่ชั้นไหน",
             "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Ngamwongwan ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
             "apology": true,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-31T21:37:03.667+07:00"
@@ -287167,7 +288518,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MK สาขางามวงศ์วานอยู่ชั้นไหนครับ",
             "answer": "MK สาขางามวงศ์วานอยู่ที่ชั้น5 ค่ะ คุณสามารถไปทานอาหารและเลือกเมนูอร่อยๆ ได้ที่นั่นเลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-23T20:59:32.446+07:00"
@@ -287181,16 +288532,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "3",
         "count": 21,
-        "inKMCount": 1,
-        "notInKMCount": 20,
-        "apologyInKMCount": 0,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 21,
+        "notInKMCount": 0,
+        "apologyInKMCount": 1,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "ร้าน SIZZLER อยู่ชั้นไหน",
             "answer": "ร้าน SIZZLER อยู่ที่ชั้น5 ค่ะ เป็นร้านอาหารที่ให้บริการอาหารและบรรยากาศน่านั่งมากเลยค่ะ มีอะไรให้ช่วยเพิ่มเติมไหมคะ?",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-31T21:36:09.704+07:00"
@@ -287199,7 +288550,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Sizzler",
             "answer": "SIZZLER อยู่ที่ชั้น5 ของ The Mall Lifestore Ngamwongwan ค่ะ เป็นร้านอาหารที่ให้บริการอาหารและบรรยากาศสำหรับรับประทานอาหารอย่างดีเลยค่ะ ถ้าคุณสนใจอาหารแบบนี้ ที่นี่ตอบโจทย์แน่นอนค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-26T13:13:36.637+07:00"
@@ -287208,7 +288559,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Sizzler อยู่ชั้นไหน",
             "answer": "SIZZLER อยู่ที่ชั้น5 ค่ะ คุณสามารถไปทานอาหารที่นั่นได้เลย มีบรรยากาศร้านอาหารที่น่านั่งมากค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-26T11:08:29.776+07:00"
@@ -287217,7 +288568,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "Sizzler ไปทางไหน",
             "answer": "ร้าน Sizzler อยู่ที่ The Mall Lifestore Ngamwongwan ชั้น 5 ค่ะ คุณสามารถขึ้นบันไดเลื่อนหรือใช้ลิฟต์ไปชั้น 5 ได้เลยค่ะ ที่นั่นจะมีร้านอาหารหลากหลายรวมถึง Sizzler ด้วยค่ะ ถ้าคุณต้องการฉันช่วยแนะนำเส้นทา…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-12-14T18:44:05.859+07:00"
@@ -287231,8 +288582,8 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "G",
         "count": 21,
-        "inKMCount": 4,
-        "notInKMCount": 17,
+        "inKMCount": 21,
+        "notInKMCount": 0,
         "apologyInKMCount": 0,
         "apologyNotInKMCount": 0,
         "examples": [
@@ -287240,7 +288591,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "NOSE TEA 在哪里",
             "answer": "NOSE TEA 在以下几个分店都有哦：",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "zh-CN",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-10-15T15:53:20.354+07:00"
@@ -287249,7 +288600,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "NOSE TEA อยู่ที่ไหน",
             "answer": "ร้าน NOSE TEA อยู่ที่ The Mall Lifestore Tha Phra ชั้น G ค่ะ เป็นร้านอาหารที่มีทั้งอาหาร เครื่องดื่ม และของหวานด้วยนะคะ ถ้าคุณสนใจ ฉันช่วยแนะนำเพิ่มเติมได้นะคะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-11-23T12:45:32.663+07:00"
@@ -287258,7 +288609,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "NOSE TEA อยู่ชั้นไหน",
             "answer": "ร้าน NOSE TEA อยู่ที่ชั้น G ค่ะ เป็นร้านอาหารที่มีทั้งอาหาร เครื่องดื่ม และของหวานให้เลือกค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-12-30T18:24:14.553+07:00"
@@ -287267,7 +288618,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "NOSE TEA",
             "answer": "NOSE TEA อยู่ที่ชั้น G ใน The Mall Lifestore Tha Phra ค่ะ ร้านนี้มีอาหาร เครื่องดื่ม และของหวานให้เลือกอร่อยด้วยนะคะ ถ้าคุณสนใจไปลองชิมก็ไปที่ชั้น G ได้เลยค่ะ มีอะไรให้ช่วยอีกไหมคะ?",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO4-M5-THA-01",
             "time": "2025-12-21T16:48:23.857+07:00"
@@ -287281,16 +288632,16 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "1",
         "count": 20,
-        "inKMCount": 1,
-        "notInKMCount": 19,
-        "apologyInKMCount": 1,
-        "apologyNotInKMCount": 1,
+        "inKMCount": 20,
+        "notInKMCount": 0,
+        "apologyInKMCount": 2,
+        "apologyNotInKMCount": 0,
         "examples": [
           {
             "question": "Cafe Amazon อยู่ชั้นไหน",
             "answer": "Cafe Amazon อยู่ที่ชั้น M และชั้น3 ของ The Mall Lifestore Bangkae ค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO2-M7-BKE-01",
             "time": "2025-10-31T13:45:45.204749+07:00"
@@ -287299,7 +288650,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "If you need to go to Cafe Amazon.",
             "answer": "You can find Cafe Amazon on the Ground floor and also on the 6th floor here at The Mall Lifestore Ngamwongwan. It’s a popular eatery offering a variety of food and beverages.",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-15T15:52:33.062+07:00"
@@ -287308,7 +288659,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "คาเฟ่ อเมซอนอยู่ชั้นไหน",
             "answer": "คาเฟ่ อเมซอนอยู่ที่ชั้น 6 และชั้น G ค่ะ คุณสามารถไปชั้นไหนก็ได้ตามสะดวกเลยนะคะ มีอะไรให้ช่วยอีกไหมคะ?",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-12-12T16:41:21.677+07:00"
@@ -287317,7 +288668,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "CAFE AMAZON อยู่ชั้นไหน",
             "answer": "CAFE AMAZON อยู่ที่ชั้น 6 และชั้น G ค่ะ ที่ The Mall Lifestore Ngamwongwan คุณสามารถไปนั่งพักดื่มกาแฟและทานของว่างได้เลยค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2026-01-26T21:28:38.569+07:00"
@@ -287331,8 +288682,8 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "subCategory": "Dining",
         "floor": "3",
         "count": 20,
-        "inKMCount": 0,
-        "notInKMCount": 20,
+        "inKMCount": 17,
+        "notInKMCount": 3,
         "apologyInKMCount": 0,
         "apologyNotInKMCount": 0,
         "examples": [
@@ -287340,7 +288691,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MKRESTAURANTS",
             "answer": "MKRESTAURANTS (เอ็มเค เรสเตอร์รองต์) อยู่ที่ชั้น 5 ของเดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ เป็นร้านอาหารและร้านกินดื่มที่มีเมนูอาหารหลากหลายให้เลือกทานค่ะ ถ้าคุณสนใจ ฉันช่วยแนะนำเมนูหรือรายละเอียดเพิ่มเติ…",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-14T11:09:10.596+07:00"
@@ -287349,7 +288700,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MK Restaurants",
             "answer": "MKRESTAURANTS is located on the5th floor of The Mall Lifestore Ngamwongwan. It is a restaurant and eatery offering food and dining options. If you want to know more or need directions, just ask!",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "en-US",
             "machine": "NO3-M6-NGW-01",
             "time": "2025-11-08T19:08:17.677+07:00"
@@ -287358,7 +288709,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MK RESTAURANTS",
             "answer": "MK RESTAURANTS อยู่ที่ชั้น 3 ของ The Mall Lifestore Bangkapi ค่ะ เป็นร้านอาหารที่มีเมนูสุกี้และชาบู ถ้าคุณชอบอาหารสไตล์นี้ รับรองว่าต้องถูกใจแน่นอนค่ะ",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-12-17T18:17:21.421536+07:00"
@@ -287367,7 +288718,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "question": "MK อยู่ชั้นไหน",
             "answer": "MK RESTAURANTS อยู่ที่ชั้น 3 ค่ะ ใน The Mall Lifestore Bangkapi",
             "apology": false,
-            "inKM": false,
+            "inKM": true,
             "language": "th-TH",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-12-16T18:03:39.638825+07:00"
@@ -287772,44 +289123,44 @@ window.__PERFORMANCE_REPORT_DATA__ = {
         "id": "kmAddBrand",
         "owner": "add",
         "tone": "amber",
-        "count": 640,
-        "voice": 522,
-        "text": 118,
+        "count": 537,
+        "voice": 441,
+        "text": 96,
         "quickReply": 0,
         "topics": [
           {
             "name": "Specific purpose",
-            "count": 43
-          },
-          {
-            "name": "Restaurants",
-            "count": 43
+            "count": 36
           },
           {
             "name": "Shop Specific",
-            "count": 39
+            "count": 35
+          },
+          {
+            "name": "Restaurants",
+            "count": 30
           },
           {
             "name": "Store Location",
-            "count": 37
-          },
-          {
-            "name": "Promotions",
-            "count": 32
+            "count": 29
           },
           {
             "name": "Misc",
-            "count": 30
+            "count": 26
+          },
+          {
+            "name": "Promotions",
+            "count": 22
           }
         ],
         "languages": [
           {
             "name": "th-TH",
-            "count": 466
+            "count": 388
           },
           {
             "name": "en-US",
-            "count": 173
+            "count": 148
           },
           {
             "name": "zh-CN",
@@ -287896,6 +289247,137 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "input": "voice",
             "machine": "NO1-M8-BKP-01",
             "time": "2025-09-01T18:24:58.048421+07:00"
+          }
+        ]
+      },
+      {
+        "id": "kmVerifyBrand",
+        "owner": "tune",
+        "tone": "purple",
+        "count": 118,
+        "voice": 90,
+        "text": 28,
+        "quickReply": 0,
+        "topics": [
+          {
+            "name": "Restaurants",
+            "count": 17
+          },
+          {
+            "name": "Promotions",
+            "count": 11
+          },
+          {
+            "name": "Store Location",
+            "count": 8
+          },
+          {
+            "name": "Computer, Mobile, and Services",
+            "count": 7
+          },
+          {
+            "name": "Specific purpose",
+            "count": 7
+          },
+          {
+            "name": "Coffee, Tea, and Casual Café",
+            "count": 6
+          }
+        ],
+        "languages": [
+          {
+            "name": "th-TH",
+            "count": 85
+          },
+          {
+            "name": "en-US",
+            "count": 29
+          },
+          {
+            "name": "zh-CN",
+            "count": 4
+          }
+        ],
+        "examples": [
+          {
+            "question": "MK อยู่ชั้นไหน",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับร้าน MK ที่ The Mall Lifestore Ngamwongwan ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "mk",
+            "topic": "Restaurants",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T21:37:03.667+07:00"
+          },
+          {
+            "question": "เดินทางอย่างไรไป MR.D.I.Y.",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับการเดินทางไปยัง MR.D.I.Y. ที่เดอะมอลล์ไลฟ์สโตร์ งามวงศ์วานค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "mrdiy",
+            "topic": "Repair and Services",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T11:50:17.859+07:00"
+          },
+          {
+            "question": "Where is Moshi Moshi?",
+            "answer": "I'm sorry, I couldn't find information about Moshi Moshi. If I misunderstood your question, please ask again.",
+            "brand": "moshi moshi",
+            "topic": "Restaurants",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-31T10:47:31.583+07:00"
+          },
+          {
+            "question": "Swensen's now",
+            "answer": "I'm sorry, I couldn't find information about current promotions at Swensen's. If I misunderstood your question, please ask again.",
+            "brand": "swensens",
+            "topic": "Ice-cream",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO2-M7-BKE-01",
+            "time": "2025-10-28T16:01:06.786762+07:00"
+          },
+          {
+            "question": "BARBQPLAZA",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชันของ BARBQPLAZA ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "barbqplaza",
+            "topic": "Restaurants",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO3-M6-NGW-01",
+            "time": "2025-10-26T21:25:46.501+07:00"
+          },
+          {
+            "question": "โปรโมชั่นห้าง The Mall Daiso ท่าพระ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ",
+            "brand": "daiso",
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-25T20:44:57.574+07:00"
+          },
+          {
+            "question": "โปรโมชั่นห้าง The Mall Daiso The Mall ท่าพระ",
+            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับโปรโมชั่นของ Daiso ที่ The Mall ท่าพระค่ะ ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
+            "brand": "daiso",
+            "topic": "Promotions",
+            "language": "th-TH",
+            "input": "voice",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-25T20:44:31.078+07:00"
+          },
+          {
+            "question": "Where is Dtac?",
+            "answer": "I'm sorry, I couldn't find information about Dtac location here. If I misunderstood your question, please ask again.",
+            "brand": "dtac",
+            "topic": "Computer, Mobile, and Services",
+            "language": "en-US",
+            "input": "voice",
+            "machine": "NO4-M5-THA-01",
+            "time": "2025-10-25T17:05:00.311+07:00"
           }
         ]
       },
@@ -288015,137 +289497,6 @@ window.__PERFORMANCE_REPORT_DATA__ = {
             "input": "quickReply",
             "machine": "NO3-M6-NGW-01",
             "time": "2026-01-27T17:49:12.888+07:00"
-          }
-        ]
-      },
-      {
-        "id": "kmVerifyBrand",
-        "owner": "tune",
-        "tone": "purple",
-        "count": 15,
-        "voice": 9,
-        "text": 6,
-        "quickReply": 0,
-        "topics": [
-          {
-            "name": "Coffee, Tea, and Casual Café",
-            "count": 4
-          },
-          {
-            "name": "Restaurants",
-            "count": 4
-          },
-          {
-            "name": "Events",
-            "count": 1
-          },
-          {
-            "name": "Promotions",
-            "count": 1
-          },
-          {
-            "name": "Fast Foods",
-            "count": 1
-          },
-          {
-            "name": "Sports",
-            "count": 1
-          }
-        ],
-        "languages": [
-          {
-            "name": "th-TH",
-            "count": 7
-          },
-          {
-            "name": "en-US",
-            "count": 4
-          },
-          {
-            "name": "zh-CN",
-            "count": 4
-          }
-        ],
-        "examples": [
-          {
-            "question": "Academy tomorrow",
-            "answer": "I'm sorry, I couldn't find information about academy schedules or availability for tomorrow. <break/> If you want, I can help you with details about Unicorn Academy or KPN Music Ac…",
-            "brand": "Unicorn Academy",
-            "topic": "Events",
-            "language": "en-US",
-            "input": "voice",
-            "machine": "NO4-M5-THA-01",
-            "time": "2026-06-06T12:03:46.445214+00:00"
-          },
-          {
-            "question": "ลานกิจกรรมมีงานอะไรบ้าง",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ ลานกิจกรรมมีงานอะไรบ้าง ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "brand": "Gourmet Market",
-            "topic": "Promotions",
-            "language": "th-TH",
-            "input": "voice",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2026-08-29T17:10:16.124+07:00"
-          },
-          {
-            "question": "How much does a McChicken menu cost at McDonald's?",
-            "answer": "I'm sorry, I don't have information about the specific cost of a McChicken menu at McDonald's. However, I do know that McDonald's is on the **G Floor** of The Mall Lifestore Bangka…",
-            "brand": "McDonald's",
-            "topic": "Fast Foods",
-            "language": "en-US",
-            "input": "voice",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2026-08-21T14:55:11.160+07:00"
-          },
-          {
-            "question": "พันธุ์ไทยอยู่ชั้นไหน",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ พันธุ์ไทย ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "brand": "Punthai",
-            "topic": "Coffee, Tea, and Casual Café",
-            "language": "th-TH",
-            "input": "voice",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-25T07:08:30.652+07:00"
-          },
-          {
-            "question": "กาแฟพันธุ์ไทยอยู่ชั้นไหน",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ กาแฟพันธุ์ไทย ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ",
-            "brand": "Cafe Amazon",
-            "topic": "Coffee, Tea, and Casual Café",
-            "language": "th-TH",
-            "input": "voice",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-25T07:08:17.054+07:00"
-          },
-          {
-            "question": "Cafe Punthai is on which floor?",
-            "answer": "I'm sorry, I couldn't find information about Cafe Punthai. If I misunderstood your question, please ask again.",
-            "brand": "Cafe Punthai",
-            "topic": "Coffee, Tea, and Casual Café",
-            "language": "en-US",
-            "input": "voice",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-25T07:06:58.641+07:00"
-          },
-          {
-            "question": "你好吗垃店在哪里",
-            "answer": "很抱歉，我没有找到您说的“垃店”。不过，我们这里有 **MALAKOR** 餐厅，它在商场的3楼。您是想找餐厅吗？",
-            "brand": "MALAKOR",
-            "topic": "Restaurants",
-            "language": "zh-CN",
-            "input": "voice",
-            "machine": "NO2-M7-BKE-01",
-            "time": "2026-09-24T19:11:59.627+07:00"
-          },
-          {
-            "question": "มีโปรโมชั่นอะไรไหมครับ",
-            "answer": "ขออภัยค่ะ ฉันไม่พบข้อมูลโปรโมชั่นของ Nike ในขณะนี้ค่ะ",
-            "brand": "Nike",
-            "topic": "Sports",
-            "language": "th-TH",
-            "input": "voice",
-            "machine": "NO1-M8-BKP-01",
-            "time": "2026-09-24T11:04:39.464+07:00"
           }
         ]
       },
@@ -290270,7 +291621,47 @@ window.__PERFORMANCE_REPORT_DATA__ = {
           }
         ]
       }
-    ]
+    ],
+    "period": {
+      "start": "2025-09-01",
+      "end": "2026-09-30",
+      "questionsScanned": 22453,
+      "monthsScanned": [
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09"
+      ],
+      "flagMonths": [
+        "2026-06",
+        "2026-08",
+        "2026-09"
+      ],
+      "fallbackMonths": [
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08"
+      ],
+      "directorySize": 153
+    }
   }
 };
 </script>
@@ -292490,6 +293881,7 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
           if(!km||!km.totalBrandMentions) return h(PageShell,{title:ov("KM Gap Analysis","วิเคราะห์ช่องว่างข้อมูล KM"),sub:ov("Brand knowledge gaps vs. the KM directory.","ช่องว่างความรู้เรื่องแบรนด์ เทียบกับฐานข้อมูล KM")},h("div",{className:"empty"},ov("No brand-mention data available yet.","ยังไม่มีข้อมูลการพูดถึงแบรนด์")));
           const actions=km.actions||[];
           const actionable=actions.filter(a=>a.owner!=="none");
+          const kmPeriod=km.period||{};
           const totalFailures=actions.reduce((s,a)=>s+a.count,0);
           const tuneTotal=actions.filter(a=>a.owner==="tune").reduce((s,a)=>s+a.count,0);
           const addTotal=actions.filter(a=>a.owner==="add").reduce((s,a)=>s+a.count,0);
@@ -292501,6 +293893,13 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
               h("article",{className:"card status-kpi"},h("div",{className:"status-kpi-head"},h("span",{className:"icon rose"},h(Icon,{name:"brain",size:18})),h("h3",null,ov("Needs Tune Learning","ต้อง Tune Learning"))),h("div",{className:"summary-value"},h(CountUp,{text:n(tuneTotal)})),h("div",{className:"summary-note"},ov("Data exists, or the question wasn't heard right","มีข้อมูลแล้ว หรือฟังคำถามไม่ถูก"))),
               h("article",{className:"card status-kpi"},h("div",{className:"status-kpi-head"},h("span",{className:"icon amber"},h(Icon,{name:"message",size:18})),h("h3",null,ov("Needs new KM data","ต้องเพิ่มข้อมูล KM"))),h("div",{className:"summary-value"},h(CountUp,{text:n(addTotal)})),h("div",{className:"summary-note"},ov("Asked often, no data yet","ถามบ่อยแต่ยังไม่มีข้อมูล"))),
               h("article",{className:"card status-kpi"},h("div",{className:"status-kpi-head"},h("span",{className:"icon"},h(Icon,{name:"mic",size:18})),h("h3",null,ov("Came in by voice","มาจากการพูด"))),h("div",{className:"summary-value"},h(CountUp,{text:pct(voiceShare?voiceTotal/voiceShare*100:0)})),h("div",{className:"summary-note"},ov("Of everything that needs work","ของสิ่งที่ต้องแก้ไขทั้งหมด")))
+            ),
+            h("div",{className:"km-coverage"},
+              h("span",{className:"km-coverage-icon"},h(Icon,{name:"calendar",size:15})),
+              h("div",{className:"km-coverage-body"},
+                h("b",null,ov(`Covers ${display(kmPeriod.start,"—")} → ${display(kmPeriod.end,"—")}`,`ครอบคลุม ${display(kmPeriod.start,"—")} → ${display(kmPeriod.end,"—")}`)),
+                h("span",null,ov(`All ${n(kmPeriod.monthsScanned?.length||0)} months of data, ${n(kmPeriod.questionsScanned||0)} questions scanned. Brand matching uses the export's own in-KM flag where present, and the ${n(kmPeriod.directorySize||0)}-store KM Directory for months recorded before that flag existed.`,`ข้อมูลครบทั้ง ${n(kmPeriod.monthsScanned?.length||0)} เดือน ตรวจสอบ ${n(kmPeriod.questionsScanned||0)} คำถาม การเทียบแบรนด์ใช้สถานะใน KM ที่มากับไฟล์ และใช้ KM Directory ${n(kmPeriod.directorySize||0)} ร้าน สำหรับเดือนที่บันทึกก่อนจะมีสถานะนั้น`))
+              )
             ),
             h("div",{className:"card",style:{marginTop:"24px"}},
               h("div",{className:"card-head"},

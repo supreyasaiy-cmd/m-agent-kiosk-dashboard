@@ -431,6 +431,9 @@ export function buildPerformanceReportData(rootDir) {
   const kmBrandMentions = new Map();
   const actionBuckets = new Map();
   const customerDemand = new Map();
+  const kmFlagMonths = new Set();
+  const kmFallbackMonths = new Set();
+  const kmCoverageDates = [];
   const dailyAssetMetrics = {};
   const monthQuestionCounts = {};
   const monthQuestionCategoryCounts = {};
@@ -487,8 +490,15 @@ export function buildPerformanceReportData(rootDir) {
       }
 
       const mentionedStore = String(row.mentionedstorename || "").trim();
+      // The isMentionedBrandsInKM column only exists from Apr 2026 onward. Reading a missing
+      // column as "false" would mislabel every earlier brand as "not in KM", so fall back to
+      // matching the KM store directory ourselves whenever the flag isn't a real true/false.
+      const inKmRaw = String(row.isMentionedBrandsInKM ?? "").trim().toLowerCase();
+      const storeDirectoryMatch = mentionedStore ? findDirectoryMatch(kmDirectory, mentionedStore) : null;
+      const inKM = inKmRaw === "true" ? true : inKmRaw === "false" ? false : !!storeDirectoryMatch;
       if (mentionedStore) {
-        const inKM = String(row.isMentionedBrandsInKM || "").toLowerCase() === "true";
+        if (inKmRaw === "true" || inKmRaw === "false") kmFlagMonths.add(monthId);
+        else kmFallbackMonths.add(monthId);
         const isApology = String(row.isApology || "").toLowerCase() === "true";
         // Group by a case/punctuation-insensitive key: the same brand is sometimes logged as
         // "Boots" and sometimes "boots" (e.g. typed vs. quick-reply), and upstream's own
@@ -497,7 +507,7 @@ export function buildPerformanceReportData(rootDir) {
         const brandKey = normalizeBrandKey(mentionedStore);
         let brandBucket = kmBrandMentions.get(brandKey);
         if (!brandBucket) {
-          const directoryMatch = findDirectoryMatch(kmDirectory, mentionedStore);
+          const directoryMatch = storeDirectoryMatch;
           brandBucket = {
             name: directoryMatch?.nameEN || mentionedStore,
             directoryName: directoryMatch?.nameEN || null,
@@ -513,7 +523,7 @@ export function buildPerformanceReportData(rootDir) {
           };
           kmBrandMentions.set(brandKey, brandBucket);
         } else if (!brandBucket.directoryName) {
-          const directoryMatch = findDirectoryMatch(kmDirectory, mentionedStore);
+          const directoryMatch = storeDirectoryMatch;
           if (directoryMatch) {
             brandBucket.name = directoryMatch.nameEN;
             brandBucket.directoryName = directoryMatch.nameEN;
@@ -552,6 +562,9 @@ export function buildPerformanceReportData(rootDir) {
 
         // Demand: what customers ask about, failures and successes alike — this is the
         // "what do users actually want" view, so it must count every question.
+        const rowDate = formatLocalIsoDate(normalizeDate(row.startAt));
+        if (rowDate) kmCoverageDates.push(rowDate);
+
         const demandKey = rowSubCategory || rowCategory || "Uncategorized";
         let demandBucket = customerDemand.get(demandKey);
         if (!demandBucket) {
@@ -588,7 +601,7 @@ export function buildPerformanceReportData(rootDir) {
         // a defect — checked before the generic buckets so it never hides inside them.
         else if (rowApology && inputKind === "quickReply") actionId = "quickReplyDeadEnd";
         else if (rowApology && rowCategory === "Out of Scope") actionId = "outOfScope";
-        else if (rowApology && mentionedStore) actionId = String(row.isMentionedBrandsInKM || "").toLowerCase() === "true" ? "kmVerifyBrand" : "kmAddBrand";
+        else if (rowApology && mentionedStore) actionId = inKM ? "kmVerifyBrand" : "kmAddBrand";
         else if (rowApology) actionId = "kmAddTopic";
 
         if (actionId) {
@@ -976,7 +989,12 @@ export function buildPerformanceReportData(rootDir) {
     brandByAssetByMonth,
     eventHistory,
     accuracyReview: buildAccuracyReviewSummary(accuracyRows, accuracySessionIds),
-    kmGapAnalysis: buildKmGapAnalysis(kmBrandMentions, actionBuckets, customerDemand)
+    kmGapAnalysis: buildKmGapAnalysis(kmBrandMentions, actionBuckets, customerDemand, {
+      dates: kmCoverageDates,
+      flagMonths: [...kmFlagMonths].sort(),
+      fallbackMonths: [...kmFallbackMonths].sort(),
+      directorySize: kmDirectory.length
+    })
   };
 }
 
@@ -1012,7 +1030,7 @@ function serializeActionBucket(bucket) {
 // columns, already computed upstream — not re-derived here) into three views: brands the AI
 // got wrong despite KM having the answer, brands customers asked about with no KM entry at
 // all, and the overall most-asked-about brands.
-function buildKmGapAnalysis(brandMentions, actionBuckets, customerDemand) {
+function buildKmGapAnalysis(brandMentions, actionBuckets, customerDemand, coverage = {}) {
   const all = [...brandMentions.values()];
   const totalBrandMentions = all.reduce((sum, b) => sum + b.count, 0);
   const wrongAnswers = all
@@ -1048,7 +1066,21 @@ function buildKmGapAnalysis(brandMentions, actionBuckets, customerDemand) {
     .sort((a, b) => b.count - a.count)
     .slice(0, 25);
 
-  return { totalBrandMentions, totalUniqueBrands: all.length, wrongAnswers, gaps, topMentions, actions, demand };
+  const dates = (coverage.dates || []).filter(Boolean).sort();
+  const period = {
+    start: dates[0] || null,
+    end: dates[dates.length - 1] || null,
+    questionsScanned: dates.length,
+    monthsScanned: (coverage.flagMonths || []).concat(coverage.fallbackMonths || [])
+      .filter((v, i, a) => a.indexOf(v) === i).sort(),
+    // Months where the export carried its own in-KM flag vs. months where we had to decide
+    // by matching the KM store directory instead.
+    flagMonths: coverage.flagMonths || [],
+    fallbackMonths: coverage.fallbackMonths || [],
+    directorySize: coverage.directorySize || 0
+  };
+
+  return { totalBrandMentions, totalUniqueBrands: all.length, wrongAnswers, gaps, topMentions, actions, demand, period };
 }
 
 function buildAccuracyReviewSummary(records, sessionIds) {
