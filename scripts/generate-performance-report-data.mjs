@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, extname, join } from "node:path";
 import Papa from "papaparse";
 import XLSX from "xlsx";
@@ -242,6 +242,36 @@ export function parseCsv(path) {
   return parsed.data;
 }
 
+// Strip everything but letters/numbers so "Bangkok Bank (BBL)" and "Bangkok Bank" compare equal.
+const normalizeBrandKey = value => String(value || "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "").trim();
+
+function loadKmDirectory(rootDir) {
+  const path = join(rootDir, "Perfomance Reports", "KM Reference", "km-directory.csv");
+  if (!existsSync(path)) return [];
+  return parseCsv(path)
+    .map(row => ({
+      nameEN: String(row.Shop_Name_EN || "").trim(),
+      nameTH: String(row.Shop_Name_TH || "").trim(),
+      dept: String(row.Dept || "").trim(),
+      subCategory: String(row["Sub Category"] || "").trim(),
+      floor: String(row.Floor || "").trim(),
+      key: normalizeBrandKey(row.Shop_Name_EN)
+    }))
+    .filter(row => row.nameEN);
+}
+
+// Exact match first, then a substring match either direction (customer-mentioned names are
+// often shorter than the full directory listing, e.g. "Bangkok Bank" vs "Bangkok Bank (BBL)").
+function findDirectoryMatch(directory, mentionedName) {
+  const key = normalizeBrandKey(mentionedName);
+  if (!key) return null;
+  return (
+    directory.find(entry => entry.key === key) ||
+    directory.find(entry => entry.key.includes(key) || key.includes(entry.key)) ||
+    null
+  );
+}
+
 function parseWorkbookSheet(path, sheetName) {
   const workbook = XLSX.readFile(path);
   const targetSheetName = sheetName || workbook.SheetNames[0];
@@ -397,6 +427,8 @@ export function buildPerformanceReportData(rootDir) {
   const allRatingRows = [];
   const accuracyRows = [];
   const accuracySessionIds = new Set();
+  const kmDirectory = loadKmDirectory(rootDir);
+  const kmBrandMentions = new Map();
   const dailyAssetMetrics = {};
   const monthQuestionCounts = {};
   const monthQuestionCategoryCounts = {};
@@ -451,6 +483,61 @@ export function buildPerformanceReportData(rootDir) {
         });
         accuracySessionIds.add(String(row.sessionId || ""));
       }
+
+      const mentionedStore = String(row.mentionedstorename || "").trim();
+      if (mentionedStore) {
+        const inKM = String(row.isMentionedBrandsInKM || "").toLowerCase() === "true";
+        const isApology = String(row.isApology || "").toLowerCase() === "true";
+        // Group by a case/punctuation-insensitive key: the same brand is sometimes logged as
+        // "Boots" and sometimes "boots" (e.g. typed vs. quick-reply), and upstream's own
+        // isMentionedBrandsInKM flag disagrees between those variants. Merging them keeps one
+        // row per real-world brand instead of splitting it by casing.
+        const brandKey = normalizeBrandKey(mentionedStore);
+        let brandBucket = kmBrandMentions.get(brandKey);
+        if (!brandBucket) {
+          const directoryMatch = findDirectoryMatch(kmDirectory, mentionedStore);
+          brandBucket = {
+            name: directoryMatch?.nameEN || mentionedStore,
+            directoryName: directoryMatch?.nameEN || null,
+            dept: directoryMatch?.dept || null,
+            subCategory: directoryMatch?.subCategory || null,
+            floor: directoryMatch?.floor || null,
+            count: 0,
+            inKMCount: 0,
+            notInKMCount: 0,
+            apologyInKMCount: 0,
+            apologyNotInKMCount: 0,
+            examples: []
+          };
+          kmBrandMentions.set(brandKey, brandBucket);
+        } else if (!brandBucket.directoryName) {
+          const directoryMatch = findDirectoryMatch(kmDirectory, mentionedStore);
+          if (directoryMatch) {
+            brandBucket.name = directoryMatch.nameEN;
+            brandBucket.directoryName = directoryMatch.nameEN;
+            brandBucket.dept = directoryMatch.dept;
+            brandBucket.subCategory = directoryMatch.subCategory;
+            brandBucket.floor = directoryMatch.floor;
+          }
+        }
+        brandBucket.count += 1;
+        if (inKM) brandBucket.inKMCount += 1;
+        else brandBucket.notInKMCount += 1;
+        if (inKM && isApology) brandBucket.apologyInKMCount += 1;
+        if (!inKM && isApology) brandBucket.apologyNotInKMCount += 1;
+        if (questionText && brandBucket.examples.length < 4) {
+          brandBucket.examples.push({
+            question: clipText(row.question, 220),
+            answer: clipText(row.answer, 200),
+            apology: isApology,
+            inKM,
+            language: String(row.language || "").trim(),
+            machine: assetId,
+            time: String(row.startAt || "").trim()
+          });
+        }
+      }
+
       if (!metricsByAsset[assetId]) metricsByAsset[assetId] = createMetricBucket();
       const bucket = metricsByAsset[assetId];
       bucket.sessionIds.add(String(row.sessionId || ""));
@@ -808,8 +895,34 @@ export function buildPerformanceReportData(rootDir) {
     categoryByAssetByMonth,
     brandByAssetByMonth,
     eventHistory,
-    accuracyReview: buildAccuracyReviewSummary(accuracyRows, accuracySessionIds)
+    accuracyReview: buildAccuracyReviewSummary(accuracyRows, accuracySessionIds),
+    kmGapAnalysis: buildKmGapAnalysis(kmBrandMentions)
   };
+}
+
+// Ranks brand mentions (from the messageLog's own mentionedstorename/isMentionedBrandsInKM
+// columns, already computed upstream — not re-derived here) into three views: brands the AI
+// got wrong despite KM having the answer, brands customers asked about with no KM entry at
+// all, and the overall most-asked-about brands.
+function buildKmGapAnalysis(brandMentions) {
+  const all = [...brandMentions.values()];
+  const totalBrandMentions = all.reduce((sum, b) => sum + b.count, 0);
+  const wrongAnswers = all
+    .filter(b => b.apologyInKMCount > 0)
+    .sort((a, b) => b.apologyInKMCount - a.apologyInKMCount)
+    .slice(0, 40);
+  // "Not in KM" alone isn't enough to call it a gap — brands like M Card or Power Mall are
+  // handled by quick replies instead of the store Directory, so the AI still answers fine.
+  // Require an actual apology so this only surfaces real "no data" failures.
+  const gaps = all
+    .filter(b => b.apologyNotInKMCount > 0)
+    .sort((a, b) => b.apologyNotInKMCount - a.apologyNotInKMCount)
+    .slice(0, 40);
+  const topMentions = all
+    .slice()
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 40);
+  return { totalBrandMentions, totalUniqueBrands: all.length, wrongAnswers, gaps, topMentions };
 }
 
 function buildAccuracyReviewSummary(records, sessionIds) {
