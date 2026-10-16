@@ -1058,10 +1058,12 @@ function buildKmGapAnalysis(brandMentions, actionBuckets, customerDemand, covera
   // is noise, not a priority.
   const demand = [...customerDemand.values()]
     .filter(d => d.count >= 5)
+    // The full question list ships (not just the 10 rendered) so the per-topic CSV export is
+    // worth opening in Excel; the UI slices it down for display.
     .map(({ questionCounts, ...d }) => ({
       ...d,
       apologyRate: d.count ? (d.apology / d.count) * 100 : 0,
-      topQuestions: [...questionCounts.values()].sort((a, b) => b.count - a.count).slice(0, 10)
+      topQuestions: [...questionCounts.values()].sort((a, b) => b.count - a.count)
     }))
     .sort((a, b) => b.count - a.count)
     .slice(0, 25);
