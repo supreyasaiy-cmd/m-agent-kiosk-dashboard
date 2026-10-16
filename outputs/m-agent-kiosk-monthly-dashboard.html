@@ -607,6 +607,8 @@
     .km-export-btn{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;border:1px solid #bfdbfe;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:12.5px;font-weight:850;padding:9px 16px;cursor:pointer;white-space:nowrap;transition:.22s var(--ease-smooth)}
     .km-export-btn:hover{background:#dbeafe;border-color:#93c5fd}
     .km-export-btn.sm{font-size:11.5px;font-weight:800;padding:5px 12px}
+    .km-section-head{margin:28px 2px 14px;align-items:center}
+    .km-section-head p{margin-top:4px;font-size:13px}
     .km-action-export{margin-top:14px;display:flex}
     .km-demand-list{display:grid;gap:8px}
     .km-demand-item{border:1px solid var(--line-2);border-radius:14px;background:#fbfcfe;overflow:hidden}
@@ -1126,7 +1128,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-16T04:07:50.251Z",
+  "generatedAt": "2026-10-16T04:14:58.696Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "30 Sep 2026",
@@ -333821,13 +333823,14 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
                 h("span",null,ov(`All ${n(kmPeriod.monthsScanned?.length||0)} months of data, ${n(kmPeriod.questionsScanned||0)} questions scanned. Brand matching uses the export's own in-KM flag where present, and the ${n(kmPeriod.directorySize||0)}-store KM Directory for months recorded before that flag existed.`,`ข้อมูลครบทั้ง ${n(kmPeriod.monthsScanned?.length||0)} เดือน ตรวจสอบ ${n(kmPeriod.questionsScanned||0)} คำถาม การเทียบแบรนด์ใช้สถานะใน KM ที่มากับไฟล์ และใช้ KM Directory ${n(kmPeriod.directorySize||0)} ร้าน สำหรับเดือนที่บันทึกก่อนจะมีสถานะนั้น`))
               )
             ),
-            h("div",{className:"card",style:{marginTop:"24px"}},
-              h("div",{className:"card-head"},
-                h("div",{className:"card-title"},h("span",{className:"icon green"},h(Icon,{name:"check"})),h("div",null,h("h3",null,ov("What to work on, in priority order","สิ่งที่ต้องทำ เรียงตามลำดับความสำคัญ")),h("p",{className:"subtitle"},ov("Each card is one kind of unanswered question — whether it needs new KM data or Tune Learning — and the exact next step. Open the examples to see the real conversations behind the number.","แต่ละการ์ดคือคำถามที่ตอบไม่ได้หนึ่งประเภท ว่าต้องเพิ่มข้อมูล KM หรือต้อง Tune Learning และต้องทำอะไรต่อ กดดูตัวอย่างเพื่อดูบทสนทนาจริงเบื้องหลังตัวเลข")))),
-                h("button",{type:"button",className:"km-export-btn",onClick:()=>downloadCsv(`km-gap-analysis-${(km.demand&&km.demand.length?new Date().toISOString().slice(0,10):"export")}.csv`,buildKmGapCsv(km,KM_ACTION_COPY,aqrLang))},h(Icon,{name:"download",size:15}),ov("Export CSV","ดาวน์โหลด CSV"))
-              )
+            h("div",{className:"section-head km-section-head"},
+              h("div",null,
+                h("h2",null,ov("Priority actions","สิ่งที่ต้องทำ")),
+                h("p",null,ov("Sorted by volume. Each card has its next step.","เรียงตามจำนวน แต่ละการ์ดระบุสิ่งที่ต้องทำ"))
+              ),
+              h("button",{type:"button",className:"km-export-btn",onClick:()=>downloadCsv(`km-gap-analysis-${new Date().toISOString().slice(0,10)}.csv`,buildKmGapCsv(km,KM_ACTION_COPY,aqrLang))},h(Icon,{name:"download",size:15}),ov("Export all","ดาวน์โหลดทั้งหมด"))
             ),
-            h("div",{style:{marginTop:"18px"}},actions.map(a=>h(KmActionCard,{key:a.id,action:a,lang:aqrLang,totalFailures,period:kmPeriod}))),
+            h("div",null,actions.map(a=>h(KmActionCard,{key:a.id,action:a,lang:aqrLang,totalFailures,period:kmPeriod}))),
             h("div",{className:"card",style:{marginTop:"24px"}},
               h("div",{className:"card-head"},h("div",{className:"card-title"},h("span",{className:"icon purple"},h(Icon,{name:"message"})),h("div",null,h("h3",null,ov("What customers want to know","ลูกค้าอยากรู้เรื่องอะไร")),h("p",{className:"subtitle"},ov("Every topic customers asked about, ranked by volume, with how often the AI failed on it. High volume + high failure = fix this first.","ทุกหัวข้อที่ลูกค้าถาม เรียงตามปริมาณ พร้อมอัตราที่ AI ตอบไม่ได้ ปริมาณสูง + ตอบไม่ได้บ่อย = ควรแก้ก่อน"))))),
               h(KmDemandTable,{rows:km.demand||[],lang:aqrLang,period:kmPeriod})
