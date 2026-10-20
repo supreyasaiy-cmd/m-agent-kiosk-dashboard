@@ -313,6 +313,14 @@
     .overview-machine-photo{width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);background:#fff}
     .overview-machine-photo img{width:100%;height:100%;object-fit:cover;display:block}
     .overview-machine-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .overview-machine-trend{margin-top:10px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+    .overview-machine-trend b{font-size:13px;font-weight:900;border-radius:999px;padding:3px 9px;white-space:nowrap}
+    .overview-machine-trend span{color:var(--muted);font-size:10.5px;line-height:1.35;overflow-wrap:anywhere}
+    .overview-machine-trend.up b{background:var(--green-soft);color:#067647}
+    .overview-machine-trend.down b{background:var(--rose-soft);color:#be123c}
+    .overview-machine-trend.flat b{background:#f2f4f7;color:#475467}
+    .overview-machine-trend.new b{background:var(--blue-soft);color:#1d4ed8}
+    .overview-machine-trend.none span{font-style:italic}
     .overview-machine-head b{display:block;font-size:15px;line-height:1.35;overflow-wrap:anywhere}
     .overview-machine-head span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em;margin-top:5px;color:#667085;font-size:12px;line-height:1.4}
     .overview-machine-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
@@ -1128,7 +1136,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-20T10:35:29.206Z",
+  "generatedAt": "2026-10-20T10:43:56.168Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "30 Sep 2026",
@@ -333316,7 +333324,20 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
         {label:ov("Top language","ภาษายอดนิยม"),value:topLanguage.name,note:ov(`${pct(langTotal?topLanguage.value/langTotal*100:0)} of chats`,`${pct(langTotal?topLanguage.value/langTotal*100:0)} ของบทสนทนา`),chart:"pie",segments:languageMix,colors:["#0891b2","#2563eb","#f59e0b","#94a3b8"]},
         {label:ov("Peak traffic window","ช่วงเวลาใช้งานสูงสุด"),value:peakWindow,note:ov("From actual usage times","จากเวลาการใช้งานจริง"),chart:"bars",values:overviewWeekdaySeries,color:"#f59e0b"}
       ];
-      const overviewMachineCards=filteredRows.map(r=>{const kiosk=kioskMap.get(r.assetId);const machineQuestions=safeNumber(r.questions), machineSuccess=machineQuestions?safeNumber(r.success)/machineQuestions*100:0;const branchFull=kiosk?.branch||"",branchShort=branchFull.split(" ")[0]||"",locationFull=display(kiosk?.location,"Location not available"),locationShort=branchFull?locationFull.replace(new RegExp("^"+branchFull.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*-\\s*"),""):locationFull,locationLabel=branchShort&&locationShort!==locationFull?`${locationShort} · ${branchShort}`:locationFull;return {assetId:r.assetId,machine:display(kiosk?.machine,r.assetId),location:locationFull,locationLabel,sessions:n(r.sessions),avgPerDay:n(Math.round(safeNumber(r.sessions)/Math.max(1,comparableDays))),questions:n(r.questions),success:pct(machineSuccess),rating:r.rating?safeNumber(r.rating).toFixed(1):"—",imageSrc:machineImages[r.assetId]||""}});
+      // Always a month-over-month read (latest month in the range vs the one before it), even
+      // when a wide range like Full history is selected — comparing Full history against the
+      // equally long window before it would compare against no data at all.
+      const trendMonthId=appliedMonthId, trendPrevMonth=prev;
+      const trendCurByAsset=new Map(perf.filter(r=>r.month===trendMonthId).map(r=>[r.assetId,r]));
+      const trendPrevByAsset=new Map(perf.filter(r=>r.month===trendPrevMonth.id).map(r=>[r.assetId,r]));
+      const overviewMachineCards=filteredRows.map(r=>{const kiosk=kioskMap.get(r.assetId);
+        // A machine with no sessions last month has no baseline to divide by, so it is flagged
+        // as new rather than reported as a +100% jump.
+        const prevSessions=safeNumber(trendPrevByAsset.get(r.assetId)?.sessions);
+        const curSessions=safeNumber(trendCurByAsset.get(r.assetId)?.sessions);
+        const trend=prevSessions>0
+          ?{state:curSessions>prevSessions?"up":curSessions<prevSessions?"down":"flat",pct:Math.abs((curSessions-prevSessions)/prevSessions*100),prevSessions,curSessions}
+          :{state:curSessions>0?"new":"none",pct:null,prevSessions,curSessions};const machineQuestions=safeNumber(r.questions), machineSuccess=machineQuestions?safeNumber(r.success)/machineQuestions*100:0;const branchFull=kiosk?.branch||"",branchShort=branchFull.split(" ")[0]||"",locationFull=display(kiosk?.location,"Location not available"),locationShort=branchFull?locationFull.replace(new RegExp("^"+branchFull.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\s*-\\s*"),""):locationFull,locationLabel=branchShort&&locationShort!==locationFull?`${locationShort} · ${branchShort}`:locationFull;return {assetId:r.assetId,machine:display(kiosk?.machine,r.assetId),location:locationFull,locationLabel,sessions:n(r.sessions),avgPerDay:n(Math.round(safeNumber(r.sessions)/Math.max(1,comparableDays))),questions:n(r.questions),success:pct(machineSuccess),rating:r.rating?safeNumber(r.rating).toFixed(1):"—",imageSrc:machineImages[r.assetId]||"",trend}});
       const overviewUsageIds=overviewMachineCards.map(item=>item.assetId);
       const overviewUsageTotals=overviewUsageIds.map(id=>perf.filter(r=>r.assetId===id).reduce((sum,r)=>sum+safeNumber(r.sessions),0));
       const overviewUsageGrandTotal=overviewUsageTotals.reduce((a,b)=>a+b,0)||1;
@@ -333495,6 +333516,14 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
                   ),
                   h("span",{className:"score-pill",title:ov("Rank by avg sessions / day","จัดอันดับตามเซสชันเฉลี่ย/วัน")},"#"+([...overviewMachineCards].sort((a,b)=>(safeNumber(b.avgPerDay)-safeNumber(a.avgPerDay))||(safeNumber(b.sessions)-safeNumber(a.sessions))).findIndex(x=>x.assetId===item.assetId)+1))
                 ),
+                (()=>{const tr=item.trend||{};
+                  const cmp=ov(`${monthObj.label} vs ${trendPrevMonth.label}`,`${monthObj.label} เทียบกับ ${trendPrevMonth.label}`);
+                  if(tr.state==="none") return h("div",{className:"overview-machine-trend none"},h("span",null,ov(`No sessions in ${monthObj.label} or ${trendPrevMonth.label}`,`ไม่มีเซสชันทั้ง ${monthObj.label} และ ${trendPrevMonth.label}`)));
+                  if(tr.state==="new") return h("div",{className:"overview-machine-trend new"},h("b",null,ov("New","เริ่มใช้งาน")),h("span",null,ov(`${n(tr.curSessions)} sessions in ${monthObj.label}, none in ${trendPrevMonth.label}`,`${n(tr.curSessions)} เซสชันใน ${monthObj.label} ไม่มีใน ${trendPrevMonth.label}`)));
+                  const sym=tr.state==="up"?"▲":tr.state==="down"?"▼":"=";
+                  const txt=tr.state==="flat"?ov("No change","ไม่เปลี่ยนแปลง"):`${sym} ${tr.pct.toFixed(1)}%`;
+                  return h("div",{className:`overview-machine-trend ${tr.state}`},h("b",null,txt),h("span",null,`${cmp} · ${n(tr.prevSessions)} → ${n(tr.curSessions)} ${ov("sessions","เซสชัน")}`));
+                })(),
                 h("div",{className:"overview-machine-metrics"},
                   h("div",null,h("strong",null,h(CountUp,{text:item.sessions})),h("span",null,ov("Sessions","เซสชัน"))),
                   h("div",null,h("strong",null,h(CountUp,{text:item.questions})),h("span",null,ov("Questions","คำถาม"))),
