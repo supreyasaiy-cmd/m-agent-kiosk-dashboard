@@ -1128,7 +1128,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-16T04:14:58.696Z",
+  "generatedAt": "2026-10-20T10:35:29.206Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "30 Sep 2026",
@@ -331830,8 +331830,8 @@ window.__PERFORMANCE_REPORT_DATA__ = {
     const overviewSections = [
       {target:"ov-summary",label:"Performance",th:"ประสิทธิภาพ"},
       {target:"ov-trend",label:"Monthly Trend",th:"เทรนด์รายเดือน"},
-      {target:"Usage Trend by Machine",label:"Usage Trend by Machine",th:"เทรนด์การใช้งานตามเครื่อง"},
       {target:"Machine overview",label:"Machine overview",th:"ภาพรวมเครื่อง"},
+      {target:"Usage Trend by Machine",label:"Usage Trend by Machine",th:"เทรนด์การใช้งานตามเครื่อง"},
       {target:"Top Quick Replies",label:"Top Quick Replies",th:"Quick Reply ยอดนิยม"},
       {target:"Question categories",label:"Question categories",th:"หมวดหมู่คำถาม"},
       {target:"User Behavior",label:"User Behavior Chart",th:"กราฟพฤติกรรมผู้ใช้"},
@@ -333472,38 +333472,6 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
               h(AreaChart,{key:trendMode,monthsData:trendMode==="avgDay"?trendAvgDayRows:monthRows,alreadyPerDay:trendMode==="avgDay",labels:trendMode==="avgDay"?{questions:ov("Avg questions/day","คำถามเฉลี่ย/วัน"),sessions:ov("Avg sessions/day","เซสชันเฉลี่ย/วัน")}:{questions:ov("Questions","คำถาม"),sessions:ov("Sessions","เซสชัน")}}),
               monthRows.some(m=>isPartialMonth(m.id))?h("p",{className:"subtitle",style:{margin:"6px 46px 0",textAlign:"right",fontSize:"11px",color:"#94a3b8"}},ov("* Partial month — fewer days of data","* เดือนที่ยังไม่ครบ — มีข้อมูลไม่ครบทุกวัน")):null
             )),
-          h("div",{className:"bento"},h("div",{className:"card span-12"},
-              h("div",{className:"card-head"},
-                h("div",{className:"card-title"},
-                  h("span",{className:"icon"},h(Icon,{name:"trend"})),
-                  h("div",null,
-                    h("h3",null,ov("Usage Trend by Machine","เทรนด์การใช้งานตามเครื่อง")),
-                    h("p",{className:"subtitle"},ov("Monthly sessions across the full available history. Hover a point for that month's sessions and usage share per kiosk — the line breaks for months a kiosk wasn't in use.","เซสชันรายเดือนจากประวัติทั้งหมด ชี้ที่จุดเพื่อดูเซสชันและส่วนแบ่งการใช้งานของแต่ละเครื่องในเดือนนั้น — เส้นจะขาดในเดือนที่เครื่องไม่ได้ใช้งาน"))
-                  )
-                )
-              ),
-              h(UsageTrendChart,{key:appliedPeriod.start+"_"+appliedPeriod.end,ids:overviewUsageIds,names:overviewUsageNames}),
-              h("div",{className:"scroll",style:{marginTop:"16px"}},
-                h("table",{className:"rank-table"},
-                  h("thead",null,
-                    h("tr",null,[ov("Machine","เครื่อง"),ov("Questions","คำถาม"),ov("Sessions","เซสชัน"),ov("Avg sessions / day","เซสชันเฉลี่ย/วัน"),ov("Avg questions / session","คำถามเฉลี่ย/เซสชัน"),ov("Share (full year)","ส่วนแบ่ง (ทั้งปี)")].map(x=>h("th",{key:x},x)))
-                  ),
-                  h("tbody",null,
-                    overviewUsageStats.map((u,i)=>{
-                      const colorIndex=overviewUsageIds.indexOf(u.assetId);
-                      return h("tr",{key:u.assetId},
-                        h("td",null,h("i",{style:{background:compareColors[colorIndex%compareColors.length],width:"10px",height:"10px",borderRadius:"3px",display:"inline-block",marginRight:"8px",verticalAlign:"middle"}}),h("b",null,u.machine)),
-                        h("td",null,n(Math.round(u.questions))),
-                        h("td",null,n(Math.round(u.sessions))),
-                        h("td",null,u.avgPerDay.toFixed(1)+ov(" per day"," เซสชัน/วัน")),
-                        h("td",null,u.qps.toFixed(1)+ov(" per session"," คำถาม/เซสชัน")),
-                        h("td",null,pct(u.share))
-                      )
-                    })
-                  )
-                )
-              )
-            )),
           h("div",{className:"card overview-summary-card"},
             h("div",{className:"overview-summary-head"},
               h("div",{className:"card-title"},
@@ -333537,6 +333505,38 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
               ))
             )
           ),
+          h("div",{className:"bento"},h("div",{className:"card span-12"},
+              h("div",{className:"card-head"},
+                h("div",{className:"card-title"},
+                  h("span",{className:"icon"},h(Icon,{name:"trend"})),
+                  h("div",null,
+                    h("h3",null,ov("Usage Trend by Machine","เทรนด์การใช้งานตามเครื่อง")),
+                    h("p",{className:"subtitle"},ov("Monthly sessions across the full available history. Hover a point for that month's sessions and usage share per kiosk — the line breaks for months a kiosk wasn't in use.","เซสชันรายเดือนจากประวัติทั้งหมด ชี้ที่จุดเพื่อดูเซสชันและส่วนแบ่งการใช้งานของแต่ละเครื่องในเดือนนั้น — เส้นจะขาดในเดือนที่เครื่องไม่ได้ใช้งาน"))
+                  )
+                )
+              ),
+              h(UsageTrendChart,{key:appliedPeriod.start+"_"+appliedPeriod.end,ids:overviewUsageIds,names:overviewUsageNames}),
+              h("div",{className:"scroll",style:{marginTop:"16px"}},
+                h("table",{className:"rank-table"},
+                  h("thead",null,
+                    h("tr",null,[ov("Machine","เครื่อง"),ov("Questions","คำถาม"),ov("Sessions","เซสชัน"),ov("Avg sessions / day","เซสชันเฉลี่ย/วัน"),ov("Avg questions / session","คำถามเฉลี่ย/เซสชัน"),ov("Share (full year)","ส่วนแบ่ง (ทั้งปี)")].map(x=>h("th",{key:x},x)))
+                  ),
+                  h("tbody",null,
+                    overviewUsageStats.map((u,i)=>{
+                      const colorIndex=overviewUsageIds.indexOf(u.assetId);
+                      return h("tr",{key:u.assetId},
+                        h("td",null,h("i",{style:{background:compareColors[colorIndex%compareColors.length],width:"10px",height:"10px",borderRadius:"3px",display:"inline-block",marginRight:"8px",verticalAlign:"middle"}}),h("b",null,u.machine)),
+                        h("td",null,n(Math.round(u.questions))),
+                        h("td",null,n(Math.round(u.sessions))),
+                        h("td",null,u.avgPerDay.toFixed(1)+ov(" per day"," เซสชัน/วัน")),
+                        h("td",null,u.qps.toFixed(1)+ov(" per session"," คำถาม/เซสชัน")),
+                        h("td",null,pct(u.share))
+                      )
+                    })
+                  )
+                )
+              )
+            )),
           h("div",{className:"card overview-summary-card"},
             h("div",{className:"overview-summary-head"},
               h("div",{className:"card-title"},
