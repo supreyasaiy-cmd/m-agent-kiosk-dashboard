@@ -1141,7 +1141,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-21T07:36:37.630Z",
+  "generatedAt": "2026-10-21T07:54:50.189Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "20 Oct 2026",
@@ -345346,7 +345346,7 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
                 ),
                 (()=>{const tr=item.trend||{};
                   const cmp=ov(`${monthObj.label} vs ${trendPrevMonth.label}`,`${monthObj.label} เทียบกับ ${trendPrevMonth.label}`);
-                  if(tr.state==="none") return h("div",{className:"overview-machine-trend none"},h("span",null,ov(`No sessions in ${monthObj.label} or ${trendPrevMonth.label}`,`ไม่มีเซสชันทั้ง ${monthObj.label} และ ${trendPrevMonth.label}`)));
+                  if(tr.state==="none") return h("div",{className:"overview-machine-trend none"},h("span",null,ov(`No activity since ${trendPrevMonth.label}`,`ไม่มีการใช้งานตั้งแต่ ${trendPrevMonth.label}`)));
                   if(tr.state==="new") return h("div",{className:"overview-machine-trend new"},h("b",null,ov("New","เริ่มใช้งาน")),h("span",null,ov(`${n(tr.curSessions)} sessions in ${monthObj.label}, none in ${trendPrevMonth.label}`,`${n(tr.curSessions)} เซสชันใน ${monthObj.label} ไม่มีใน ${trendPrevMonth.label}`)));
                   const sym=tr.state==="up"?"▲":tr.state==="down"?"▼":"=";
                   const txt=tr.state==="flat"?ov("No change","ไม่เปลี่ยนแปลง"):`${sym} ${tr.pct.toFixed(1)}%`;
