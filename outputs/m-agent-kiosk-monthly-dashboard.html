@@ -313,7 +313,8 @@
     .overview-machine-photo{width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);background:#fff}
     .overview-machine-photo img{width:100%;height:100%;object-fit:cover;display:block}
     .overview-machine-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-    .overview-machine-trend{margin-top:10px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+    .overview-machine-trend{margin-top:10px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-height:76px}
+    .overview-machine-trend.none{align-items:flex-start}
     .overview-machine-trend b{font-size:13px;font-weight:900;border-radius:999px;padding:3px 9px;white-space:nowrap}
     .overview-machine-trend span{color:var(--muted);font-size:10.5px;line-height:1.35;overflow-wrap:anywhere}
     .overview-machine-trend.up b{background:var(--green-soft);color:#067647}
@@ -1141,7 +1142,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-21T07:54:50.189Z",
+  "generatedAt": "2026-10-21T08:07:56.865Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "20 Oct 2026",
@@ -343352,7 +343353,30 @@ window.__PERFORMANCE_REPORT_DATA__ = {
 };
 </script>
   <script>
-    const {useEffect, useMemo, useRef, useState} = React;
+    const {useEffect, useLayoutEffect, useMemo, useRef, useState} = React;
+    // Equalizes the height of every descendant matching `selector` to the tallest one, so
+    // sibling cards with different text lengths (e.g. a one-line "No activity" vs a two-line
+    // trend readout) still align their content below. Resyncs on resize since text wrapping
+    // depends on the rendered width, not just content.
+    function EqualHeightRows({selector,children}){
+      const ref=useRef(null);
+      useLayoutEffect(()=>{
+        const container=ref.current;
+        if(!container) return;
+        const sync=()=>{
+          const nodes=[...container.querySelectorAll(selector)];
+          if(!nodes.length) return;
+          nodes.forEach(node=>{node.style.minHeight="0px";});
+          const max=Math.max(...nodes.map(node=>node.scrollHeight));
+          nodes.forEach(node=>{node.style.minHeight=max+"px";});
+        };
+        sync();
+        const ro=new ResizeObserver(sync);
+        ro.observe(container);
+        return ()=>ro.disconnect();
+      });
+      return h("div",{ref},children);
+    }
     const h = React.createElement;
     const months = [
       {id:"2026-10",label:"October 2026",short:"Oct",days:31},
@@ -345334,6 +345358,7 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
                 h("button",{className:"hero-chip",onClick:()=>goPage("machine-status"),type:"button","aria-label":"Open Machine Status"},h(Icon,{name:"cpu",size:16}),ov("Open Machine Status","เปิดหน้าสถานะเครื่อง"))
               )
             ),
+            h(EqualHeightRows,{selector:".overview-machine-trend",key:overviewMachineCards.map(x=>x.assetId).join("|")+aqrLang+trendMonthId},
             h("div",{className:"overview-machine-grid"},
               overviewMachineCards.map(item=>h("div",{className:"overview-machine-card",key:item.assetId},
                 item.imageSrc&&h("div",{className:"overview-machine-photo"},h("img",{src:item.imageSrc,alt:`${item.machine} at ${item.location}`})),
@@ -345363,6 +345388,7 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
                   h("div",{className:"metric-highlight",style:{gridColumn:"1/-1"}},h("strong",null,h(CountUp,{text:item.avgPerDay})),h("span",null,ov("Avg sessions / day","เซสชันเฉลี่ย/วัน")))
                 )
               ))
+            )
             )
           ),
           h("div",{className:"bento"},h("div",{className:"card span-12"},
