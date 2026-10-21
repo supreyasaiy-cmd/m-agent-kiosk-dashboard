@@ -607,6 +607,11 @@
     .km-action-examples-body{margin-top:12px;display:grid;gap:10px}
     .km-example{border:1px solid var(--line-2);border-radius:14px;background:#fbfcfe;padding:12px 14px;display:grid;gap:4px;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
     .km-example-meta{color:var(--muted);font-size:11px}
+    .period-banner{margin-bottom:20px;display:flex;align-items:center;gap:11px;border:1px solid #bfdbfe;border-radius:14px;background:#eff6ff;padding:13px 16px}
+    .period-banner-icon{flex:0 0 auto;color:#1d4ed8}
+    .period-banner-body{min-width:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+    .period-banner-body b{font-size:13.5px;font-weight:850;color:#1d4ed8}
+    .period-banner-body span{color:#3b5a9a;font-size:12px;overflow-wrap:anywhere}
     .km-coverage{margin-top:16px;display:flex;align-items:flex-start;gap:11px;border:1px solid var(--line-2);border-radius:14px;background:#f8fafc;padding:13px 16px}
     .km-coverage-icon{flex:0 0 auto;color:#667085;margin-top:1px}
     .km-coverage-body{min-width:0;display:grid;gap:3px}
@@ -1136,7 +1141,7 @@
   <script src="./vendor/xlsx.full.min.js"></script>
   <script id="performance-report-data-inline">
 window.__PERFORMANCE_REPORT_DATA__ = {
-  "generatedAt": "2026-10-21T06:59:01.527Z",
+  "generatedAt": "2026-10-21T07:14:26.010Z",
   "source": "Performance Reports CSV",
   "historyStart": "1 Sep 2025",
   "historyEnd": "20 Oct 2026",
@@ -343370,7 +343375,7 @@ window.__PERFORMANCE_REPORT_DATA__ = {
       {assetId:"NO2-M7-BKE-01",machine:"TheMall-002",screen:"43 in",branch:"M8 Bangkapi",location:"M8 Bangkapi - E-Stamp ชั้น G",period:"10 Apr 2026-Present",status:"Active",notes:"Consolidated from M7 Bangkae; borrowed for Bangkok Bank M VISA 2026 and Marketing Oops 2026."},
       {assetId:"NO3-M6-NGW-01",machine:"TheMall-003",screen:"Not provided",branch:"M8 Bangkapi",location:"M8 Bangkapi - Bank Zone ชั้น 2",period:"10 Apr 2026-27 Jul 2026",status:"Returned",notes:"Consolidated from M6 Ngamwongwan to M8 Bank Zone; returned on 27 Jul 2026. Not counted from Aug 2026."},
       {assetId:"NO4-M5-THA-01",machine:"TheMall-004",screen:"Not provided",branch:"M8 Bangkapi",location:"M8 Bangkapi - Platinum Lounge ชั้น 2",period:"10 Apr 2026-27 Jul 2026",status:"Returned",notes:"Consolidated from M5 Thapra; borrowed for The Mall Lifestore Sports Fest 2026; returned on 27 Jul 2026. Not counted from Aug 2026."},
-      {assetId:"NO5-M3-EVT-01",machine:"TheMall-005",screen:"55 in",branch:"M8 Bangkapi",location:"M8 Bangkapi - Dining Zone ชั้น 3",period:"10 Apr 2026-Present",status:"Active",notes:"Former event pool machine, now permanent at M8 Dining Zone."}
+      {assetId:"NO5-M3-EVT-01",machine:"TheMall-005",screen:"55 in",branch:"M8 Bangkapi",location:"M8 Bangkapi - E-Stamp ชั้น M",period:"10 Apr 2026-Present",status:"Active",notes:"Former event pool machine, permanent at M8 Dining Zone until 16 Oct 2026, then relocated to E-Stamp ชั้น M."}
     ];
     const coverImage = "./assets/event-default.jpg";
     const eventImages = {
@@ -344682,7 +344687,7 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
         {assetId:"NO2-M7-BKE-01",machine:"TheMall-002",location:"E-Stamp, G Floor",screen:'43"',color:"#0891b2"},
         {assetId:"NO3-M6-NGW-01",machine:"TheMall-003",location:"Bank Zone, 2nd Floor",screen:'43"',color:"#12b76a"},
         {assetId:"NO4-M5-THA-01",machine:"TheMall-004",location:"Platinum Lounge, 2nd Floor",screen:'43"',color:"#f59e0b"},
-        {assetId:"NO5-M3-EVT-01",machine:"TheMall-005",location:"Dining Zone, 3rd Floor",screen:'55"',color:"#7c3aed"}
+        {assetId:"NO5-M3-EVT-01",machine:"TheMall-005",location:"E-Stamp, M Floor",screen:'55"',color:"#7c3aed"}
       ];
       const safeComparison=comparison||{ids:[],current:[],ranking:[],days:30};
       const activeIds=safeComparison.ids||[];
@@ -345256,6 +345261,13 @@ function QuestionCategories({rows,questions=[]}){if(!rows?.length)return h("div"
       const renderPage=()=>{
         if(page==="machine-comparison") return h(MachineComparisonSection,machineComparisonProps);
         if(page==="overview") return h(PageShell,null,
+          h("div",{className:"period-banner"},
+            h("span",{className:"period-banner-icon"},h(Icon,{name:"calendar",size:15})),
+            h("div",{className:"period-banner-body"},
+              h("b",null,isFullHistoryRange?ov("Full history","ข้อมูลทั้งหมด"):isFullMonthRange?monthObj.label:ov("Custom period","ช่วงที่กำหนดเอง")),
+              h("span",null,periodText+(isFullHistoryRange?ov(" · every month of data on record","· ข้อมูลทุกเดือนที่มี"):""))
+            )
+          ),
           h("div",{className:"kpi-grid",id:"ov-performance"},
             kpis.map((k,i)=>h(KpiCard,{key:k[0],label:k[0],value:k[1],note:k[2],deltaValue:k[3],bad:k[0]==="Apology Rate",icon:k[5],series:k[6],tone:["","purple","cyan","green","amber","rose"][i%6],showDelta:i!==4&&i!==5,onClick:i===5?()=>goPage("machine-timeline"):null,ctaLabel:i===5?"Open Event Report & Timeline":""}))
           ),
