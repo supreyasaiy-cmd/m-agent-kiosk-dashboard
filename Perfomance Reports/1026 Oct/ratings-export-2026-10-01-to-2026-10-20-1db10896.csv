@@ -1,0 +1,95 @@
+sessionId,askAnswerId,machineId,configId,rating,startAt,reason,reasonText,machineName,firstQuestion,firstAnswer,language
+1792507204565,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-20T21:40:06.030+07:00,,,TheMall-002-M8-BKP-03,,,
+1792498890993,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-20T19:21:34.887+07:00,helpfulness,Helpfulness,TheMall-002-M8-BKP-03,hello,"Hello! 
+I'm doing well, thanks for asking!",en-US
+1792495749161,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-20T18:29:10.841+07:00,,,TheMall-005-M8-BKP-02,,,
+1792320307754,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-18T17:45:12.258+07:00,accuracy,Accuracy,TheMall-001-M8-BKP-01,How much payment for parking?,"For parking at The Mall Bangkapi, weekdays offer 1 to 3 hours of free parking, and weekends offer 1 to 2 hours free. After that, it's 20 Baht per hour for 4 to 6 hours, and 50 Baht per hour for 7 hours or more. For motorcycles, the first 3 hours are free, then it's 20 Baht per hour.",en-US
+1792318285031,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-18T17:11:29.380+07:00,speed,ความเร็ว,TheMall-002-M8-BKP-03,อยู่ไหน,ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ อยู่ไหน ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ,th-TH
+1792306103281,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-18T13:48:27.125+07:00,,,TheMall-001-M8-BKP-01,ห้ามคนเดินหายล่ะ,ถ้าคุณลูกค้าหาสินค้าไม่เจอสามารถสอบถามพนักงานที่เคาน์เตอร์ประชาสัมพันธ์ได้เลยค่ะหรือจะค้นหาจาก Directory ใน M Card Application ก็ได้นะคะ,th-TH
+1792246416617,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-17T21:13:39.046+07:00,accuracy,准确性,TheMall-001-M8-BKP-01,,,
+1792245548902,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-17T20:59:14.251+07:00,accuracy,ความแม่นยำ,TheMall-002-M8-BKP-03,quick reply: MCard,MCard มีหลากหลายรูปแบบ สามารถคลิกดูได้ตาม Card ด้านล่าง,th-TH
+1792228726868,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-17T16:18:52.571+07:00,,,TheMall-002-M8-BKP-03,Coffee or Tea,"""You are currently at The Mall Lifestore Bangkapi.
+There are currently coffee and tea drink promotions available within the mall.
+Would you like me to recommend participating stores?""",en-US
+1792228701964,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-17T16:18:27.258+07:00,,,TheMall-002-M8-BKP-03,quick reply: promotion,"ตอนนี้มีโปรโมชั่นดี ๆ หลายรายการเลยค่ะ
+ลูกค้าสามารถแตะดูรายละเอียดจากการ์ดด้านล่างได้เลยนะคะ",th-TH
+1792226420740,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-17T15:40:26.771+07:00,accuracy,ความแม่นยำ,TheMall-002-M8-BKP-03,สวัสดี,สวัสดีค่ะฉันคือ M-Agent ค่ะ ยินดีที่ได้ช่วยเหลือคุณ มีอะไรให้ช่วยไหมคะ?,th-TH
+1792160683895,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-16T21:24:47.157+07:00,speed,速度,TheMall-005-M8-BKP-02,Special Privilege,"当然！我们有很多特别优惠活动。
+比如，使用 **UOB 信用卡**全额支付，并兑换积分，可享受高达13%的额外折扣。
+M Card Junior Club 会员在 Kid's Planet 也有特别优惠。
+另外，出示有效登机牌和护照/身份证的乘客可以享受 **2026 航空特权**。
+M Card Junior Club 会员在生日月份还可以获得价值100泰铢的 Swensen's 电子优惠券。
+ttb Disney 信用卡和借记卡持卡人消费满3,500泰铢或以上，可获得500泰铢的 M Cash 优惠券。
+您还可以使用 M 积分在 **Rama 9 医院**和 **Samitivej 医院**兑换特别优惠。
+M Power Blue 和 Black 会员在生日月份购买 La Mer 60毫升或以上面霜时，可获得特别礼品和面部护理服务。
+您想了解哪个优惠的更多详情呢？",zh-CN
+1792139862894,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-16T15:37:43.715+07:00,speed,Speed,TheMall-002-M8-BKP-03,Coffee or Tea,"""You are currently at The Mall Lifestore Bangkapi.
+There are currently coffee and tea drink promotions available within the mall.
+Would you like me to recommend participating stores?""",en-US
+1792036191835,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-15T11:37:43.472+07:00,helpfulness,Helpfulness,TheMall-001-M8-BKP-01,quick reply: Directory,"You’re now at The Mall Life Store Bangkapi.
+Is there any store or brand you’d like to find? I can help you with that!",en-US
+1791893644091,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-13T19:14:06.738+07:00,helpfulness,ความช่วยเหลือ,TheMall-002-M8-BKP-03,quick reply: MCard,MCard มีหลากหลายรูปแบบ สามารถคลิกดูได้ตาม Card ด้านล่าง,th-TH
+1791888179928,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-13T17:43:03.636+07:00,helpfulness,ความช่วยเหลือ,TheMall-002-M8-BKP-03,quick reply: Special Privilege,"""ขณะนี้ลูกค้าอยู่ที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ นะคะ
+ค้นพบสิทธิพิเศษที่รอคุณอยู่ทั่วทั้งศูนย์การค้า
+คุณต้องการดูร้านค้าที่ร่วมรายการหรือไม่
+ลูกค้าสามารถแตะดูรายละเอียดจากการ์ดด้านล่างได้เลยนะคะ""",th-TH
+1791885067415,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-13T16:51:10.543+07:00,helpfulness,Helpfulness,TheMall-005-M8-BKP-02,,,
+1791874167812,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-13T14:18:17.371+07:00,,,TheMall-001-M8-BKP-01,quick reply: Coffee or Tea,"""You are currently at The Mall Lifestore Bangkapi.
+There are currently coffee and tea drink promotions available within the mall.
+Would you like me to recommend participating stores?""",en-US
+1791804911849,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-12T18:35:13.690+07:00,speed,速度,TheMall-005-M8-BKP-02,左宗盛的,"很抱歉，我没有找到相关信息。
+如果我理解错了您的问题，请再问一次。",zh-CN
+1791717792586,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-11T18:23:16.366+07:00,,,TheMall-002-M8-BKP-03,สวัสดีค่ะ,สวัสดีค่ะ ยินดีที่ได้ช่วยเหลือคุณ มีอะไรให้ช่วยไหมคะ?,th-TH
+1791710644948,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-11T16:24:08.298+07:00,accuracy,ความแม่นยำ,TheMall-001-M8-BKP-01,สวัสดีค่ะ,สวัสดีค่ะ ยินดีที่ได้ช่วยเหลือคุณ มีอะไรให้ช่วยไหมคะ?,th-TH
+1791704024248,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-11T14:33:46.952+07:00,accuracy,ความแม่นยำ,TheMall-001-M8-BKP-01,quick reply: Directory,"ขณะนี้ลูกค้าอยู่ที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ นะคะ
+อยากหาร้านไหนหรือแบรนด์อะไรเป็นพิเศษไหมคะ เดี๋ยวฉันช่วยดูให้ค่ะ",th-TH
+1791619875729,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,2,2026-10-10T15:11:19.824+07:00,accuracy,ความแม่นยำ,TheMall-001-M8-BKP-01,ผมหล่อไหม,ฉันอยู่ที่นี่เพื่อช่วยเหลือคุณค่ะ มีอะไรให้ช่วยไหมคะ?,th-TH
+1791617358196,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-10T14:29:20.683+07:00,,,TheMall-002-M8-BKP-03,Special Privilege,"您好！我们有几个特别优惠活动哦！
+- **UOB信用卡额外折扣促销**：使用UOB信用卡全额支付，可兑换积分获得最高13%的额外折扣。
+- **M Junior x Kids Planet**：M Card Junior Club会员在Kid's Planet可享受特别优惠。
+- **2026年航空公司特权**：出示有效登机牌和护照/身份证的乘客可享受特别优惠。
+- **ttb迪士尼系列2026**：ttb迪士尼信用卡和借记卡持卡人可获得500泰铢的M现金券。
+- **M Card**：M Card会员可享受专属特权，包括积分累积和生日月份的特别优惠。
+- **生日礼遇**：M Card Junior Club会员在生日月份可获得价值100泰铢的Swensen's电子优惠券。",zh-CN
+1791556564981,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-09T21:36:09.788+07:00,,,TheMall-005-M8-BKP-02,Hello,สวัสดีค่ะ ยินดีต้อนรับสู่ The Mall Bangkapi นะคะมีอะไรให้ M-Agent ช่วยเหลือคุณได้บ้างคะ?,th-TH
+1791547930980,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-09T19:12:13.454+07:00,helpfulness,ความช่วยเหลือ,TheMall-005-M8-BKP-02,ขอตังค์หน่อย 20,"คุณสามารถใช้ M Point แลกส่วนลด 20 บาทได้ที่ร้านค้าเหล่านี้ค่ะ
+- **D'Oro** ใช้ 120 M Point แลกส่วนลด 20 บาท สำหรับเครื่องดื่มทุกเมนู
+- **Olino** ใช้ 120 M Point แลกส่วนลด 20 บาท สำหรับเครื่องดื่มทุกเมนู
+- **KOI The'** ใช้ 160 M Point แลกส่วนลด 20 บาท สำหรับเครื่องดื่มทุกเมนู
+- **Tao Bin** ใช้ 160 M Point แลกส่วนลด 20 บาท สำหรับเครื่องดื่มทุกเมนูค่ะ",th-TH
+1791497624981,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-09T05:13:49.472+07:00,,,TheMall-002-M8-BKP-03,ร้าน MSX อยู่ตรงไหน,ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ MSX ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ,th-TH
+1791495698889,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-09T04:41:41.378+07:00,,,TheMall-002-M8-BKP-03,Gourmet Market,Gourmet Market อยู่ที่ชั้น G ค่ะ,th-TH
+1791465572787,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-08T20:19:37.631+07:00,,,TheMall-002-M8-BKP-03,quick reply: Coffee or Tea,"""ขณะนี้ลูกค้าอยู่ที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ นะคะ
+ขณะนี้มีโปรโมชั่นเครื่องดื่มกาแฟและชาภายในศูนย์การค้าค่ะ
+สนใจให้ฉันแนะนำร้านที่ร่วมรายการไหมคะ""",th-TH
+1791464356060,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-08T19:59:18.192+07:00,accuracy,准确性,TheMall-002-M8-BKP-03,6767,很抱歉，我没有找到相关信息。如果我理解错了您的问题，请再问一次。,zh-CN
+1791379307909,RATING,16f880a4-ccd9-41b6-a3ad-0f0075b649a2,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-07T20:21:52.013+07:00,helpfulness,ความช่วยเหลือ,TheMall-005-M8-BKP-02,ร้านขายหนังสือการ์ตูน,"ร้านหนังสือการ์ตูนโดยตรงตอนนี้ยังไม่มีนะคะ 
+แต่ถ้าคุณลูกค้ามองหาร้านหนังสือทั่วไป เรามีร้าน **SE-ED BOOK CENTER** อยู่ที่ชั้น **G** ค่ะ 
+หรือถ้าสนใจของเล่นและของสะสมเกี่ยวกับซูเปอร์ฮีโร่ เรามีร้าน **DC** และ **Marvel** อยู่ที่ชั้น **2** ในแผนก Kids'Planet Toys ค่ะ",th-TH
+1791292386784,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-06T20:13:10.386+07:00,,,TheMall-002-M8-BKP-03,quick reply: MCard,MCard มีหลากหลายรูปแบบ สามารถคลิกดูได้ตาม Card ด้านล่าง,th-TH
+1791250494054,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-06T08:34:59.032+07:00,,,TheMall-002-M8-BKP-03,คิดอยู่ชั้นไหน,ขออภัยค่ะ ฉันไม่พบข้อมูลเกี่ยวกับ คิด ถ้าฉันเข้าใจคำถามของคุณผิดพลาด กรุณาถามอีกครั้งค่ะ,th-TH
+1791207213065,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-05T20:33:37.407+07:00,speed,Speed,TheMall-002-M8-BKP-03,Roar,I'm here to help! What would you like to know?,en-US
+1791178879827,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-05T14:54:02.561+07:00,helpfulness,Helpfulness,TheMall-001-M8-BKP-01,Directory,"You’re now at The Mall Life Store Bangkapi.
+Is there any store or brand you’d like to find? I can help you with that!",en-US
+1791120114229,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-04T20:39:26.055+07:00,,,TheMall-002-M8-BKP-03,banner: Free Gifts for M Pet Club Members at Dogster & Catster,"M Pet Club members can get free Dogster Bite (beef tendon) or Catster Topping at **Dogster & Catster** when you purchase products worth 400 Baht.This promotion is valid until December 31, 2026.You'll need to show the coupon redeemed in the M Card Application via Line OA: @Dogsterfood.",en-US
+1791118770499,RATING,135ef541-0de0-41cb-bd1f-c909b3ddb9a3,c9cc2d27f5c76ffd8e18ecfe24419215,1,2026-10-04T19:59:35.046+07:00,helpfulness,ความช่วยเหลือ,TheMall-001-M8-BKP-01,quick reply: promotion,"ตอนนี้มีโปรโมชั่นดี ๆ หลายรายการเลยค่ะ
+ลูกค้าสามารถแตะดูรายละเอียดจากการ์ดด้านล่างได้เลยนะคะ",th-TH
+1791095722000,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-04T13:35:27.364+07:00,helpfulness,Helpfulness,TheMall-002-M8-BKP-03,hi,"Hi there! I'm M-Agent, and I'm happy to help you. What can I assist with today?",en-US
+1791037178213,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-03T21:19:42.666+07:00,helpfulness,Helpfulness,TheMall-002-M8-BKP-03,Coffee or Tea,"""You are currently at The Mall Lifestore Bangkapi.
+There are currently coffee and tea drink promotions available within the mall.
+Would you like me to recommend participating stores?""",en-US
+1791037143819,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-03T21:19:08.506+07:00,accuracy,Accuracy,TheMall-002-M8-BKP-03,hello,"Hello there! 
+How can I help you today?",en-US
+1791026383238,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,3,2026-10-03T18:19:47.483+07:00,speed,ความเร็ว,TheMall-002-M8-BKP-03,,,
+1791020146046,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-03T16:35:49.329+07:00,,,TheMall-002-M8-BKP-03,quick reply: Coffee or Tea,"""You are currently at The Mall Lifestore Bangkapi.
+There are currently coffee and tea drink promotions available within the mall.
+Would you like me to recommend participating stores?""",en-US
+1791019805505,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-03T16:30:08.923+07:00,accuracy,ความแม่นยำ,TheMall-002-M8-BKP-03,Special Privilege,"""ขณะนี้ลูกค้าอยู่ที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ นะคะ
+ค้นพบสิทธิพิเศษที่รอคุณอยู่ทั่วทั้งศูนย์การค้า
+คุณต้องการดูร้านค้าที่ร่วมรายการหรือไม่
+ลูกค้าสามารถแตะดูรายละเอียดจากการ์ดด้านล่างได้เลยนะคะ""",th-TH
+1791019763082,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-03T16:29:27.401+07:00,,,TheMall-002-M8-BKP-03,Special Privilege,"""ขณะนี้ลูกค้าอยู่ที่เดอะมอลล์ไลฟ์สโตร์ บางกะปิ นะคะ
+ค้นพบสิทธิพิเศษที่รอคุณอยู่ทั่วทั้งศูนย์การค้า
+คุณต้องการดูร้านค้าที่ร่วมรายการหรือไม่
+ลูกค้าสามารถแตะดูรายละเอียดจากการ์ดด้านล่างได้เลยนะคะ""",th-TH
+1791006294640,RATING,53c8aecf-7c86-4034-9b84-ffa5b9bb11a1,c9cc2d27f5c76ffd8e18ecfe24419215,4,2026-10-03T12:44:58.123+07:00,,,TheMall-002-M8-BKP-03,ปิดเครื่อง,ยินดีค่ะ มีอะไรให้ช่วยอีกไหมคะ?,th-TH

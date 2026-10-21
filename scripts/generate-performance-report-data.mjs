@@ -58,6 +58,12 @@ const reportFiles = {
   "2026-09": {
     message: "Perfomance Reports/0926 Sep/messageLog-export-2026-09-01-to-2026-09-30-74042160.csv",
     rating: "Perfomance Reports/0926 Sep/ratings-export-2026-09-01-to-2026-09-30-74042160.csv"
+  },
+  "2026-10": {
+    // Partial month: export covers 1-20 Oct only, so monthMeta marks it partial and the
+    // per-day figures divide by the days actually covered rather than all 31.
+    message: "Perfomance Reports/1026 Oct/messageLog-export-2026-10-01-to-2026-10-20-1db10896.csv",
+    rating: "Perfomance Reports/1026 Oct/ratings-export-2026-10-01-to-2026-10-20-1db10896.csv"
   }
 };
 
